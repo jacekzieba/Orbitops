@@ -1,0 +1,4 @@
+/* Lucide Orbit mark shared by the landing page and demo. */
+.header.wrap .brand .brand-mark,.footer .brand .brand-mark{width:40px;height:40px;flex-shrink:0;margin-right:10px;color:inherit}
+.footer .footer-brand{display:inline-flex;align-items:center}
+@media(max-width:760px){.header.wrap .brand .brand-mark,.footer .brand .brand-mark{width:34px;height:34px;margin-right:8px}}

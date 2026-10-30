@@ -1,0 +1,89 @@
+/* One family, a small hierarchy, and Lucide SVGs with predictable bounds. */
+body,input,select,textarea,button{font-family:Manrope,sans-serif}
+body{font-weight:400;line-height:1.6}
+h1,h2,h3,h4{font-family:Manrope,sans-serif;font-weight:700}
+h2,.example-heading h2,.sources .source-intro h2{font-size:40px;line-height:1.15;letter-spacing:-1.5px}
+.section-index,.eyebrow{font-size:11px;font-weight:600;letter-spacing:1.4px}
+.contact-form input:not([type=checkbox]),.contact-form select,.contact-form textarea{font-family:Manrope,sans-serif}
+.icon{display:inline-block;width:20px;height:20px;flex:none;vertical-align:middle;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
+button .icon,a .icon{pointer-events:none}
+.hero-benefits .icon{width:25px;height:25px;stroke:currentColor}
+.hero-benefits>span{font-size:9px;line-height:1.55}
+.challenge-visuals figcaption>span{width:32px;height:32px;display:flex;align-items:center;justify-content:center;padding:6px;overflow:visible}
+.challenge-visuals figcaption .icon{width:20px;height:20px}
+.use-card-image>span{width:40px;height:40px;display:flex;align-items:center;justify-content:center;padding:9px;overflow:visible}
+.use-card-image .icon{width:22px;height:22px}
+.fusion-output>div>span{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:28px;height:28px}
+.fusion-output .icon{width:25px;height:25px}
+.workspace-brand{display:flex;align-items:center;gap:5px}.workspace-brand>.icon{color:#00dfb0;width:23px;height:23px}
+.workspace-tabs button>span{display:flex;align-items:center;justify-content:center;width:20px;height:20px;flex:none}
+.workspace-tabs .icon{width:18px;height:18px}
+.network-icon{display:flex;align-items:center}.network-icon .icon{width:28px;height:28px}
+.risk-filters button{display:inline-flex;align-items:center;gap:6px}.risk-filters .icon{width:16px;height:16px}
+.contact-photo figcaption>span{display:flex;align-items:center}.contact-photo .icon{width:29px;height:29px}
+.button span,.text-link span,.alert-arrow,.step-arrow{display:inline-flex;align-items:center;justify-content:center;flex:none}
+.button .icon,.text-link .icon,.step-arrow .icon{width:18px;height:18px}
+.menu{align-items:center;justify-content:center;padding:6px}.menu .icon{width:23px;height:23px}
+#region-motion .icon,#pause .icon{width:15px;height:15px}
+.region-view-controls [data-region-turn] .icon{width:19px;height:19px}
+.challenge-image{overflow:hidden;border-radius:8px;isolation:isolate}
+.challenge-visuals .challenge-image img{border-radius:0}
+.challenge-visuals figure{position:relative;transition:transform .65s cubic-bezier(.2,.7,.2,1);transform-origin:center;will-change:transform}
+@media(hover:hover){.challenge-visuals figure:hover{transform:scale(1.055);z-index:1}}
+.data-layers{outline-offset:5px}
+.data-layer{transition:transform .65s cubic-bezier(.2,.7,.2,1),box-shadow .65s;transform-origin:center}
+.layer-label{transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.data-layers:is(:hover,:focus-visible) .layer-top{transform:translate(9px,-20px) rotateX(53deg) rotateZ(-28deg);box-shadow:0 20px 35px #0005}
+.data-layers:is(:hover,:focus-visible) .layer-middle{transform:translate(-7px,0) rotateX(53deg) rotateZ(-34deg)}
+.data-layers:is(:hover,:focus-visible) .layer-bottom{transform:translate(5px,20px) rotateX(53deg) rotateZ(-29deg)}
+.data-layers:is(:hover,:focus-visible) .layer-label-one{transform:translateY(-16px)}
+.data-layers:is(:hover,:focus-visible) .layer-label-three{transform:translateY(18px)}
+.region-actions{padding:20px 25px 24px;background:#143749;border-bottom:1px solid #315360}
+.region-actions[hidden]{display:none}
+.action-kicker{font-size:10px;font-weight:600;letter-spacing:1px;color:#a3dbc9;margin-bottom:12px}
+.region-action-options{display:flex;gap:7px;flex-wrap:wrap}
+.region-action-options button{display:flex;align-items:center;justify-content:center;gap:7px;border:1px solid #597a89;border-radius:6px;background:#0b2538;color:#e0edf0;padding:10px 11px;font-size:11px;flex:1}
+.region-action-options .icon{width:17px;height:17px}
+.region-action-options button[aria-pressed=true]{color:#082b32;background:#80e2c6;border-color:#80e2c6}
+.region-action-detail{padding-top:17px}.region-action-detail strong{font-size:15px;font-weight:600;color:#f6fffb}
+.region-action-detail p{font-size:13px;line-height:1.65;color:#c4dae4;margin-top:8px}
+.region-actions>small{display:block;margin-top:15px;font-size:10px;line-height:1.5;color:#9db7c5}
+.map-label.action-focus{border:2px solid #008d76;box-shadow:0 0 0 4px #00c9a318;background:#effff8}
+@media(max-width:1150px){.hero-benefits>span{font-size:8px}.fusion-output .icon{width:21px;height:21px}.region-actions{padding:18px}.region-action-options button{padding:10px 8px}}
+@media(max-width:760px){h2,.example-heading h2,.sources .source-intro h2,.technology h2{font-size:32px;letter-spacing:-1.1px}.section-index,.eyebrow{font-size:10px}.menu{display:flex}.hero-benefits>span{font-size:7px}.hero-benefits .icon{width:21px;height:21px}.challenge-visuals figcaption>span{width:29px;height:29px;margin-bottom:8px}.use-card-image>span{width:34px;height:34px;padding:7px}.use-card-image .icon{width:20px;height:20px}.workspace-brand{gap:3px}.workspace-brand>.icon{width:20px;height:20px}.workspace-tabs button>span{width:17px;height:17px}.workspace-tabs .icon{width:16px;height:16px}.contact-form input:not([type=checkbox]),.contact-form select,.contact-form textarea{font-size:16px}.data-layers{overflow:visible}.region-actions{padding:20px 18px}.region-action-options button{font-size:11px;min-height:44px}.region-action-detail strong{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.challenge-visuals figure,.data-layer,.layer-label{transition:none}.challenge-visuals figure:hover{transform:none}.data-layers:is(:hover,:focus-visible) .data-layer{transform:rotateX(53deg) rotateZ(-32deg)}.data-layers:is(:hover,:focus-visible) .layer-label{transform:none}}
+/* Reserve room for the expanded stack so it stays clear of the output panel. */
+@media(min-width:761px) and (max-width:1150px){.data-layers{height:350px}}
+@media(max-width:760px){.data-layers{height:360px}}
+
+/* Keep the scene's framing independent of the expanded report content. */
+.demo{align-items:start}
+#region{flex:none;height:430px}
+.scene-panel{align-self:start}
+.language-switcher{display:flex;align-items:center;gap:3px;padding:4px;border:1px solid #dce5ef;border-radius:24px;background:#f6faf9;flex-shrink:0}
+.language-switcher button{display:flex;align-items:center;gap:5px;border:0;border-radius:18px;padding:7px 8px;background:transparent;color:#526586;font-size:11px;font-weight:650;min-height:34px}
+.language-switcher button[aria-pressed=true]{background:#103445;color:#fff}
+.language-switcher button:hover{box-shadow:inset 0 0 0 1px #76bbaa}
+.language-switcher button span{font-size:16px;line-height:1}
+.header{gap:14px}
+.header nav{gap:18px;margin-left:0;padding:10px 0}
+@media(max-width:1150px) and (min-width:761px){.header{flex-wrap:wrap;height:auto;min-height:94px;padding-top:16px;padding-bottom:16px}.header nav{order:4;width:100%;justify-content:center}.language-switcher{margin-left:auto}}
+@media(max-width:760px){#region{height:320px}.header{gap:8px;flex-wrap:wrap;height:auto;min-height:116px;padding-top:12px;padding-bottom:12px}.header .brand{margin-right:auto}.header .nav-cta{display:none}.language-switcher{padding:2px}.language-switcher button{padding:6px;font-size:10px;gap:3px}.language-switcher button span{font-size:14px}.header nav.open{top:100%;z-index:10}.header .menu{flex-shrink:0}}
+
+/* Let longer translated labels wrap inside their grid and flex tracks. */
+.technology>*{min-width:0}
+.fusion-output>div{min-width:0;overflow-wrap:anywhere}
+@media(max-width:1150px){.fusion-output>div{flex:1}.fusion-output{min-width:0}}
+html[lang=de] h2,html[lang=de] h3{overflow-wrap:anywhere}
+
+/* Header actions: language selection, demo and contact stay together. */
+.header-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.header-actions .language-switcher{margin-right:6px}
+.nav-demo{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:45px;padding:11px 18px;border:1px solid #b9cbd3;border-radius:30px;color:#103445;background:#fff;font-size:12px;font-weight:650;white-space:nowrap;transition:background .2s,border-color .2s}
+.nav-demo:hover{background:#ecfaf5;border-color:#00aa8d}
+.nav-demo[aria-current=page]{background:#103445;color:#fff;border-color:#103445}
+.header-actions .nav-cta{align-items:center;justify-content:center;min-height:45px;white-space:nowrap}
+@media(min-width:761px) and (max-width:1150px){.header-actions{margin-left:auto}.header-actions .language-switcher{margin-left:0}}
+@media(max-width:760px){.header{min-height:0;justify-content:space-between;row-gap:14px}.header .brand{order:0}.header .menu{order:1}.header-actions{order:2;flex-basis:100%;flex-wrap:wrap;gap:8px}.header-actions .language-switcher{margin-right:auto}.header-actions .nav-demo{min-height:40px;padding:9px 12px;font-size:11px;gap:9px}.header .header-actions .nav-cta{display:inline-flex;min-height:40px;padding:9px 12px;font-size:10px;gap:10px;margin:0;white-space:normal}.header-actions .nav-cta span{display:none}}
+@media(max-width:760px){.header-actions .nav-demo{padding:9px 10px}.header-actions .nav-demo span{display:none}}
+@media(max-width:380px){.header-actions{justify-content:center}.header-actions .language-switcher{flex-basis:100%;justify-content:center;margin-right:0}}
