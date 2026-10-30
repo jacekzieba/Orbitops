@@ -114,3 +114,15 @@ Widoczny e-mail i formularz przygotowują wiadomość do `kontakt@orbitops.eu`. 
 `demo-translations-actions.js` i `demo-translations-surfaces.js` dodają332 autorskie pary EN/DE oraz wzorce dla dynamicznych tekstów. `demo-localization.js` tłumaczy nowe węzły i etykiety dostępności po renderowaniu, zachowując tekst źródłowy i umożliwiając powrót PL/EN/DE, także w klonowanej mapie archiwalnej. Kwoty są nadal wPLN, bez przeliczania waluty. Daty i szacowany stan zapasu używają wybranego locale oraz strefy Europe/Warsaw.
 
 Zweryfikowano w przeglądarce: menu1440px w jednym rzędzie;390px z otwarciem i Escape oraz bez overflow; DE kalkulator i nawigacyjne dowody; przełączanie72hEN→DE zachowuje wybór; zapis i historia decyzji wPL/EN/DE; mapa archiwalna po powrocie doPL ma polskie nazwy krajów. Widoczny mailto i wygenerowany mailto z formularza mają poprawnego odbiorcę (bez wysyłania wiadomości). Konsola bez błędów. Dopisek o scenariuszu wyłącznie po polsku usunięto.
+
+## SEO i identyfikacja
+
+Logo wykorzystuje ikonę **Orbit** z lokalnej biblioteki Lucide (ISC, `assets/LUCIDE-LICENSE.txt`). Znak w `assets/brand-mark.svg` jest wspólny dla nagłówka, stopki, SVG favicon, favicon ICO (16/32/48 px), ikony Apple (180 px) i logo organizacji (512 px). Pełne logo: `assets/logo.svg` oraz `assets/logo.png`. Grafika Open Graph: `assets/og-orbitops.png`, 1200 × 630 px.
+
+Strona główna i demonstrator mają osobne tytuły, opisy, canonical, Open Graph i Twitter Card. Strona główna zawiera JSON-LD Organization, WebSite i WebPage, bez deklarowania nieistniejących ocen ani produkcyjnego produktu. `seo.js` synchronizuje metadane z przełącznikiem PL/EN/DE. Obrazy mają wymiary ograniczające przesunięcia układu. Galeria `review/` ma `noindex,follow`; pozostaje dostępna robotom, aby mogły odczytać tę dyrektywę.
+
+Docelowy adres publikacji przez FTP: **https://orbitops.eu/**. Warianty `?lang=` i `index.html` są konsolidowane do bazowego URL strony. Nie deklarujemy hreflang: niezależne indeksowanie języków wymaga osobnych, statycznie przetłumaczonych stron; obecny przełącznik działa przez JavaScript. `sitemap.xml` zawiera dwa kanoniczne URL, bez galerii i parametrów podglądu.
+
+Na hostingu FTP plik `robots.txt` musi być dostępny bezpośrednio pod `https://orbitops.eu/robots.txt`. Wgraj zawartość paczki publikacyjnej do katalogu dokumentów przypisanego do domeny orbitops.eu; nie wgrywaj nadrzędnego katalogu `prototyp`. Paczka zawiera wymagane moduły Three.js. Robots.txt nie zabezpiecza dostępu do plików.
+
+Przy zmianie domeny należy zaktualizować adresy w `index.html`, `demo.html`, `sitemap.xml` i `robots.txt`. Workflow Pages kopiuje również sitemap, robots i favicony do artefaktu publikacji. Publikacja na GitHub Pages jest niezależna od hostingu FTP.

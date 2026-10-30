@@ -38,6 +38,7 @@ jobs:
         run: |
           mkdir -p _site/node_modules/three/examples/jsm/controls
           cp prototyp/*.html prototyp/*.css prototyp/*.js _site/
+          cp prototyp/robots.txt prototyp/sitemap.xml prototyp/favicon.svg prototyp/favicon.ico _site/
           cp -R prototyp/assets _site/assets
           cp -R prototyp/review _site/review
           cp -R prototyp/node_modules/three/build _site/node_modules/three/build
