@@ -1,0 +1,6 @@
+node_modules/
+review/*.webm
+review/frames/
+assets/rotterdam-source.png
+assets/rotterdam-crop.png
+assets/rotterdam-preview.png
