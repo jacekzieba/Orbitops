@@ -1,4 +1,5 @@
 (() => {
+  const {t,progress}=window.OrbitI18n;
   const tabs = [...document.querySelectorAll('[data-workspace-tab]')];
   function openTab(name, focus = false) {
     tabs.forEach(button => {
@@ -36,7 +37,7 @@
       item.setAttribute('aria-pressed', String(active));
     });
     const fields = {'preview-category':'category','preview-risk-badge':'badge','preview-risk-title':'title','preview-risk-region':'region','preview-relation':'relation','preview-impact':'impact','preview-action':'action','preview-map-label':'label','preview-region-name':'name'};
-    Object.entries(fields).forEach(([id,key]) => document.getElementById(id).textContent = scenario[key]);
+    Object.entries(fields).forEach(([id,key]) => document.getElementById(id).textContent = t(scenario[key]));
     const area = document.getElementById('preview-risk-area');
     ['cx','cy','rx','ry'].forEach((key,index) => area.setAttribute(key,scenario.area[index]));
     area.setAttribute('fill',scenario.color); area.setAttribute('stroke',scenario.color);
@@ -52,7 +53,7 @@
   }));
   const actions = [...document.querySelectorAll('.preview-action-list input')];
   actions.forEach(input => input.addEventListener('change', () => {
-    document.getElementById('action-progress').textContent = `${actions.filter(item=>item.checked).length} z 3 sprawdzonych`;
+    document.getElementById('action-progress').textContent = progress(actions.filter(item=>item.checked).length);
   }));
   document.querySelectorAll('[data-interest]').forEach(link => link.addEventListener('click', () => {
     const checkbox = document.querySelector(`[data-topic="${link.dataset.interest}"]`);
@@ -67,21 +68,27 @@
   form.addEventListener('input', event => { result.hidden = true; if (event.target.setCustomValidity) event.target.setCustomValidity(''); });
   form.addEventListener('submit', event => {
     event.preventDefault();
-    form.querySelectorAll('[required]').forEach(field => field.setCustomValidity(field.value.trim() ? '' : 'Uzupełnij to pole.'));
+    form.querySelectorAll('[required]').forEach(field => field.setCustomValidity(field.value.trim() ? '' : t('Uzupełnij to pole.')));
     if (!form.reportValidity()) return;
     const fields = new FormData(form);
-    const interests = fields.getAll('interest').join(', ') || 'Nie wskazano';
-    draft = `Dzień dobry,\n\nChcę porozmawiać o OrbitOps.\n\nImię i nazwisko: ${fields.get('fullName').trim()}\nFirma: ${fields.get('company').trim()}\nStanowisko: ${fields.get('role').trim() || 'Nie podano'}\nBranża: ${fields.get('industry') || 'Nie podano'}\nE-mail: ${fields.get('email').trim()}\nTelefon: ${fields.get('phone').trim() || 'Nie podano'}\nObszary zainteresowania: ${interests}\n\nWyzwania operacyjne:\n${fields.get('message').trim()}\n`;
-    document.getElementById('contact-mailto').href = `mailto:orbitops@gmail.com?subject=${encodeURIComponent('OrbitOps — kontakt: '+fields.get('company').trim())}&body=${encodeURIComponent(draft)}`;
+    const interests = fields.getAll('interest').map(t).join(', ') || t('Nie wskazano');
+    const value = key => fields.get(key)?.trim() || t('Nie podano');
+    draft = `${t('Dzień dobry,')}\n\n${t('Chcę porozmawiać o OrbitOps.')}\n\n${t('Imię i nazwisko')}: ${value('fullName')}\n${t('Firma')}: ${value('company')}\n${t('Stanowisko')}: ${value('role')}\n${t('Branża')}: ${t(value('industry'))}\n${t('E-mail')}: ${value('email')}\n${t('Telefon')}: ${value('phone')}\n${t('Obszary zainteresowania')}: ${interests}\n\n${t('Wyzwania operacyjne')}:\n${value('message')}\n`;
+    document.getElementById('contact-mailto').href = `mailto:kontakt@orbitops.eu?subject=${encodeURIComponent(t('OrbitOps — kontakt: ')+fields.get('company').trim())}&body=${encodeURIComponent(draft)}`;
     document.getElementById('copy-status').textContent = '';
     result.hidden = false;
   });
   document.getElementById('copy-contact').addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText(draft);
-      document.getElementById('copy-status').textContent = 'Treść wiadomości została skopiowana.';
+      document.getElementById('copy-status').textContent = t('Treść wiadomości została skopiowana.');
     } catch {
-      document.getElementById('copy-status').textContent = 'Nie udało się skopiować. Użyj przycisku otwierającego wiadomość w programie pocztowym.';
+      document.getElementById('copy-status').textContent = t('Nie udało się skopiować. Użyj przycisku otwierającego wiadomość w programie pocztowym.');
     }
+  });
+  document.addEventListener('languagechange', () => {
+    document.querySelector('[data-risk].active').click();
+    document.getElementById('action-progress').textContent = progress(actions.filter(item=>item.checked).length);
+    if (!result.hidden) form.requestSubmit();
   });
 })();

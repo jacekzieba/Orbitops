@@ -1,6 +1,7 @@
 import * as THREE from './node_modules/three/build/three.module.js';
 import { OrbitControls } from './node_modules/three/examples/jsm/controls/OrbitControls.js';
 import { createRegionModel } from './region-model.js?v=20261030-refine';
+const {t}=window.OrbitI18n;
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const earthHost=document.querySelector('#earth');
 const regionHost=document.querySelector('#region');
@@ -28,8 +29,8 @@ mapRenderer=renderer(regionHost);mapRenderer.shadowMap.enabled=true;mapRenderer.
 mapControls=new OrbitControls(mapCamera,mapRenderer.domElement);mapControls.target.set(0,.5,0);mapControls.enableDamping=!reduced;mapControls.dampingFactor=.075;mapControls.enableZoom=false;mapControls.enablePan=false;mapControls.minPolarAngle=.4;mapControls.maxPolarAngle=1.25;mapControls.rotateSpeed=.65;mapControls.update();mapControls.saveState();
 mapControls.addEventListener('start',()=>regionHost.classList.add('is-dragging'));mapControls.addEventListener('end',()=>regionHost.classList.remove('is-dragging'));
 }catch(e){document.querySelector('.hero-visual').classList.add('fallback');earthHost.style.background='url(assets/earth-day.jpg) center/cover';regionHost.innerHTML='<p style="padding:35px;line-height:1.7">Dostawca A → Twoja dostawa → Twoja fabryka<br>Pełny opis przykładu znajduje się obok.</p>';console.error(e);}
-const pause=document.querySelector('#pause');function setPause(){pause.innerHTML='<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">'+(paused?'<path d="m9 5 11 7-11 7z"/>':'<path d="M9 4v16M15 4v16"/>')+'</svg>';pause.setAttribute('aria-label',paused?'Uruchom animację':'Wstrzymaj animację');}setPause();pause.addEventListener('click',()=>{paused=!paused;setPause()});
-document.querySelectorAll('.report-step').forEach(b=>b.addEventListener('click',()=>{step=Number(b.dataset.step);document.querySelector('#region-actions').hidden=step!==2;document.querySelectorAll('[data-select-step]').forEach(x=>{const a=Number(x.dataset.selectStep)===step;x.classList.toggle('active',a);x.setAttribute('aria-pressed',String(a))});document.querySelectorAll('.report-step').forEach(x=>{const a=x===b;x.classList.toggle('active',a);x.setAttribute('aria-expanded',String(a))});document.querySelector('.legend-line').style.background=step===1?'#a44832':'#20594e';const tag=document.querySelector('#information-tag');tag.textContent=['PROGNOZA · OPADY','WNIOSEK · DOSTAWA DO SPRAWDZENIA','DZIAŁANIE · WERYFIKACJA'][step];tag.className='information-tag '+['','impact','action'][step];document.querySelector('#supplier-label')?.classList.toggle('attention',step===1);const impactLabel=document.querySelector('#impact-label');if(impactLabel)impactLabel.style.display=step===1?'flex':'none';document.querySelector('#mobile-state').textContent=['Pogoda w regionie dostawcy wymaga uwagi.','Możliwy wpływ — bez potwierdzenia opóźnienia.','Sprawdź dostawcę, zapas i alternatywy.'][step];}));
+const pause=document.querySelector('#pause');function setPause(){pause.innerHTML='<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">'+(paused?'<path d="m9 5 11 7-11 7z"/>':'<path d="M9 4v16M15 4v16"/>')+'</svg>';pause.setAttribute('aria-label',t(paused?'Uruchom animację':'Wstrzymaj animację'));}setPause();pause.addEventListener('click',()=>{paused=!paused;setPause()});
+document.querySelectorAll('.report-step').forEach(b=>b.addEventListener('click',()=>{step=Number(b.dataset.step);document.querySelector('#region-actions').hidden=step!==2;document.querySelectorAll('[data-select-step]').forEach(x=>{const a=Number(x.dataset.selectStep)===step;x.classList.toggle('active',a);x.setAttribute('aria-pressed',String(a))});document.querySelectorAll('.report-step').forEach(x=>{const a=x===b;x.classList.toggle('active',a);x.setAttribute('aria-expanded',String(a))});document.querySelector('.legend-line').style.background=step===1?'#a44832':'#20594e';const tag=document.querySelector('#information-tag');tag.textContent=t(['PROGNOZA · OPADY','WNIOSEK · DOSTAWA DO SPRAWDZENIA','DZIAŁANIE · WERYFIKACJA'][step]);tag.className='information-tag '+['','impact','action'][step];document.querySelector('#supplier-label')?.classList.toggle('attention',step===1);const impactLabel=document.querySelector('#impact-label');if(impactLabel)impactLabel.style.display=step===1?'flex':'none';document.querySelector('#mobile-state').textContent=t(['Pogoda w regionie dostawcy wymaga uwagi.','Możliwy wpływ — bez potwierdzenia opóźnienia.','Sprawdź dostawcę, zapas i alternatywy.'][step]);}));
 const regionActionContent=[
  ['Potwierdź gotowość dostawcy','Zapytaj, czy towar jest gotowy do odbioru i czy termin wymaga aktualizacji.'],
  ['Sprawdź bufor w fabryce','Porównaj dostępny zapas z planem produkcji. Ustal, ile czasu daje Ci obecny bufor.'],
@@ -38,30 +39,30 @@ const regionActionContent=[
 document.querySelectorAll('[data-region-action]').forEach(button=>button.addEventListener('click',()=>{
  regionAction=Number(button.dataset.regionAction);
  document.querySelectorAll('[data-region-action]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
- document.querySelector('#region-action-title').textContent=regionActionContent[regionAction][0];
- document.querySelector('#region-action-copy').textContent=regionActionContent[regionAction][1];
+ document.querySelector('#region-action-title').textContent=t(regionActionContent[regionAction][0]);
+ document.querySelector('#region-action-copy').textContent=t(regionActionContent[regionAction][1]);
  mapRendered=false;
 }));
 function setRegionInteraction(enabled){
   if(!mapControls)return;
   mapControls.enabled=enabled;regionHost.classList.toggle('is-interactive',enabled);mapRenderer.domElement.style.touchAction=enabled?'none':'pan-y';
-  const button=document.querySelector('#rotate');button.setAttribute('aria-pressed',String(enabled));button.textContent=enabled?'Wyłącz obracanie':'Włącz obracanie';
-  document.querySelector('#region-gesture-hint').textContent=enabled?'Przeciągnij model, aby zmienić widok.':'Włącz obracanie, aby obejrzeć model z innej strony.';
+  const button=document.querySelector('#rotate');button.setAttribute('aria-pressed',String(enabled));button.textContent=t(enabled?'Wyłącz obracanie':'Włącz obracanie');
+  document.querySelector('#region-gesture-hint').textContent=t(enabled?'Przeciągnij model, aby zmienić widok.':'Włącz obracanie, aby obejrzeć model z innej strony.');
 }
 setRegionInteraction(!touchRegion.matches);touchRegion.addEventListener('change',()=>setRegionInteraction(!touchRegion.matches));
 document.querySelector('#rotate').addEventListener('click',()=>setRegionInteraction(!mapControls?.enabled));
 document.querySelector('#reset-region').addEventListener('click',()=>{if(mapControls){mapControls.reset();mapModel.group.rotation.set(0,0,0);mapRendered=false;}});
 document.querySelectorAll('[data-region-turn]').forEach(button=>button.addEventListener('click',()=>{if(!mapControls)return;const offset=mapCamera.position.clone().sub(mapControls.target);offset.applyAxisAngle(new THREE.Vector3(0,1,0),Number(button.dataset.regionTurn)*Math.PI/8);mapCamera.position.copy(mapControls.target).add(offset);mapControls.update();mapRendered=false;}));
-function updateMotionButton(){const button=document.querySelector('#region-motion');button.textContent=regionMotionPaused?'Uruchom ruch':'Wstrzymaj ruch';button.setAttribute('aria-pressed',String(!regionMotionPaused));}
+function updateMotionButton(){const button=document.querySelector('#region-motion');button.textContent=t(regionMotionPaused?'Uruchom ruch':'Wstrzymaj ruch');button.setAttribute('aria-pressed',String(!regionMotionPaused));}
 updateMotionButton();document.querySelector('#region-motion').addEventListener('click',()=>{regionMotionPaused=!regionMotionPaused;updateMotionButton();});
-document.querySelector('.menu').addEventListener('click',e=>{const open=e.currentTarget.getAttribute('aria-expanded')!=='true';e.currentTarget.setAttribute('aria-expanded',String(open));document.querySelector('.header nav').classList.toggle('open',open)});document.querySelectorAll('.header nav a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.header nav').classList.remove('open');document.querySelector('.menu').setAttribute('aria-expanded','false')}));
+document.querySelectorAll('.header nav a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.header nav').classList.remove('open');document.querySelector('.menu').setAttribute('aria-expanded','false')}));
 
 function resize(){mapRendered=false;if(heroRenderer){heroRenderer.setSize(earthHost.clientWidth,earthHost.clientHeight);heroCamera.aspect=earthHost.clientWidth/earthHost.clientHeight;heroCamera.updateProjectionMatrix()}if(mapRenderer){mapRenderer.setSize(regionHost.clientWidth,regionHost.clientHeight);let a=regionHost.clientWidth/regionHost.clientHeight;const h=a<1.5?8.6:6.4;mapCamera.left=-h*a;mapCamera.right=h*a;mapCamera.top=h;mapCamera.bottom=-h;mapCamera.updateProjectionMatrix()}}window.addEventListener('resize',resize);const sizeObserver=new ResizeObserver(resize);sizeObserver.observe(earthHost);sizeObserver.observe(regionHost);resize();
 let last=performance.now(),elapsed=paused?2:0,oldShot=-1;const still=new URLSearchParams(location.search).get('still');if(still){elapsed=(Number(still)-1)*6+2;paused=true;setPause();}const titles=['Szersza perspektywa.','Bliżej tego, co istotne.','Zależność, którą warto sprawdzić.'];const subtitles=['Od obserwacji Ziemi do lokalnego kontekstu.','Rotterdam · dzienny obraz satelitarny regionu.','Model poglądowy zależności dostaw.'];
 function label(id,point){if(!mapCamera)return;const p=point.clone();mapModel.group.localToWorld(p);p.project(mapCamera);const el=document.getElementById(id);if(!el)return;const half=el.offsetWidth/2+7;const x=THREE.MathUtils.clamp((p.x+1)/2*regionHost.clientWidth,half,regionHost.clientWidth-half);const y=THREE.MathUtils.clamp((-p.y+1)/2*regionHost.clientHeight-12,el.offsetHeight+8,regionHost.clientHeight-7);el.style.left=x+'px';el.style.top=y+'px';}
 function animate(now){requestAnimationFrame(animate);const dt=Math.min((now-last)/1000,.05);last=now;if(!paused&&!document.hidden&&heroVisible)elapsed+=dt;
 if(heroRenderer&&heroVisible){globe.visible=true;regionPhoto.visible=false;heroRegion.group.visible=false;fade.visible=false;filmPoint.visible=false;document.querySelector('#film-marker').style.display='none';const halfFov=THREE.MathUtils.degToRad(heroCamera.fov/2);const fitDistance=1.72/Math.sin(Math.atan(Math.tan(halfFov)*Math.min(heroCamera.aspect,1)))*1.10;heroCamera.position.set(0,.12,Math.max(5.6,fitDistance));heroCamera.lookAt(0,.12,0);globe.position.set(0,.12,0);globe.rotation.y=-.12+elapsed*.032;globe.rotation.z=.10+Math.sin(elapsed*.11)*.012;heroRenderer.render(heroScene,heroCamera);}
-if(mapRenderer&&(regionVisible||!mapRendered)){mapRendered=true;mapModel.rain.visible=step<2;mapModel.rain.children[0].material.opacity=step===1?.22:.48;mapModel.connection.visible=step>0;mapModel.connection.material.color.setHex(step===1?0xa44832:0x20594e);mapModel.focusRing.visible=step>0;mapModel.focusRing.material.color.setHex(step===1?0xa44832:0x20594e);mapModel.pins[0].material.color.setHex(step===1?0xa44832:0x20594e);if(!regionMotionPaused&&regionVisible&&!document.hidden)regionElapsed+=dt;
+if(mapRenderer&&(regionVisible||!mapRendered)){mapRendered=true;const rainMaterial=mapModel.rain.children[0].material;rainMaterial.opacity=THREE.MathUtils.damp(rainMaterial.opacity,step===2?0:step===1?.22:.48,8,reduced?1:dt);mapModel.rain.visible=rainMaterial.opacity>.005;mapModel.connection.visible=step>0;mapModel.connection.material.color.setHex(step===1?0xa44832:0x20594e);mapModel.focusRing.visible=step>0;mapModel.focusRing.material.color.setHex(step===1?0xa44832:0x20594e);mapModel.pins[0].material.color.setHex(step===1?0xa44832:0x20594e);if(!regionMotionPaused&&regionVisible&&!document.hidden)regionElapsed+=dt;
 mapModel.setAction(step===2?regionAction:-1);
 document.querySelector('#supplier-label').classList.toggle('action-focus',step===2&&regionAction===0);
 document.querySelector('#factory-label').classList.toggle('action-focus',step===2&&regionAction===1);
@@ -79,3 +80,9 @@ if(new URLSearchParams(location.search).has('capture')&&heroRenderer){
 }
 
 document.querySelectorAll('[data-select-step]').forEach(b=>b.addEventListener('click',()=>document.querySelector(`.report-step[data-step="${b.dataset.selectStep}"]`).click()));
+
+document.addEventListener('languagechange',()=>{
+ setPause();updateMotionButton();setRegionInteraction(mapControls?.enabled ?? false);
+ document.querySelector(`.report-step[data-step="${step}"]`).click();
+ document.querySelector(`[data-region-action="${regionAction}"]`).click();
+});

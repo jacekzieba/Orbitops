@@ -64,8 +64,42 @@ Sprawdzono w lokalnej przeglądarce: przeciąganie, pauzę i wznowienie, reset, 
 
 Cała strona korzysta z rodziny Manrope (również formularze i przyciski). Usunięto deklaracje ładowania IBM Plex Sans. Piktogramy zastąpiono lokalnie osadzonymi SVG Lucide; licencja: `assets/LUCIDE-LICENSE.txt`, źródło: https://lucide.dev/license.
 
-Zdjęcia w sekcji „Świat się zmienia” powiększają się o 5,5% w obrębie kadru. Warstwy danych rozsuwają się po najechaniu i przy fokusie klawiatury. Efekty respektują prefers-reduced-motion.
+Całe kafelki w sekcji „Świat się zmienia” powiększają się o 5,5%, razem ze zdjęciem i podpisem. Warstwy danych rozsuwają się po najechaniu i przy fokusie klawiatury. Efekty respektują prefers-reduced-motion.
 
 Trzeci krok regionu udostępnia trzy działania: dostawca, zapas i transport. Wybór zmienia opis, zaznaczenie lokalizacji, pulsujący znacznik 3D i sygnał na trasie transportu. Są to ilustracyjne sugestie, nie operacje na rzeczywistych danych.
 
 Weryfikacja: jedna obliczona rodzina fontów w nagłówkach, akapitach, przyciskach i formularzach; działający hover zdjęć i różne transformacje trzech warstw; przełączenie wszystkich działań; mobilny widok 390 px bez przepełnienia poziomego; brak błędów konsoli. Kadry w `review/refinement-*.png`. Niezależna recenzja tej aktualizacji nie została ukończona: model krytyka Sol dwukrotnie zgłosił brak dostępnej pojemności. Poprzednie oceny nie dotyczą tej aktualizacji.
+
+## Wersje językowe i stabilna scena 3D
+
+Przełącznik w nagłówku udostępnia polski, angielski i niemiecki z flagami. `translations.js` zawiera tłumaczenia tekstów strony, opisów obrazów, etykiet dostępności, scenariuszy interaktywnych i wiadomości kontaktowej. `i18n.js` ustawia język dokumentu, zapamiętuje wybór lokalnie i obsługuje linki `?lang=pl`, `?lang=en` i `?lang=de`. Zmiana języka zachowuje wybrany scenariusz, krok, działanie i wpisane dane formularza.
+
+Scena regionu ma stałą wysokość niezależną od rozwijanego panelu działań. Przełączenie na trzeci krok nie zmienia rozmiaru płótna ani kadru kamery. Opady łagodnie wygasają przy zmianie kroku. Kafelki wyzwania skalują się w całości, zamiast przybliżać samo zdjęcie.
+
+## Dashboard Demo — FibreFlow
+
+`demo.html`, `demo-style.css` i `demo.js` udostępniają samodzielny, interaktywny demonstrator w stylistyce strony. Scenariusz: NordTimber / Kotka → Gdańsk → papiernia FibreFlow w Toruniu → PackPro / Poznań. Dashboard jest po polsku; przełącznik języka zachowuje dotychczasową obsługę wspólnego nagłówka.
+
+Działają: cztery widoki, wybór i filtrowanie trzech sygnałów, porównanie dwóch wariantów dla każdego zdarzenia, koszt działania i potencjalna strata, rozwijane założenia, zapis i aktualizacja decyzji z właścicielem oraz reset. Decyzje są przechowywane tylko w pamięci otwartej karty i znikają po odświeżeniu. Nie są wysyłane żadne zlecenia ani wiadomości.
+
+Wszystkie dane są fikcyjne, także komunikaty pogodowe i regulacyjne. Stan zapasu: 800 t na 30.10.2026, 10:00 CET, zużycie 200 t/dobę. Przyjęcie 1 200 t surowca w zakładzie zaplanowano na 02.11, 10:00; brak zapasu wypada 03.11, 10:00. Symulowane 48 h opóźnienia daje 24 h luki. Partia 28 t gotowego papieru jest niezależna od tej dostawy drewna. Brak integracji API, AIS, GIS lub produkcyjnego modelu AI.
+
+Po audycie doprecyzowano model zakładu: zintegrowana celulozownia i papiernia pracująca 24/7, brak bufora masy celulozowej, jednakowa założona wilgotność drewna. Zapisanie propozycji decyzji nie usuwa ryzyka. Dla strat równych zero warunki skuteczności są zawsze widoczne. 18 000 zł oznacza dopłatę do zakupu pomostowego, nie pełne zapotrzebowanie na gotówkę; koszt przerwy netto zakłada 2 500 zł/h utraconej marży i kosztów postoju.
+
+### Rozbudowa interakcji i mapy
+
+`demo-refinement.css` porządkuje typografię Manrope. `demo-icons.js` osadza lokalny zestaw SVG Lucide, na tej samej licencji co ikony strony. `demo-map.js` i `demo-map.css` pokazują rzeczywiste granice Natural Earth oraz miasta we wspólnej projekcji Mercatora; lokalny plik mapy ma42KB. Pochodzenie: `assets/baltic-map-credits.md`. Trasy są orientacyjne, a animacja wiatru ilustracyjna, z pauzą, przełącznikiem warstwy i obsługą reduced-motion.
+
+SugestiaAI jest przykładową wiadomością opartą na regule zapasu; nie korzysta z API modelu. Interaktywne grafiki pokazują okna dostaw, warianty24/48/72h i stan dowodów nawigacyjnych. Kalkulator wrażliwości nie zmienia zapisanej analizy48h. Bieżące audyty i ich ograniczenia opisuje `review/recenzja-demo-dashboard.md`.
+
+### Animacje i archiwalne decyzje
+
+`demo-insights.js/css` dodaje odtwarzanie zużycia zapasu: pierścień, odliczanie i suwak czasu0–96h, pauzę oraz reset. Przyspieszenie1s=15min dotyczy tylko odtwarzania bez nowych dostaw, nie głównej analizy. Odtwarzanie respektuje reduced-motion.
+
+WidokDecyzje zawiera stałą fikcyjną decyzjęDEC-2026-014 z20–24.10.2026 (CEST): trasę głównej dostawy, odczyty sygnałów, uzasadnienie, koszty i historię zamknięcia. Nie przedstawia zakupu jako rzeczywistej transakcji ani różnicy wariantów jako potwierdzonej oszczędności. Licznik nawigacji obejmuje1 przypadek archiwalny i bieżące propozycje.
+
+Mapa ma ciągłe gradientowe wstęgi i cząstki z ogonami poruszające się po krzywych, zamiast krótkich kresek. Pauza zamraża ruch; reduced-motion oraz brak wsparcia offset-path pozostawiają statyczną warstwę.
+
+### Bieżący zapas w jednym panelu
+
+Przyspieszone odtwarzanie zastąpiono panelem „Stan na teraz” bez suwaka i przycisków odtwarzania. Masa drewna, odliczanie dni/godzin/minut/sekund, pierścień, znacznik „Teraz” na osi i KPI pokrycia wynikają z rzeczywistego zegara oraz bazowego fikcyjnego stanu800t na30.10.2026,10:00CET i zużycia200t/dobę. Dane nie pochodzą zWMS. Model pomija nowe dostawy; po03.11,10:00 zatrzymuje masę i czas na zerze. Odliczanie jest częścią tego samego panelu co planowane przyjęcie i bufor24h.
