@@ -5,11 +5,12 @@
  const canonical=value=>reverse.has(value.trim())?value.replace(value.trim(),reverse.get(value.trim())):value;
  const attributes=['aria-label','alt','placeholder','title'];
  const language=()=>window.OrbitI18n?.language||'pl';
+ function currency(value,lang){return value.replace(/(\d[\d\s\u00a0\u202f.,]*) zł/g,(_,amount)=>new Intl.NumberFormat(lang==='de'?'de-DE':'en-GB').format(Number(amount.replace(/\s/g,'').replace(',','.')))+' PLN');}
  function translate(source){
   const key=source.trim(),lang=language();if(!key||lang==='pl')return source;
   const index=lang==='en'?0:1,pair=window.OrbitTranslations[key];
-  if(pair)return source.replace(key,pair[index]);
-  for(const entry of window.OrbitDemoPatterns||[]){const re=new RegExp(entry.re);if(re.test(key))return source.replace(key,key.replace(re,entry[lang]));}
+  if(pair)return currency(source.replace(key,pair[index]),lang);
+  for(const entry of window.OrbitDemoPatterns||[]){if(entry.re.endsWith(' zł$'))continue;const re=new RegExp(entry.re);if(re.test(key))return currency(source.replace(key,key.replace(re,entry[lang])),lang);}
   if(/^[\d\s\u00a0\u202f.,]+ zł$/.test(key)){const amount=Number(key.replace(/zł|\s/g,'').replace(',','.'));return new Intl.NumberFormat(lang==='de'?'de-DE':'en-GB').format(amount)+' PLN';}
   return source;
  }

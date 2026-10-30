@@ -1371,3 +1371,5 @@ Object.assign(window.OrbitTranslations, {
   "Pracujemy nad wersją demonstracyjną OrbitOps. Wkrótce pokażemy tutaj, jak dane zmieniają się w decyzje.": ["We are working on an OrbitOps demo. Soon, this is where you will see data turn into decisions.", "Wir arbeiten an einer Demoversion von OrbitOps. Hier zeigen wir bald, wie aus Daten Entscheidungen werden."],
   "Wróć na stronę główną": ["Back to the homepage", "Zurück zur Startseite"]
 });
+
+Object.assign(window.OrbitTranslations,{"Zamknij menu":["Close menu","Menü schließen"]});
