@@ -78,7 +78,7 @@ Scena regionu ma stałą wysokość niezależną od rozwijanego panelu działań
 
 ## Dashboard Demo — FibreFlow
 
-`demo.html`, `demo-style.css` i `demo.js` udostępniają samodzielny, interaktywny demonstrator w stylistyce strony. Scenariusz: NordTimber / Kotka → Gdańsk → papiernia FibreFlow w Toruniu → PackPro / Poznań. Dashboard jest po polsku; przełącznik języka zachowuje dotychczasową obsługę wspólnego nagłówka.
+`demo.html`, `demo-style.css` i `demo.js` udostępniają samodzielny, interaktywny demonstrator w stylistyce strony. Scenariusz: NordTimber / Kotka → Gdańsk → papiernia FibreFlow w Toruniu → PackPro / Poznań. Dashboard obsługuje polski, angielski i niemiecki, również w dynamicznych analizach, mapach i archiwum. Zmiana języka zachowuje wybór sygnału i decyzje w bieżącej sesji.
 
 Działają: cztery widoki, wybór i filtrowanie trzech sygnałów, porównanie dwóch wariantów dla każdego zdarzenia, koszt działania i potencjalna strata, rozwijane założenia, zapis i aktualizacja decyzji z właścicielem oraz reset. Decyzje są przechowywane tylko w pamięci otwartej karty i znikają po odświeżeniu. Nie są wysyłane żadne zlecenia ani wiadomości.
 
@@ -103,3 +103,14 @@ Mapa ma ciągłe gradientowe wstęgi i cząstki z ogonami poruszające się po k
 ### Bieżący zapas w jednym panelu
 
 Przyspieszone odtwarzanie zastąpiono panelem „Stan na teraz” bez suwaka i przycisków odtwarzania. Masa drewna, odliczanie dni/godzin/minut/sekund, pierścień, znacznik „Teraz” na osi i KPI pokrycia wynikają z rzeczywistego zegara oraz bazowego fikcyjnego stanu800t na30.10.2026,10:00CET i zużycia200t/dobę. Dane nie pochodzą zWMS. Model pomija nowe dostawy; po03.11,10:00 zatrzymuje masę i czas na zerze. Odliczanie jest częścią tego samego panelu co planowane przyjęcie i bufor24h.
+
+
+### Wspólna nawigacja, kontakt i pełne EN / DE
+
+`navigation.css/js` są współdzielone przez stronę główną i Demo: szeroki desktop ma jeden rząd logo/nawigacja/akcje, poniżej1380px działa menu rozwijane. Menu zamyka się po wyborze linku, Escape i kliknięciu poza nagłówkiem. Ma przetłumaczoną nazwę i aria-expanded/aria-controls.
+
+Widoczny e-mail i formularz przygotowują wiadomość do `kontakt@orbitops.eu`. Formularz nadal otwiera szkic w programie pocztowym, bez automatycznej wysyłki.
+
+`demo-translations-actions.js` i `demo-translations-surfaces.js` dodają332 autorskie pary EN/DE oraz wzorce dla dynamicznych tekstów. `demo-localization.js` tłumaczy nowe węzły i etykiety dostępności po renderowaniu, zachowując tekst źródłowy i umożliwiając powrót PL/EN/DE, także w klonowanej mapie archiwalnej. Kwoty są nadal wPLN, bez przeliczania waluty. Daty i szacowany stan zapasu używają wybranego locale oraz strefy Europe/Warsaw.
+
+Zweryfikowano w przeglądarce: menu1440px w jednym rzędzie;390px z otwarciem i Escape oraz bez overflow; DE kalkulator i nawigacyjne dowody; przełączanie72hEN→DE zachowuje wybór; zapis i historia decyzji wPL/EN/DE; mapa archiwalna po powrocie doPL ma polskie nazwy krajów. Widoczny mailto i wygenerowany mailto z formularza mają poprawnego odbiorcę (bez wysyłania wiadomości). Konsola bez błędów. Dopisek o scenariuszu wyłącznie po polsku usunięto.
