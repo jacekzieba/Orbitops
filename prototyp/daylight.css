@@ -154,3 +154,22 @@
   letter-spacing: -.6px;
 }
 .supply-card-copy h3 { font-weight: 600; letter-spacing: -.8px; }
+
+/* Jeden mięta dla akcji głównej i jedna ciemna powierzchnia dla stopki i panelu */
+.film-hero-actions .button.primary,
+.button.primary,
+.nav-cta,
+.form-submit {
+  background: var(--mint);
+  border-color: var(--mint);
+  color: var(--ink-deep);
+}
+.film-hero-actions .button.primary:hover,
+.button.primary:hover,
+.nav-cta:hover,
+.form-submit:hover {
+  background: #9af0d6;
+  border-color: #9af0d6;
+}
+.footer,
+.workspace { background: var(--ink-deep); }
