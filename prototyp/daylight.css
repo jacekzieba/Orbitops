@@ -173,3 +173,22 @@
 }
 .footer,
 .workspace { background: var(--ink-deep); }
+
+/* Hero: nakładka dla czytelności tekstu. Lewa strona (tekst) mocniej zaciemniona,
+   prawa zostawia ruch filmu; góra i dół chronią nagłówek oraz pasek sterowania. */
+.film-hero-shade {
+  background:
+    linear-gradient(90deg, rgba(8, 31, 45, .9) 0%, rgba(8, 31, 45, .72) 34%, rgba(8, 31, 45, .3) 62%, rgba(8, 31, 45, .12) 100%),
+    linear-gradient(180deg, rgba(8, 31, 45, .62) 0%, rgba(8, 31, 45, .08) 24%, rgba(8, 31, 45, .12) 52%, rgba(8, 31, 45, .8) 100%),
+    rgba(8, 31, 45, .18);
+}
+.film-hero-copy > p { color: #eaf3f0; }
+.film-hero-copy .eyebrow { color: #d6efe6; font-size: 11px; }
+.film-hero-copy h1 { text-shadow: 0 2px 28px rgba(8, 31, 45, .45); }
+@media (max-width: 760px) {
+  .film-hero-shade {
+    background:
+      linear-gradient(180deg, rgba(8, 31, 45, .72) 0%, rgba(8, 31, 45, .62) 45%, rgba(8, 31, 45, .88) 100%),
+      rgba(8, 31, 45, .14);
+  }
+}
