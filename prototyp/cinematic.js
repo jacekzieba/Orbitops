@@ -6,6 +6,9 @@
   const cases = [...document.querySelectorAll('[data-agent-case]')];
   const hero = document.querySelector('.film-hero');
   if (!video || !toggle || !hero) return;
+  const filmSpeed = .6;
+  video.defaultPlaybackRate = filmSpeed;
+  video.playbackRate = filmSpeed;
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   let wantsPlayback = !motion.matches && !navigator.connection?.saveData;
   let visible = false;
@@ -36,6 +39,7 @@
     if (wantsPlayback && visible && !document.hidden) {
       const source = video.querySelector('source');
       if (!source.hasAttribute('src')) { source.src = source.dataset.src; video.load(); }
+      video.playbackRate = filmSpeed;
       video.play().catch(() => { /* The poster and manual control remain available. */ });
     } else video.pause();
     label();
