@@ -246,3 +246,11 @@ body { background: var(--nf-bg); color: var(--nf-ink); }
 .use-cards { align-items: stretch; }
 .use-card { display: flex; flex-direction: column; }
 .use-card-copy { flex: 1; }
+
+/* Mapa zależności: nakładka SVG nie może zasłaniać mapy Europy */
+.preview-network { background: transparent !important; border: 0 !important; }
+.preview-map { background: #092433; }
+.map-drawing { background: #092433; }
+
+/* Kafelki pod sceną: bez tła za kafelkami */
+.delivery-takeaways { background: transparent !important; border: 0 !important; box-shadow: none !important; }
