@@ -1,0 +1,222 @@
+/* Nightfall — ciemna warstwa dla wszystkich sekcji po „Jak to działa".
+   Hero i sekcja #jak zostają bez zmian. Ładowana po daylight.css. */
+
+:root {
+  --nf-bg: #07121a;
+  --nf-bg-2: #0a1822;
+  --nf-card: #0e202d;
+  --nf-card-2: #12293a;
+  --nf-line: rgba(142, 205, 189, .16);
+  --nf-line-strong: rgba(142, 205, 189, .32);
+  --nf-ink: #eaf4f1;
+  --nf-muted: #9db4ba;
+  --nf-mint: #6ee3c2;
+  --nf-amber: #e0a84f;
+  --nf-glow: 0 0 0 1px var(--nf-line), 0 24px 60px -28px rgba(0, 0, 0, .7);
+
+  --ink: #eaf4f1;
+  --muted: #9db4ba;
+  --line: var(--nf-line);
+  --surface: var(--nf-card);
+  --surface-mist: var(--nf-bg-2);
+  --teal: var(--nf-mint);
+  --shadow-card: var(--nf-glow);
+}
+
+html { background: var(--nf-bg); color-scheme: dark; }
+body { background: var(--nf-bg); color: var(--nf-ink); }
+.header { color: #fff; }
+
+/* Powierzchnie sekcji */
+.example-section,
+.sources,
+.platform-section,
+.about,
+.contact-section { background: var(--nf-bg); }
+.use-section,
+.technology-section {
+  background: var(--nf-bg-2);
+}
+.technology-section { background: radial-gradient(at 70% 30%, #12303f, var(--nf-bg-2) 62%); }
+.sources.wrap.section,
+.about.wrap.section { max-width: none; }
+.about.wrap.section { border-top: 1px solid var(--nf-line); }
+.sources { position: relative; }
+
+/* Tekst */
+.example-section h2, .example-section h3,
+.source-intro h2, .sources h3,
+.use-heading h2, .use-card-copy h3,
+.platform-heading h2, .platform-heading h3,
+.about h2, .about h3, .about strong,
+.contact h2, .form-heading { color: var(--nf-ink); }
+.example-section h2 span, .source-intro h2 span, .use-heading h2 span,
+.platform-heading h2 span, .about h2 span, .contact h2 span,
+.technology h2 span { color: var(--nf-mint); }
+.example-heading p, .source-intro p, .use-heading p, .platform-heading p,
+.about p, .contact-story > p, .sources p, .use-card-copy p,
+.form-delivery-note, .atlas-disclaimer, .photo-context,
+.technology-copy p, .example-section p { color: var(--nf-muted); }
+.section-index, .eyebrow { color: var(--nf-mint); }
+.large-copy { color: var(--nf-ink) !important; }
+
+/* Przyciski */
+.button.secondary, .text-link { color: var(--nf-ink); border-color: var(--nf-line-strong); }
+.button.secondary:hover, .text-link:hover { color: var(--nf-mint); }
+.text-link { color: var(--nf-mint); }
+
+/* ---- Przykład (scena three.js) ---- */
+.scenario-caption { color: var(--nf-muted); }
+.demo, .scene-panel, .report {
+  background: var(--nf-card);
+  border-color: var(--nf-line);
+  color: var(--nf-ink);
+}
+.scene-panel { background: #0a1620; box-shadow: var(--nf-glow); }
+.report { background: var(--nf-card); box-shadow: var(--nf-glow); }
+#region { background: #0a1620; }
+.map-top, .map-bottom, .region-view-controls, .map-legend, .report-header, .report-foot {
+  color: var(--nf-muted); border-color: var(--nf-line); background: transparent;
+}
+.map-top button, .region-view-controls button, .region-top-buttons button,
+.mobile-tabs button, .region-action-options button {
+  background: rgba(110, 227, 194, .06); color: var(--nf-ink); border-color: var(--nf-line-strong);
+}
+.map-top button[aria-pressed="true"], .mobile-tabs button.active,
+.region-action-options button[aria-pressed="true"] {
+  background: var(--nf-mint); color: #07121a; border-color: var(--nf-mint);
+}
+.map-label, .information-tag, .mobile-state {
+  background: rgba(8, 24, 34, .88); color: var(--nf-ink); border-color: var(--nf-line-strong);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .7);
+}
+.map-label small { color: var(--nf-muted); }
+.report-step { border-color: var(--nf-line); color: var(--nf-ink); background: transparent; }
+.report-step.active { background: rgba(110, 227, 194, .07); }
+.step-number { background: rgba(110, 227, 194, .1); color: var(--nf-mint); border-color: var(--nf-line-strong); }
+.report-step.active .step-number { background: var(--nf-mint); color: #07121a; }
+.step-description, .step-kind { color: var(--nf-muted); }
+.action-kicker, .region-action-detail, .region-actions, .actions-heading { color: var(--nf-ink); }
+.region-action-detail { background: rgba(110, 227, 194, .05); border-color: var(--nf-line); }
+.delivery-takeaways, .delivery-takeaways * { border-color: var(--nf-line); }
+.delivery-takeaways { background: var(--nf-card); color: var(--nf-ink); }
+.delivery-takeaways span, .delivery-takeaways small { color: var(--nf-muted); }
+
+/* ---- Pełniejszy obraz ---- */
+.data-layers article, .fusion-output, .atlas-notes article {
+  background: var(--nf-card); border-color: var(--nf-line); color: var(--nf-ink);
+}
+.atlas-notes article { border-color: var(--nf-line); background: transparent; }
+.atlas-notes article span { color: var(--nf-mint); }
+.atlas-image { box-shadow: var(--nf-glow); }
+.atlas-image img { filter: saturate(.8) brightness(.78) contrast(1.08); }
+.atlas-image-label, .atlas-image figcaption {
+  background: rgba(7, 18, 26, .86); color: var(--nf-muted); border-color: var(--nf-line);
+}
+.atlas-image-label strong { color: var(--nf-ink); }
+.atlas-takeaway {
+  background: linear-gradient(90deg, rgba(110, 227, 194, .1), rgba(110, 227, 194, .02));
+  border-color: var(--nf-mint); color: var(--nf-ink);
+}
+.atlas-takeaway p { color: var(--nf-ink); }
+.atlas-takeaway span { color: var(--nf-mint); }
+.layer-label { background: rgba(7, 18, 26, .86); color: var(--nf-ink); border-color: var(--nf-line-strong); }
+.fusion-output * { color: inherit; }
+
+/* ---- Zastosowania ---- */
+.use-card { background: var(--nf-card); border: 1px solid var(--nf-line); box-shadow: var(--nf-glow); }
+.use-card:hover { border-color: var(--nf-line-strong); transform: translateY(-3px); }
+.use-card-image img { filter: saturate(.75) brightness(.8) contrast(1.05); }
+.use-card-image span { background: rgba(7, 18, 26, .85); color: var(--nf-mint); border-color: var(--nf-line-strong); }
+.use-card-link { color: var(--nf-mint); }
+
+/* ---- Podgląd platformy ---- */
+.preview-disclosure { color: var(--nf-muted); }
+.workspace { background: #0a1620; border: 1px solid var(--nf-line); box-shadow: var(--nf-glow); }
+.workspace-main, .workspace-body, .workspace-view, .workspace-grid > * {
+  background: transparent; color: var(--nf-ink); border-color: var(--nf-line);
+}
+.workspace-sidebar { background: #08131b; border-color: var(--nf-line); }
+.workspace-header, .workspace-footer { background: #08131b; border-color: var(--nf-line); color: var(--nf-muted); }
+.workspace-tabs button { color: var(--nf-muted); }
+.workspace-tabs button.active, .workspace-tabs .active { color: var(--nf-mint); border-color: var(--nf-mint); }
+.workspace-metrics > div { background: var(--nf-card); border-color: var(--nf-line); }
+.workspace-metrics span { color: var(--nf-muted); }
+.workspace-metrics strong, .workspace-page-title { color: var(--nf-ink); }
+.preview-map, .preview-network, .supplier-list, .risk-detail, .preview-action-list,
+.preview-map-insight, .supplier-attention, .suggested-action {
+  background: var(--nf-card); color: var(--nf-ink); border-color: var(--nf-line);
+}
+.preview-map { background: #0a1c28; }
+.risk-filters button, .supplier-list button {
+  background: rgba(110, 227, 194, .05); color: var(--nf-ink); border-color: var(--nf-line);
+}
+.risk-filters button.selected, .supplier-list button.selected, .supplier-list .active {
+  background: rgba(110, 227, 194, .14); border-color: var(--nf-mint); color: var(--nf-ink);
+}
+.platform-followup { color: var(--nf-ink); border-color: var(--nf-line); }
+
+/* ---- O nas ---- */
+.team-landscape img { filter: saturate(.7) brightness(.72) contrast(1.08); }
+.about-status { background: rgba(110, 227, 194, .07); border-color: var(--nf-line-strong); color: var(--nf-ink); }
+
+/* ---- Kontakt ---- */
+.contact-form { background: var(--nf-card); border: 1px solid var(--nf-line); box-shadow: var(--nf-glow); color: var(--nf-ink); }
+.contact-form label, .contact-form legend, .contact-form span { color: var(--nf-muted); }
+.contact-form input, .contact-form textarea, .contact-form select {
+  background: #08141d; color: var(--nf-ink); border: 1px solid var(--nf-line-strong);
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder { color: #5f7881; }
+.contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus { border-color: var(--nf-mint); }
+.interest-grid label, .interest-grid > * { background: rgba(110, 227, 194, .05); border-color: var(--nf-line-strong); color: var(--nf-ink); }
+.interest-grid input:checked + span, .interest-grid label:has(input:checked) { background: rgba(110, 227, 194, .16); border-color: var(--nf-mint); color: var(--nf-ink); }
+.contact-faq, .contact-faq * { border-color: var(--nf-line); color: var(--nf-ink); }
+.contact-faq p { color: var(--nf-muted); }
+.contact-email, .contact-result { color: var(--nf-mint); }
+.contact-photo img { filter: saturate(.7) brightness(.75); }
+.contact-photo figcaption { background: rgba(7, 18, 26, .86); color: var(--nf-muted); }
+.form-submit { color: #07121a; }
+
+/* Stopka */
+.footer { background: #050d13; border-top: 1px solid var(--nf-line); }
+
+/* Etykiety i przyciski sceny — wyższa specyficzność niż region-style.css */
+.scene-panel .facility-label,
+.scene-panel .impact-label { background: rgba(8, 24, 34, .9); border-color: var(--nf-line-strong) !important; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .8); }
+.scene-panel .facility-label strong { color: var(--nf-ink); }
+.scene-panel .facility-label small { color: var(--nf-muted); }
+.scene-panel .impact-label { color: var(--nf-amber); }
+.scene-panel .facility-label.action-focus { border-color: var(--nf-mint) !important; box-shadow: 0 0 0 1px var(--nf-mint), 0 0 28px -4px rgba(110, 227, 194, .5); }
+.scene-panel .map-top .region-top-buttons button,
+.scene-panel .region-view-controls button {
+  background: rgba(110, 227, 194, .07); color: var(--nf-ink); border: 1px solid var(--nf-line-strong);
+}
+.scene-panel .map-top .region-top-buttons button[aria-pressed=true] {
+  background: rgba(110, 227, 194, .18); color: var(--nf-mint); border-color: var(--nf-mint);
+}
+.scene-panel .map-top .region-top-buttons button:hover,
+.scene-panel .region-view-controls button:hover { border-color: var(--nf-mint); }
+.scene-panel .information-tag { background: rgba(8, 24, 34, .9); color: var(--nf-mint); }
+.scene-panel .map-legend span { color: var(--nf-muted); }
+.scene-panel #factory-label { background: rgba(8, 24, 34, .9); border-color: rgba(110, 227, 194, .5) !important; }
+.scene-panel #factory-label strong { color: var(--nf-mint); }
+.scene-panel #factory-label .location-dot { background: var(--nf-mint); box-shadow: 0 0 10px var(--nf-mint); }
+.scene-panel #supplier-label .location-dot { background: var(--nf-amber); box-shadow: 0 0 10px var(--nf-amber); }
+.scene-panel .map-top #region-motion { background: rgba(110, 227, 194, .07); border-color: var(--nf-line-strong); color: var(--nf-ink); }
+.scene-panel .map-top #region-motion[aria-pressed=true] { background: rgba(110, 227, 194, .18); border-color: var(--nf-mint); color: var(--nf-mint); }
+
+/* Poprawki po przeglądzie */
+.workspace-metrics > div:last-child { background: rgba(110, 227, 194, .08) !important; border-color: var(--nf-mint) !important; }
+.workspace-metrics > div:last-child strong { color: var(--nf-mint) !important; }
+.contact-form input:not([type=checkbox]):not([type=radio]),
+.contact-form textarea,
+.contact-form select {
+  background: #08141d !important; color: var(--nf-ink) !important; border-color: var(--nf-line-strong) !important;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder { color: #6a838c !important; }
+.contact-form label, .contact-form .interest-grid, .contact-form .interest-grid * { color: var(--nf-ink); }
+.contact-form .form-delivery-note, .contact-form small { color: var(--nf-muted); }
+.about p:not(.large-copy) { color: #b4c7cb; }
+.about-status { color: var(--nf-ink); }
+.platform-heading p { color: var(--nf-muted) !important; }
+.contact-photo figcaption { color: var(--nf-ink); }

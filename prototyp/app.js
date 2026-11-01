@@ -1,6 +1,6 @@
 import * as THREE from './node_modules/three/build/three.module.js';
 import { OrbitControls } from './node_modules/three/examples/jsm/controls/OrbitControls.js';
-import { createRegionModel } from './region-model.js?v=20261030-refine';
+import { createRegionModel } from './region-model.js?v=20261101-night3';
 const {t}=window.OrbitI18n;
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const regionHost=document.querySelector('#region');
@@ -10,17 +10,18 @@ const touchRegion=matchMedia('(max-width: 760px), (pointer: coarse)');
 const renderers=[];
 let regionVisible=false,mapRendered=false;
 const visibility=new IntersectionObserver(entries=>entries.forEach(e=>{regionVisible=e.isIntersecting;}),{rootMargin:'120px'});visibility.observe(regionHost);
-function renderer(host){const r=new THREE.WebGLRenderer({antialias:true,alpha:true});r.setPixelRatio(Math.min(devicePixelRatio,2));r.setSize(host.clientWidth,host.clientHeight);r.outputColorSpace=THREE.SRGBColorSpace;r.toneMapping=THREE.ACESFilmicToneMapping;r.toneMappingExposure=1.05;host.prepend(r.domElement);renderers.push(r);return r;}
+function renderer(host){const r=new THREE.WebGLRenderer({antialias:true,alpha:true});r.setPixelRatio(Math.min(devicePixelRatio,2));r.setSize(host.clientWidth,host.clientHeight);r.outputColorSpace=THREE.SRGBColorSpace;r.toneMapping=THREE.ACESFilmicToneMapping;r.toneMappingExposure=1.3;host.prepend(r.domElement);renderers.push(r);return r;}
 const regionModel=createRegionModel;
 function lights(scene){
-  scene.add(new THREE.HemisphereLight(0xfffcf0,0xa5b09b,1.45));
-  const key=new THREE.DirectionalLight(0xfff5e0,2.15);key.position.set(-7,14,8);key.castShadow=true;
+  scene.add(new THREE.HemisphereLight(0x9ec4e0,0x14232d,1.9));
+  const key=new THREE.DirectionalLight(0xbcd6ff,2.3);key.position.set(-7,14,8);key.castShadow=true;
   Object.assign(key.shadow.camera,{left:-14,right:14,top:14,bottom:-14,near:.5,far:45});key.shadow.mapSize.set(1024,1024);key.shadow.bias=-.0004;key.shadow.normalBias=.025;key.shadow.radius=3;scene.add(key);
+  for(const [x,y,z,c,i] of [[-5.8,2.2,-2,0xe0a84f,14],[5.8,2.6,3.4,0x5ee6c8,16],[.4,1.4,0,0x6ee3c2,6]]){const l=new THREE.PointLight(c,i,9,1.6);l.position.set(x,y,z);scene.add(l);}
 }
 
 let mapRenderer,mapScene,mapCamera,mapModel;
 try{
-mapRenderer=renderer(regionHost);mapRenderer.shadowMap.enabled=true;mapRenderer.shadowMap.type=THREE.PCFShadowMap;mapScene=new THREE.Scene();mapScene.background=new THREE.Color(0xeff5fa);const aspect=regionHost.clientWidth/regionHost.clientHeight;mapCamera=new THREE.OrthographicCamera(-11*aspect,11*aspect,11,-11,.1,150);mapCamera.position.set(17,19,22);mapCamera.lookAt(0,0,0);lights(mapScene);mapModel=regionModel();mapScene.add(mapModel.group);
+mapRenderer=renderer(regionHost);mapRenderer.shadowMap.enabled=true;mapRenderer.shadowMap.type=THREE.PCFShadowMap;mapScene=new THREE.Scene();mapScene.background=new THREE.Color(0x0a1620);const aspect=regionHost.clientWidth/regionHost.clientHeight;mapCamera=new THREE.OrthographicCamera(-11*aspect,11*aspect,11,-11,.1,150);mapCamera.position.set(17,19,22);mapCamera.lookAt(0,0,0);lights(mapScene);mapModel=regionModel();mapScene.add(mapModel.group);
 mapControls=new OrbitControls(mapCamera,mapRenderer.domElement);mapControls.target.set(0,.5,0);mapControls.enableDamping=!reduced;mapControls.dampingFactor=.075;mapControls.enableZoom=false;mapControls.enablePan=false;mapControls.minPolarAngle=.4;mapControls.maxPolarAngle=1.25;mapControls.rotateSpeed=.65;mapControls.update();mapControls.saveState();
 mapControls.addEventListener('start',()=>regionHost.classList.add('is-dragging'));mapControls.addEventListener('end',()=>regionHost.classList.remove('is-dragging'));
 }catch(e){regionHost.innerHTML='<p style="padding:35px;line-height:1.7">Dostawca A → Twoja dostawa → Twoja fabryka<br>Pełny opis przykładu znajduje się obok.</p>';console.error(e);}
