@@ -1373,3 +1373,271 @@ Object.assign(window.OrbitTranslations, {
 });
 
 Object.assign(window.OrbitTranslations,{"Zamknij menu":["Close menu","Menü schließen"]});
+
+/* Cinematic supply story, November 2026. */
+Object.assign(window.OrbitTranslations, {
+  "Rozwijamy OrbitOps, by łączyć dane satelitarne, pogodę i kontekst Twojej firmy. Zobacz, jak sygnał ze świata może pomóc w decyzji o dostawie.": [
+    "We are developing OrbitOps to connect satellite data, weather and your business context. See how a signal from the world can inform a supply decision.",
+    "Wir entwickeln OrbitOps, um Satellitendaten, Wetter und Ihren Unternehmenskontext zu verbinden. Entdecken Sie, wie ein Signal aus der Welt eine Lieferentscheidung unterstützen kann."
+  ],
+  "Zobacz scenariusz": [
+    "Explore the scenario",
+    "Szenario ansehen"
+  ],
+  "SZERSZA PERSPEKTYWA. KONKRETNY WPŁYW.": [
+    "A WIDER PERSPECTIVE. A CLEARER IMPACT.",
+    "WEITERE PERSPEKTIVE. KONKRETE AUSWIRKUNGEN."
+  ],
+  "Świat w ruchu.": [
+    "A world in motion.",
+    "Eine Welt in Bewegung."
+  ],
+  "Twoja firma w centrum.": [
+    "Your business at the centre.",
+    "Ihr Unternehmen im Mittelpunkt."
+  ],
+  "Pogoda, zasoby, transport. Zobacz zależności, które mają znaczenie dla ciągłości Twoich dostaw.": [
+    "Weather, resources, transport. Discover the connections that matter for your supply continuity.",
+    "Wetter, Ressourcen, Transport. Entdecken Sie die Zusammenhänge, die für Ihre Lieferkontinuität wichtig sind."
+  ],
+  "01 — 03 / OD SYGNAŁU DO DECYZJI": [
+    "01 — 03 / FROM SIGNAL TO DECISION",
+    "01 — 03 / VOM SIGNAL ZUR ENTSCHEIDUNG"
+  ],
+  "Jeden sygnał.": [
+    "One signal.",
+    "Ein Signal."
+  ],
+  "Cały łańcuch zależności.": [
+    "A whole chain of dependencies.",
+    "Eine ganze Kette von Abhängigkeiten."
+  ],
+  "Sygnał": [
+    "Signal",
+    "Signal"
+  ],
+  "Wpływ": [
+    "Impact",
+    "Auswirkung"
+  ],
+  "Decyzja": [
+    "Decision",
+    "Entscheidung"
+  ],
+  "Transport morski · materiał ilustracyjny": [
+    "Maritime transport · illustrative footage",
+    "Seetransport · illustratives Filmmaterial"
+  ],
+  "Odtwórz film": [
+    "Play film",
+    "Film abspielen"
+  ],
+  "Wstrzymaj film": [
+    "Pause film",
+    "Film pausieren"
+  ],
+  "Z ORBITY DO DECYZJI": [
+    "FROM ORBIT TO DECISION",
+    "AUS DEM ORBIT ZUR ENTSCHEIDUNG"
+  ],
+  "Za każdą dostawą": [
+    "Behind every delivery",
+    "Hinter jeder Lieferung"
+  ],
+  "stoi sieć zależności.": [
+    "is a network of dependencies.",
+    "steht ein Netz von Abhängigkeiten."
+  ],
+  "Od dostępności surowca po pracę zakładu. Przejdź przez przykład i zobacz, gdzie szukać sygnałów, jak ocenić wpływ i co sprawdzić dalej.": [
+    "From raw material availability to factory operations. Explore the example to see where to look for signals, how to assess the impact and what to check next.",
+    "Von der Rohstoffverfügbarkeit bis zum Betrieb des Werks. Entdecken Sie im Beispiel, wo Sie Signale finden, Auswirkungen bewerten und die nächsten Schritte prüfen können."
+  ],
+  "01 / DOSTAWCA": [
+    "01 / SUPPLIER",
+    "01 / LIEFERANT"
+  ],
+  "02 / TRANSPORT": [
+    "02 / TRANSPORT",
+    "02 / TRANSPORT"
+  ],
+  "03 / TWÓJ ZAKŁAD": [
+    "03 / YOUR FACTORY",
+    "03 / IHR WERK"
+  ],
+  "ROZPOZNAJ SYGNAŁ": [
+    "IDENTIFY THE SIGNAL",
+    "SIGNAL ERKENNEN"
+  ],
+  "ZROZUM WPŁYW": [
+    "UNDERSTAND THE IMPACT",
+    "AUSWIRKUNGEN VERSTEHEN"
+  ],
+  "WYBIERZ NASTĘPNY KROK": [
+    "CHOOSE THE NEXT STEP",
+    "NÄCHSTEN SCHRITT WÄHLEN"
+  ],
+  "Wszystko zaczyna się": [
+    "It all starts",
+    "Alles beginnt"
+  ],
+  "u źródła.": [
+    "at the source.",
+    "an der Quelle."
+  ],
+  "Co zmienia się w otoczeniu dostawcy?": [
+    "What is changing around your supplier?",
+    "Was verändert sich im Umfeld Ihres Lieferanten?"
+  ],
+  "Jedna zmiana.": [
+    "One change.",
+    "Eine Veränderung."
+  ],
+  "Kolejne ogniwa.": [
+    "Multiple connections.",
+    "Weitere Glieder."
+  ],
+  "Które dostawy wymagają uwagi?": [
+    "Which deliveries need attention?",
+    "Welche Lieferungen brauchen Aufmerksamkeit?"
+  ],
+  "Szerszy obraz.": [
+    "A wider view.",
+    "Ein umfassenderes Bild."
+  ],
+  "Bliżej decyzji.": [
+    "Closer to a decision.",
+    "Näher an der Entscheidung."
+  ],
+  "Sprawdź zapas i możliwe alternatywy.": [
+    "Check stock and possible alternatives.",
+    "Prüfen Sie Bestände und mögliche Alternativen."
+  ],
+  "Zdjęcia ilustracyjne. Papiernia: Pine Bluff, USA. Poniższy scenariusz wykorzystuje fikcyjne dane i lokalizacje.": [
+    "Illustrative photography. Paper mill: Pine Bluff, USA. The following scenario uses fictional data and locations.",
+    "Illustrative Fotos. Papierfabrik: Pine Bluff, USA. Das folgende Szenario verwendet fiktive Daten und Standorte."
+  ],
+  "Skład drewna przy lesie widziany z góry": [
+    "A timber yard beside a forest, seen from above",
+    "Holzlager am Waldrand aus der Vogelperspektive"
+  ],
+  "Pracownik na kontenerach w terminalu portowym": [
+    "A worker on containers at a port terminal",
+    "Ein Arbeiter auf Containern in einem Hafenterminal"
+  ],
+  "Papiernia American Kraft Paper Industries w Pine Bluff, USA": [
+    "American Kraft Paper Industries mill in Pine Bluff, USA",
+    "Papierfabrik von American Kraft Paper Industries in Pine Bluff, USA"
+  ],
+  "Port kontenerowy widziany z góry": [
+    "Container port seen from above",
+    "Containerhafen aus der Vogelperspektive"
+  ]
+});
+
+/* Full-screen video hero and example agent suggestions. */
+Object.assign(window.OrbitTranslations, {
+  "Dostrzegaj sygnały. Rozumiej zależności.": [
+    "Spot signals. Understand connections.",
+    "Signale erkennen. Zusammenhänge verstehen."
+  ],
+  "Podejmuj świadome decyzje o dostawach.": [
+    "Make informed supply decisions.",
+    "Fundierte Lieferentscheidungen treffen."
+  ],
+  "Zobacz demo": [
+    "Explore the demo",
+    "Demo ansehen"
+  ],
+  "Poznaj scenariusz": [
+    "Explore the scenario",
+    "Szenario entdecken"
+  ],
+  "Przykładowe podpowiedzi agenta OrbitOps": [
+    "Example suggestions from the OrbitOps agent",
+    "Beispielhafte Hinweise des OrbitOps-Agenten"
+  ],
+  "Agent OrbitOps": [
+    "OrbitOps Agent",
+    "OrbitOps-Agent"
+  ],
+  "OD SYGNAŁU DO DECYZJI": [
+    "FROM SIGNAL TO DECISION",
+    "VOM SIGNAL ZUR ENTSCHEIDUNG"
+  ],
+  "PRZYKŁAD": [
+    "EXAMPLE",
+    "BEISPIEL"
+  ],
+  "SYGNAŁ": [
+    "SIGNAL",
+    "SIGNAL"
+  ],
+  "MOŻLIWY WPŁYW": [
+    "POTENTIAL IMPACT",
+    "MÖGLICHE AUSWIRKUNG"
+  ],
+  "SUGESTIA DZIAŁANIA": [
+    "SUGGESTED ACTION",
+    "HANDLUNGSVORSCHLAG"
+  ],
+  "Prognoza wskazuje intensywne opady w regionie Twojego dostawcy.": [
+    "The forecast indicates heavy rainfall in your supplier’s region.",
+    "Die Prognose deutet auf starke Regenfälle in der Region Ihres Lieferanten hin."
+  ],
+  "Ta lokalizacja jest powiązana z dostawą do Twojego zakładu. Warto potwierdzić termin odbioru.": [
+    "This location is linked to a delivery to your factory. Consider confirming the collection date.",
+    "Dieser Standort ist mit einer Lieferung an Ihr Werk verbunden. Bestätigen Sie den Abholtermin."
+  ],
+  "Sprawdź gotowość dostawcy i bufor zapasu. Porównaj dostępne alternatywy.": [
+    "Check supplier readiness and your stock buffer. Compare available alternatives.",
+    "Prüfen Sie die Lieferbereitschaft und Ihren Bestandspuffer. Vergleichen Sie verfügbare Alternativen."
+  ],
+  "W przykładowym planie transportu pojawiło się 48 godzin opóźnienia.": [
+    "The example transport plan now shows a 48-hour delay.",
+    "Im beispielhaften Transportplan ist eine Verzögerung von 48 Stunden aufgetreten."
+  ],
+  "Przy założonym zużyciu zapas może skończyć się przed przyjęciem dostawy.": [
+    "At the assumed consumption rate, stock may run out before the delivery arrives.",
+    "Bei dem angenommenen Verbrauch könnte der Bestand vor dem Wareneingang aufgebraucht sein."
+  ],
+  "Porównaj zakup pomostowy ze zmianą transportu. Sprawdź koszt i warunki każdego wariantu.": [
+    "Compare a bridging purchase with a transport change. Check the cost and conditions of each option.",
+    "Vergleichen Sie einen Überbrückungskauf mit einer Transportänderung. Prüfen Sie Kosten und Bedingungen jeder Option."
+  ],
+  "Przykładowy stan surowca zapewnia cztery dni pracy zakładu.": [
+    "The example raw material stock covers four days of factory operations.",
+    "Der beispielhafte Rohstoffbestand deckt vier Betriebstage des Werks ab."
+  ],
+  "Przesunięcie kolejnej dostawy może zmniejszyć bufor produkcji.": [
+    "A delay to the next delivery could reduce the production buffer.",
+    "Eine Verschiebung der nächsten Lieferung könnte den Produktionspuffer verringern."
+  ],
+  "Potwierdź aktualny stan magazynu i termin przyjęcia. Ustal, kiedy potrzebna będzie decyzja.": [
+    "Confirm current stock and the expected receipt date. Establish when a decision will be needed.",
+    "Bestätigen Sie den aktuellen Bestand und den Wareneingangstermin. Klären Sie, wann eine Entscheidung nötig ist."
+  ],
+  "Podpowiedzi demonstracyjne · fikcyjne dane": [
+    "Demo suggestions · fictional data",
+    "Demo-Hinweise · fiktive Daten"
+  ],
+  "Otwórz demo OrbitOps": [
+    "Open the OrbitOps demo",
+    "OrbitOps-Demo öffnen"
+  ],
+  "Wybierz przykładową sytuację": [
+    "Choose an example scenario",
+    "Beispielszenario wählen"
+  ],
+  "Uruchom animacje": [
+    "Play animations",
+    "Animationen starten"
+  ],
+  "Wstrzymaj animacje": [
+    "Pause animations",
+    "Animationen pausieren"
+  ],
+  "Od dostawcy do decyzji": [
+    "From supplier to decision",
+    "Vom Lieferanten zur Entscheidung"
+  ]
+});

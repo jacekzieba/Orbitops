@@ -1,0 +1,124 @@
+/* Daylight — warstwa spójności. Ładowana na końcu: jedna paleta, jeden rytm sekcji,
+   jedna skala nagłówków, jeden zestaw promieni i cieni. Zmieniaj wartości tutaj,
+   a nie w pozostałych arkuszach. */
+
+:root {
+  --ink: #0c1939;
+  --ink-deep: #081f2d;
+  --ink-deep-2: #123343;
+  --muted: #526586;
+  --line: #dce5ef;
+  --mint: #6ee3c2;
+  --mint-soft: #8ecdbd;
+  --teal: #33746b;
+  --surface: #fff;
+  --surface-mist: #f1f5f3;
+
+  --sec-y: clamp(64px, 7.5vw, 96px);
+  --head-gap: clamp(28px, 3.4vw, 44px);
+
+  --r-sm: 6px;
+  --r-card: 12px;
+  --shadow-card: 0 1px 2px rgba(12, 25, 57, .06), 0 12px 32px -16px rgba(12, 25, 57, .18);
+}
+
+/* Rytm: każda sekcja ma ten sam oddech pionowy */
+.supply-story.wrap.section,
+.example-section > .wrap.section,
+.use-section > .wrap.section,
+.platform-section > .wrap.section,
+.sources.wrap.section,
+.about.wrap.section,
+.wrap.technology,
+.contact-section > .wrap.contact {
+  padding-top: var(--sec-y);
+  padding-bottom: var(--sec-y);
+}
+.example-section .section { padding-top: var(--sec-y); }
+
+/* Powierzchnie: ciemny blok filmowy, potem naprzemiennie biel i mgła */
+.film-hero,
+.world-story { background: var(--ink-deep); }
+.technology-section {
+  background: radial-gradient(at 70% 30%, var(--ink-deep-2), var(--ink-deep) 62%);
+}
+.example-section,
+.use-section,
+.contact-section { background: var(--surface-mist); }
+.platform-section { background: var(--surface); }
+.about.wrap.section { border-top: 1px solid var(--line); }
+
+/* Nagłówki sekcji: jedna skala, jedna waga */
+.supply-heading h2,
+.example-section h2,
+.technology h2,
+.source-intro h2,
+.use-heading h2,
+.platform-heading h2,
+.about h2,
+.contact h2 {
+  font-size: clamp(32px, 3.6vw, 48px);
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -1.6px;
+}
+.supply-heading h2,
+.technology h2 { color: #fff; }
+.example-section h2,
+.source-intro h2,
+.use-heading h2,
+.platform-heading h2,
+.about h2,
+.contact h2 { color: var(--ink); }
+@media (max-width: 760px) {
+  .supply-heading h2,
+  .example-section h2,
+  .technology h2,
+  .source-intro h2,
+  .use-heading h2,
+  .platform-heading h2,
+  .about h2,
+  .contact h2 { letter-spacing: -1.1px; }
+}
+
+/* Etykiety sekcji: jeden rozmiar, kolor zależny tylko od tła */
+.section-index,
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+.supply-story .section-index,
+.technology .section-index,
+.technology .eyebrow,
+.film-hero .eyebrow,
+.film-hero .section-index { color: var(--mint-soft); }
+
+/* Karty i zdjęcia: jeden promień, jeden cień */
+.use-card,
+.supply-card,
+.team-landscape,
+.contact-photo,
+.contact-form,
+.atlas-image,
+.data-layers article,
+.fusion-output {
+  border-radius: var(--r-card);
+}
+.use-card,
+.contact-form { box-shadow: var(--shadow-card); }
+.use-card-image,
+.use-card-image img,
+.team-landscape img,
+.contact-photo img,
+.atlas-image img { border-radius: inherit; }
+.use-card-image { border-radius: var(--r-card) var(--r-card) 0 0; }
+.use-card { overflow: hidden; }
+
+/* Linki i focus: jedna logika */
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid var(--mint);
+  outline-offset: 3px;
+}

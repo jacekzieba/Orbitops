@@ -1,6 +1,14 @@
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 class Handler(SimpleHTTPRequestHandler):
+ def end_headers(self):
+  self.send_header('Cache-Control', 'no-store, max-age=0')
+  super().end_headers()
+ def do_GET(self):
+  # Always serve current workspace files during local design review.
+  if 'If-Modified-Since' in self.headers:
+   del self.headers['If-Modified-Since']
+  super().do_GET()
  def do_POST(self):
   if self.path != '/__capture':
    self.send_error(404); return

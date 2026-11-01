@@ -23,7 +23,7 @@ Kontakt pozostaje oznaczoną makietą: strona nie wysyła zgłoszeń. Scenariusz
 
 ## Materiał recenzencki
 
-Katalog `review/` zawiera PNG makiet oraz nagranie faktycznego renderu WebGL. Krytyk wizualny Sol 6.1 ocenia wyłącznie te obrazy i klatki animacji; nie otrzymuje kodu ani koncepcji tekstowej. Historia i ograniczenia oceny znajdują się w `review/recenzja-wizualna.md`.
+Zrzuty recenzenckie i surowe materiały (wideo 4K, duże PNG) nie są w repozytorium; trzymaj je lokalnie poza gitem. W repo są tylko skompresowane zasoby używane przez stronę (WebP, woff2, mp4 720p).
 
 Tryby pomocnicze do reprodukcji kadrów: `?still=1`, `?still=2`, `?still=3`. `?capture=hero` zapisuje 18,5-sekundowe nagranie płótna WebGL do lokalnego katalogu review. Serwer przyjmuje nagranie wyłącznie pod `/__capture` i działa na interfejsie loopback.
 
@@ -126,3 +126,30 @@ Docelowy adres publikacji przez FTP: **https://orbitops.eu/**. Warianty `?lang=`
 Na hostingu FTP plik `robots.txt` musi być dostępny bezpośrednio pod `https://orbitops.eu/robots.txt`. Wgraj zawartość paczki publikacyjnej do katalogu dokumentów przypisanego do domeny orbitops.eu; nie wgrywaj nadrzędnego katalogu `prototyp`. Paczka zawiera wymagane moduły Three.js. Robots.txt nie zabezpiecza dostępu do plików.
 
 Przy zmianie domeny należy zaktualizować adresy w `index.html`, `demo.html`, `sitemap.xml` i `robots.txt`. Workflow Pages kopiuje również sitemap, robots i favicony do artefaktu publikacji. Publikacja na GitHub Pages jest niezależna od hostingu FTP.
+
+## Filmowa LP — materiały użytkownika (1 listopada 2026)
+
+`cinematic.css/js` dodają większą typografię hero, krótszy opis i główne przejście do scenariusza. Glob pozostaje na pierwszym ekranie. Dawne trzy małe kafelki wyzwania zastąpiono pełnoszeroką sekcją filmu portu oraz fotograficzną historią dostawca → transport → zakład. Każde zdjęcie wybiera odpowiedni krok istniejącego modelu 3D. Nowe treści i etykiety mają wersje PL/EN/DE.
+
+Film z `content/` ma wersję internetową 1080p/30 fps (około 8,3 MiB zamiast 150 MiB). Jest wyciszony, ładowany przy wejściu w widok, zatrzymuje się poza widokiem i w nieaktywnej karcie. Pauza użytkownika zachowuje się przy zmianie języka. Reduced-motion i save-data wyłączają automatyczne uruchamianie; ręczne odtworzenie pozostaje dostępne. Poster stanowi statyczny odpowiednik. Trzy zdjęcia przygotowano jako WebP. Chłodniejszą, wspólną kolorystykę nadają odwracalne filtry CSS. Pliki oryginalne pozostają niezmienione. Lista źródeł i stan informacji o licencjach: `assets/content/CREDITS.md`.
+
+Sprawdzono w przeglądarce przy 1440 i 390 px: render nowych sekcji, brak poziomego przepełnienia, odtwarzanie i pauzę filmu, pauzę poza widokiem, wszystkie trzy przejścia ze zdjęć do modelu, zmianę języka podczas pauzy, nowe treści PL/EN/DE i poprawne ładowanie zdjęć. Kontrola HTML: brak zduplikowanych ID i brak brakujących plików lokalnych. `node --check` dla nowych skryptów przechodzi. Obsługa reduced-motion została sprawdzona w kodzie; preferencji systemowej nie zmieniano. Konsola nie zgłosiła błędów; istniejące ostrzeżenie Three.js o PCFSoftShadowMap pozostawiono bez zmiany. Kadry: `review/cinematic-*.jpg`. To weryfikacja wykonawcza, bez nowej niezależnej recenzji wizualnej.
+
+Zaktualizowano lokalny katalog `orbitops-ftp/` oraz przygotowano osobną paczkę `orbitops-lp-wow.zip`. Nie publikowano zmian na hostingu.
+
+## Hero z filmem i przykładowym agentem — wersja 2
+
+Ta aktualizacja zastępuje poprzedni pierwszy ekran z globem. Hero ma pełnoekranowe tło wideo portu, nawigację na obrazie, nową hierarchię tekstu oraz trzy sekwencje przykładowych podpowiedzi agenta: opady, transport i zapas. Każda pokazuje sygnał, możliwy wpływ i sugestię działania. Komunikaty są autorskimi przykładami na fikcyjnych danych, bez połączenia z modelem AI ani systemami firmy; opis jest widoczny w hero. Główny przycisk prowadzi do demo z zachowaniem języka, drugi do modelu regionu.
+
+`cinematic.js` odsłania komunikaty co 2,4 s i zmienia przykład co 16 s. Wspólna pauza zatrzymuje film i zegar sekwencji; wybór innego przykładu podczas pauzy pokazuje jego komplet komunikatów. Stan przykładu i pauzy zachowuje się po zmianie języka. Ruch jest wstrzymywany poza widokiem i w ukrytej karcie. Reduced-motion wyłącza automatyczne odtwarzanie i pokazuje komplet wybranego przykładu. Save-data również zaczyna od statycznego widoku. Przy braku możliwości odtworzenia wideo pozostaje poster.
+
+Usunięto powtórzenie filmu pod hero oraz inicjalizację, teksturę i sterowanie globu z `app.js`. Model regionu zachowuje własny renderer i interakcje. Zastąpiono przestarzałe ustawienie PCFSoftShadowMap przez dostępny PCFShadowMap.
+
+Weryfikacja w przeglądarce: PL/EN/DE, desktop 1440 × 900, telefon 390 × 844 oraz rzeczywista szerokość podglądu 878 px. Brak poziomego przewijania. Potwierdzono etapowe pojawianie się trzech wiadomości i automatyczną zmianę przykładu, zatrzymanie czasu wideo i postępu sekwencji (te same wartości przed i po zmianie języka), ręczny wybór przykładu podczas pauzy, mobilne menu i Escape, przejście do scenariusza, wybór trzeciego kroku i akcji zapasu w modelu 3D. Konsola bieżącej wersji bez błędów. Kontrola HTML: jedno wideo, brak starego hosta globu, brak powtórzonych ID i brakujących plików. Sprawdzenie składni trzech zmienionych skryptów przechodzi. Reduced-motion i save-data sprawdzono w kodzie, bez zmiany ustawień systemowych. Kadry finalnego hero: `review/agent-hero-desktop.jpg`, `review/agent-hero-mobile.jpg`.
+
+Aktualna paczka FTP `orbitops-lp-wow.zip` i katalog `orbitops-ftp/` zawierają tę wersję. Lokalne `server.py` wyłącza pamięć podręczną. Nie wykonano publikacji na hostingu.
+
+
+## Spójność wizualna
+
+`daylight.css` ładuje się ostatni i definiuje tokeny (kolory, rytm sekcji `--sec-y`, promienie, cień kart) oraz jedną skalę nagłówków i etykiet. Zmiany wyglądu sekcji rób tam, nie w starszych arkuszach.
