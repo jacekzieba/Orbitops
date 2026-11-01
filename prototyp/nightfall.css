@@ -220,3 +220,29 @@ body { background: var(--nf-bg); color: var(--nf-ink); }
 .about-status { color: var(--nf-ink); }
 .platform-heading p { color: var(--nf-muted) !important; }
 .contact-photo figcaption { color: var(--nf-ink); }
+
+/* Przegląd 2: karty pod sceną, panel działań, numery kroków, kontrast */
+.delivery-takeaways article {
+  background: var(--nf-card); border: 1px solid var(--nf-line); box-shadow: var(--nf-glow); color: var(--nf-ink);
+}
+.delivery-takeaways article span { color: var(--nf-mint); }
+.delivery-takeaways article strong { color: var(--nf-ink); }
+.delivery-takeaways article p { color: var(--nf-muted); }
+.region-actions { background: #0f2a3a; border-bottom: 1px solid var(--nf-line); }
+.region-actions > small { color: var(--nf-muted); font-size: 11px; }
+.region-action-detail p { color: #c2d6da; }
+.region-action-options button { background: rgba(110, 227, 194, .06); border-color: var(--nf-line-strong); color: var(--nf-ink); }
+.region-action-options button[aria-pressed=true] { background: var(--nf-mint); color: #07121a; border-color: var(--nf-mint); }
+.report .step-number { color: var(--nf-mint); font-size: 12px; font-weight: 700; padding-left: 8px; min-width: 34px; }
+.report-step.active .step-number { color: var(--nf-mint); background: transparent; }
+
+.section-index, .eyebrow, .scenario-caption, .caption-detail { font-size: 12px; }
+.atlas-disclaimer, .photo-context, .form-delivery-note, .platform-followup + p,
+.use-section > .wrap > p:last-child, .sources > p:last-child { color: #a9bec3; font-size: 12px; }
+.contact-form .interest-grid label, .contact-form .interest-grid span { color: var(--nf-ink) !important; font-size: 13px; }
+.contact-form .interest-grid input { accent-color: var(--nf-mint); }
+.use-card-copy p { color: #b4c7cb; }
+.footer { background: var(--nf-bg); }
+.use-cards { align-items: stretch; }
+.use-card { display: flex; flex-direction: column; }
+.use-card-copy { flex: 1; }

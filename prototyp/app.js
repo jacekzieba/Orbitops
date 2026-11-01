@@ -1,6 +1,6 @@
 import * as THREE from './node_modules/three/build/three.module.js';
 import { OrbitControls } from './node_modules/three/examples/jsm/controls/OrbitControls.js';
-import { createRegionModel } from './region-model.js?v=20261101-night3';
+import { createRegionModel } from './region-model.js?v=20261101-night6';
 const {t}=window.OrbitI18n;
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const regionHost=document.querySelector('#region');
@@ -56,7 +56,7 @@ function resize(){mapRendered=false;if(mapRenderer){mapRenderer.setSize(regionHo
 let last=performance.now();
 function label(id,point){if(!mapCamera)return;const p=point.clone();mapModel.group.localToWorld(p);p.project(mapCamera);const el=document.getElementById(id);if(!el)return;const half=el.offsetWidth/2+7;const x=THREE.MathUtils.clamp((p.x+1)/2*regionHost.clientWidth,half,regionHost.clientWidth-half);const y=THREE.MathUtils.clamp((-p.y+1)/2*regionHost.clientHeight-12,el.offsetHeight+8,regionHost.clientHeight-7);el.style.left=x+'px';el.style.top=y+'px';}
 function animate(now){requestAnimationFrame(animate);const dt=Math.min((now-last)/1000,.05);last=now;
-if(mapRenderer&&(regionVisible||!mapRendered)){mapRendered=true;const rainMaterial=mapModel.rain.children[0].material;rainMaterial.opacity=THREE.MathUtils.damp(rainMaterial.opacity,step===2?0:step===1?.22:.48,8,reduced?1:dt);mapModel.rain.visible=rainMaterial.opacity>.005;mapModel.connection.visible=step>0;mapModel.connection.material.color.setHex(step===1?0xa44832:0x20594e);mapModel.focusRing.visible=step>0;mapModel.focusRing.material.color.setHex(step===1?0xa44832:0x20594e);mapModel.pins[0].material.color.setHex(step===1?0xa44832:0x20594e);if(!regionMotionPaused&&regionVisible&&!document.hidden)regionElapsed+=dt;
+if(mapRenderer&&(regionVisible||!mapRendered)){mapRendered=true;const rainMaterial=mapModel.rain.children[0].material;rainMaterial.opacity=THREE.MathUtils.damp(rainMaterial.opacity,step===2?0:step===1?.1:.16,8,reduced?1:dt);mapModel.rain.visible=rainMaterial.opacity>.005;mapModel.connection.visible=step>0;mapModel.connection.material.color.setHex(step===1?0xff7a5c:0x6ee3c2);mapModel.focusRing.visible=step>0;mapModel.focusRing.material.color.setHex(step===1?0xff7a5c:0x6ee3c2);mapModel.pins[0].material.color.setHex(step===1?0xff7a5c:0x6ee3c2);if(!regionMotionPaused&&regionVisible&&!document.hidden)regionElapsed+=dt;
 mapModel.setAction(step===2?regionAction:-1);
 document.querySelector('#supplier-label').classList.toggle('action-focus',step===2&&regionAction===0);
 document.querySelector('#factory-label').classList.toggle('action-focus',step===2&&regionAction===1);
@@ -64,9 +64,9 @@ mapModel.update(regionElapsed);mapControls?.update();
 mapCamera.updateMatrixWorld();
 const aspect=regionHost.clientWidth/regionHost.clientHeight;let extentX=0,extentY=0;
 for(const x of [-9.2,9.2])for(const y of [0,3.3])for(const z of [-6.2,6.2]){const corner=new THREE.Vector3(x,y,z).applyMatrix4(mapCamera.matrixWorldInverse);extentX=Math.max(extentX,Math.abs(corner.x));extentY=Math.max(extentY,Math.abs(corner.y));}
-const targetHalf=Math.max(6.0,extentY*1.13,extentX/aspect*1.13);const half=THREE.MathUtils.lerp(mapCamera.top,targetHalf,reduced?1:.16);
+const targetHalf=Math.max(6.0,extentY*.97,extentX/aspect*.97);const half=THREE.MathUtils.lerp(mapCamera.top,targetHalf,reduced?1:.16);
 mapCamera.left=-half*aspect;mapCamera.right=half*aspect;mapCamera.top=half;mapCamera.bottom=-half;mapCamera.updateProjectionMatrix();
-mapRenderer.render(mapScene,mapCamera);label('supplier-label',mapModel.supplier.clone().add(new THREE.Vector3(0,.6,0)));label('factory-label',mapModel.factory.clone());label('impact-label',new THREE.Vector3(.3,1.2,0));}}
+mapRenderer.render(mapScene,mapCamera);label('supplier-label',mapModel.supplier.clone().add(new THREE.Vector3(0,1.5,0)));label('factory-label',mapModel.factory.clone().add(new THREE.Vector3(0,1.3,0)));label('impact-label',new THREE.Vector3(.3,2.6,0));}}
 requestAnimationFrame(animate);
 document.querySelectorAll('[data-select-step]').forEach(b=>b.addEventListener('click',()=>document.querySelector(`.report-step[data-step="${b.dataset.selectStep}"]`).click()));
 
