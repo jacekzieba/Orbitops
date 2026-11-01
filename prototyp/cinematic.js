@@ -6,7 +6,7 @@
   const cases = [...document.querySelectorAll('[data-agent-case]')];
   const hero = document.querySelector('.film-hero');
   if (!video || !toggle || !hero) return;
-  const filmSpeed = .35;
+  const filmSpeed = 1; // spowolnienie jest w pliku (60 kl/s przeliczone na 2x wolniej), nie w odtwarzaczu
   video.defaultPlaybackRate = filmSpeed;
   video.playbackRate = filmSpeed;
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
