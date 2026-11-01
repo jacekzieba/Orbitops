@@ -122,3 +122,35 @@
   outline: 3px solid var(--mint);
   outline-offset: 3px;
 }
+
+/* Przyciski: jeden kształt (pigułka), jedna waga */
+.film-hero-actions .button.primary,
+.button,
+.nav-cta,
+.nav-demo { border-radius: 999px; font-weight: 600; }
+
+/* Tekst na jasnych sekcjach: jeden kolor treści, jeden kolor pomocniczy */
+.example-heading p,
+.source-intro p,
+.use-heading p,
+.platform-heading p,
+.about p,
+.contact-story > p,
+.sources p,
+.use-card-copy p,
+.form-delivery-note,
+.atlas-disclaimer,
+.photo-context { color: var(--muted); }
+
+/* Tytuły kart i bloków: jedna waga, jeden kolor */
+.sources h3,
+.example-section h3,
+.use-card-copy h3,
+.form-heading,
+.about h3,
+.platform-heading h3 {
+  color: var(--ink);
+  font-weight: 600;
+  letter-spacing: -.6px;
+}
+.supply-card-copy h3 { font-weight: 600; letter-spacing: -.8px; }
