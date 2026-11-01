@@ -6,7 +6,7 @@
   const cases = [...document.querySelectorAll('[data-agent-case]')];
   const hero = document.querySelector('.film-hero');
   if (!video || !toggle || !hero) return;
-  const filmSpeed = .6;
+  const filmSpeed = .35;
   video.defaultPlaybackRate = filmSpeed;
   video.playbackRate = filmSpeed;
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
