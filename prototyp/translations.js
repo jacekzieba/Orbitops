@@ -1374,270 +1374,264 @@ Object.assign(window.OrbitTranslations, {
 
 Object.assign(window.OrbitTranslations,{"Zamknij menu":["Close menu","Menü schließen"]});
 
-/* Cinematic supply story, November 2026. */
+// Revised landing-page copy; retain earlier entries for other demo surfaces.
 Object.assign(window.OrbitTranslations, {
-  "Rozwijamy OrbitOps, by łączyć dane satelitarne, pogodę i kontekst Twojej firmy. Zobacz, jak sygnał ze świata może pomóc w decyzji o dostawie.": [
-    "We are developing OrbitOps to connect satellite data, weather and your business context. See how a signal from the world can inform a supply decision.",
-    "Wir entwickeln OrbitOps, um Satellitendaten, Wetter und Ihren Unternehmenskontext zu verbinden. Entdecken Sie, wie ein Signal aus der Welt eine Lieferentscheidung unterstützen kann."
+  "OrbitOps łączy obserwacje Ziemi, dane pogodowe i środowiskowe z informacjami o dostawcach, transporcie i zapasach. Pomaga ocenić, które zdarzenia mogą wpłynąć na Twoje dostawy i ciągłość działania — oraz wskazać, co warto sprawdzić, zanim pojawi się problem.": [
+    "OrbitOps combines Earth observations, weather and environmental data with supplier, transport and inventory information. It helps assess which events may affect your deliveries and business continuity — and identify what to check before a problem arises.",
+    "OrbitOps verbindet Erdbeobachtungen, Wetter- und Umweltdaten mit Informationen über Lieferanten, Transport und Bestände. Es hilft einzuschätzen, welche Ereignisse Ihre Lieferungen und Betriebsabläufe beeinflussen könnten — und was Sie prüfen sollten, bevor ein Problem entsteht."
   ],
-  "Zobacz scenariusz": [
-    "Explore the scenario",
-    "Szenario ansehen"
+  "Zobacz demo ↗": [
+    "View demo ↗",
+    "Demo ansehen ↗"
   ],
-  "SZERSZA PERSPEKTYWA. KONKRETNY WPŁYW.": [
-    "A WIDER PERSPECTIVE. A CLEARER IMPACT.",
-    "WEITERE PERSPEKTIVE. KONKRETE AUSWIRKUNGEN."
+  "PRZYKŁADOWY SYGNAŁ · DANE DEMONSTRACYJNE": [
+    "EXAMPLE SIGNAL · DEMO DATA",
+    "BEISPIELSIGNAL · DEMODATEN"
   ],
-  "Świat w ruchu.": [
-    "A world in motion.",
-    "Eine Welt in Bewegung."
+  "Intensywne opady w regionie dostawcy.": [
+    "Heavy rainfall in the supplier’s region.",
+    "Starke Niederschläge in der Region des Lieferanten."
   ],
-  "Twoja firma w centrum.": [
-    "Your business at the centre.",
-    "Ihr Unternehmen im Mittelpunkt."
+  "3D / WIZUALIZACJA": [
+    "3D / VISUALIZATION",
+    "3D / VISUALISIERUNG"
   ],
-  "Pogoda, zasoby, transport. Zobacz zależności, które mają znaczenie dla ciągłości Twoich dostaw.": [
-    "Weather, resources, transport. Discover the connections that matter for your supply continuity.",
-    "Wetter, Ressourcen, Transport. Entdecken Sie die Zusammenhänge, die für Ihre Lieferkontinuität wichtig sind."
+  "Ryzyko zaczyna się poza firmą. Jego skutki pojawiają się w operacjach.": [
+    "Risk starts outside your business. Its effects reach your operations.",
+    "Risiken entstehen außerhalb Ihres Unternehmens. Ihre Folgen zeigen sich im Betrieb."
   ],
-  "01 — 03 / OD SYGNAŁU DO DECYZJI": [
-    "01 — 03 / FROM SIGNAL TO DECISION",
-    "01 — 03 / VOM SIGNAL ZUR ENTSCHEIDUNG"
+  "Pogoda, dostępność zasobów i zakłócenia infrastruktury mogą wpływać na dostawców, trasy i terminy realizacji. Informacje o tych zdarzeniach są często rozproszone. Bez powiązania ich z dostawami i zapasami trudno ocenić, co rzeczywiście wymaga uwagi.": [
+    "Weather, resource availability and infrastructure disruptions can affect suppliers, routes and delivery schedules. Information about these events is often scattered. Without linking it to deliveries and inventory, it is difficult to assess what actually needs attention.",
+    "Wetter, Ressourcenverfügbarkeit und Infrastrukturstörungen können Lieferanten, Routen und Liefertermine beeinflussen. Informationen über diese Ereignisse sind oft verstreut. Ohne sie mit Lieferungen und Beständen zu verknüpfen, lässt sich schwer beurteilen, was tatsächlich Aufmerksamkeit erfordert."
   ],
-  "Jeden sygnał.": [
-    "One signal.",
-    "Ein Signal."
+  "Co sygnał z zewnątrz oznacza dla Twojej dostawy?": [
+    "What does an external signal mean for your delivery?",
+    "Was bedeutet ein externes Signal für Ihre Lieferung?"
   ],
-  "Cały łańcuch zależności.": [
-    "A whole chain of dependencies.",
-    "Eine ganze Kette von Abhängigkeiten."
+  "Sam alert nie mówi jeszcze, co jest zagrożone. OrbitOps ma łączyć lokalizację zdarzenia z dostawcą, trasą i danymi operacyjnymi firmy, aby pomóc ocenić możliwe konsekwencje.": [
+    "An alert alone does not tell you what is at risk. OrbitOps is designed to connect an event’s location with the supplier, route and company operational data to help assess possible consequences.",
+    "Eine Warnung allein zeigt noch nicht, was gefährdet ist. OrbitOps soll den Ereignisort mit dem Lieferanten, der Route und den Betriebsdaten des Unternehmens verknüpfen, um mögliche Folgen einzuschätzen."
   ],
-  "Sygnał": [
-    "Signal",
-    "Signal"
-  ],
-  "Wpływ": [
-    "Impact",
-    "Auswirkung"
-  ],
-  "Decyzja": [
-    "Decision",
-    "Entscheidung"
-  ],
-  "Transport morski · materiał ilustracyjny": [
-    "Maritime transport · illustrative footage",
-    "Seetransport · illustratives Filmmaterial"
-  ],
-  "Odtwórz film": [
-    "Play film",
-    "Film abspielen"
-  ],
-  "Wstrzymaj film": [
-    "Pause film",
-    "Film pausieren"
-  ],
-  "Z ORBITY DO DECYZJI": [
-    "FROM ORBIT TO DECISION",
-    "AUS DEM ORBIT ZUR ENTSCHEIDUNG"
-  ],
-  "Za każdą dostawą": [
-    "Behind every delivery",
-    "Hinter jeder Lieferung"
-  ],
-  "stoi sieć zależności.": [
-    "is a network of dependencies.",
-    "steht ein Netz von Abhängigkeiten."
-  ],
-  "Od dostępności surowca po pracę zakładu. Przejdź przez przykład i zobacz, gdzie szukać sygnałów, jak ocenić wpływ i co sprawdzić dalej.": [
-    "From raw material availability to factory operations. Explore the example to see where to look for signals, how to assess the impact and what to check next.",
-    "Von der Rohstoffverfügbarkeit bis zum Betrieb des Werks. Entdecken Sie im Beispiel, wo Sie Signale finden, Auswirkungen bewerten und die nächsten Schritte prüfen können."
-  ],
-  "01 / DOSTAWCA": [
-    "01 / SUPPLIER",
-    "01 / LIEFERANT"
-  ],
-  "02 / TRANSPORT": [
-    "02 / TRANSPORT",
-    "02 / TRANSPORT"
-  ],
-  "03 / TWÓJ ZAKŁAD": [
-    "03 / YOUR FACTORY",
-    "03 / IHR WERK"
-  ],
-  "ROZPOZNAJ SYGNAŁ": [
-    "IDENTIFY THE SIGNAL",
-    "SIGNAL ERKENNEN"
-  ],
-  "ZROZUM WPŁYW": [
-    "UNDERSTAND THE IMPACT",
-    "AUSWIRKUNGEN VERSTEHEN"
-  ],
-  "WYBIERZ NASTĘPNY KROK": [
-    "CHOOSE THE NEXT STEP",
-    "NÄCHSTEN SCHRITT WÄHLEN"
-  ],
-  "Wszystko zaczyna się": [
-    "It all starts",
-    "Alles beginnt"
-  ],
-  "u źródła.": [
-    "at the source.",
-    "an der Quelle."
-  ],
-  "Co zmienia się w otoczeniu dostawcy?": [
-    "What is changing around your supplier?",
-    "Was verändert sich im Umfeld Ihres Lieferanten?"
-  ],
-  "Jedna zmiana.": [
-    "One change.",
-    "Eine Veränderung."
-  ],
-  "Kolejne ogniwa.": [
-    "Multiple connections.",
-    "Weitere Glieder."
-  ],
-  "Które dostawy wymagają uwagi?": [
-    "Which deliveries need attention?",
-    "Welche Lieferungen brauchen Aufmerksamkeit?"
-  ],
-  "Szerszy obraz.": [
-    "A wider view.",
-    "Ein umfassenderes Bild."
-  ],
-  "Bliżej decyzji.": [
-    "Closer to a decision.",
-    "Näher an der Entscheidung."
-  ],
-  "Sprawdź zapas i możliwe alternatywy.": [
-    "Check stock and possible alternatives.",
-    "Prüfen Sie Bestände und mögliche Alternativen."
-  ],
-  "Zdjęcia ilustracyjne. Papiernia: Pine Bluff, USA. Poniższy scenariusz wykorzystuje fikcyjne dane i lokalizacje.": [
-    "Illustrative photography. Paper mill: Pine Bluff, USA. The following scenario uses fictional data and locations.",
-    "Illustrative Fotos. Papierfabrik: Pine Bluff, USA. Das folgende Szenario verwendet fiktive Daten und Standorte."
-  ],
-  "Skład drewna przy lesie widziany z góry": [
-    "A timber yard beside a forest, seen from above",
-    "Holzlager am Waldrand aus der Vogelperspektive"
-  ],
-  "Pracownik na kontenerach w terminalu portowym": [
-    "A worker on containers at a port terminal",
-    "Ein Arbeiter auf Containern in einem Hafenterminal"
-  ],
-  "Papiernia American Kraft Paper Industries w Pine Bluff, USA": [
-    "American Kraft Paper Industries mill in Pine Bluff, USA",
-    "Papierfabrik von American Kraft Paper Industries in Pine Bluff, USA"
-  ],
-  "Port kontenerowy widziany z góry": [
-    "Container port seen from above",
-    "Containerhafen aus der Vogelperspektive"
-  ]
-});
-
-/* Full-screen video hero and example agent suggestions. */
-Object.assign(window.OrbitTranslations, {
-  "Dostrzegaj sygnały. Rozumiej zależności.": [
-    "Spot signals. Understand connections.",
-    "Signale erkennen. Zusammenhänge verstehen."
-  ],
-  "Podejmuj świadome decyzje o dostawach.": [
-    "Make informed supply decisions.",
-    "Fundierte Lieferentscheidungen treffen."
-  ],
-  "Zobacz demo": [
-    "Explore the demo",
-    "Demo ansehen"
-  ],
-  "Poznaj scenariusz": [
-    "Explore the scenario",
-    "Szenario entdecken"
-  ],
-  "Przykładowe podpowiedzi agenta OrbitOps": [
-    "Example suggestions from the OrbitOps agent",
-    "Beispielhafte Hinweise des OrbitOps-Agenten"
-  ],
-  "Agent OrbitOps": [
-    "OrbitOps Agent",
-    "OrbitOps-Agent"
-  ],
-  "OD SYGNAŁU DO DECYZJI": [
-    "FROM SIGNAL TO DECISION",
-    "VOM SIGNAL ZUR ENTSCHEIDUNG"
-  ],
-  "PRZYKŁAD": [
-    "EXAMPLE",
-    "BEISPIEL"
+  "PRZYKŁAD ILUSTRACYJNY · FIKCYJNE DANE I LOKALIZACJE": [
+    "ILLUSTRATIVE EXAMPLE · FICTIONAL DATA AND LOCATIONS",
+    "ANSCHAULICHES BEISPIEL · FIKTIVE DATEN UND STANDORTE"
   ],
   "SYGNAŁ": [
     "SIGNAL",
     "SIGNAL"
   ],
-  "MOŻLIWY WPŁYW": [
-    "POTENTIAL IMPACT",
-    "MÖGLICHE AUSWIRKUNG"
+  "Zobacz, co się zmienia.": [
+    "See what is changing.",
+    "Erkennen Sie Veränderungen."
   ],
-  "SUGESTIA DZIAŁANIA": [
-    "SUGGESTED ACTION",
-    "HANDLUNGSVORSCHLAG"
+  "Prognoza lub obserwacja wskazuje zdarzenie w obszarze istotnym dla łańcucha dostaw.": [
+    "A forecast or observation indicates an event in an area relevant to the supply chain.",
+    "Eine Prognose oder Beobachtung weist auf ein Ereignis in einem für die Lieferkette relevanten Gebiet hin."
   ],
-  "Prognoza wskazuje intensywne opady w regionie Twojego dostawcy.": [
-    "The forecast indicates heavy rainfall in your supplier’s region.",
-    "Die Prognose deutet auf starke Regenfälle in der Region Ihres Lieferanten hin."
+  "WPŁYW": [
+    "IMPACT",
+    "AUSWIRKUNG"
   ],
-  "Ta lokalizacja jest powiązana z dostawą do Twojego zakładu. Warto potwierdzić termin odbioru.": [
-    "This location is linked to a delivery to your factory. Consider confirming the collection date.",
-    "Dieser Standort ist mit einer Lieferung an Ihr Werk verbunden. Bestätigen Sie den Abholtermin."
+  "Sprawdź, czego może dotyczyć.": [
+    "Check what may be affected.",
+    "Prüfen Sie, was betroffen sein könnte."
   ],
-  "Sprawdź gotowość dostawcy i bufor zapasu. Porównaj dostępne alternatywy.": [
-    "Check supplier readiness and your stock buffer. Compare available alternatives.",
-    "Prüfen Sie die Lieferbereitschaft und Ihren Bestandspuffer. Vergleichen Sie verfügbare Alternativen."
+  "Powiąż lokalizację z dostawcą, transportem, zamówieniem lub zapasem.": [
+    "Link the location to a supplier, shipment, order or inventory.",
+    "Verknüpfen Sie den Standort mit einem Lieferanten, Transport, Auftrag oder Bestand."
   ],
-  "W przykładowym planie transportu pojawiło się 48 godzin opóźnienia.": [
-    "The example transport plan now shows a 48-hour delay.",
-    "Im beispielhaften Transportplan ist eine Verzögerung von 48 Stunden aufgetreten."
+  "DZIAŁANIE": [
+    "ACTION",
+    "HANDLUNG"
   ],
-  "Przy założonym zużyciu zapas może skończyć się przed przyjęciem dostawy.": [
-    "At the assumed consumption rate, stock may run out before the delivery arrives.",
-    "Bei dem angenommenen Verbrauch könnte der Bestand vor dem Wareneingang aufgebraucht sein."
+  "Ustal, co należy zweryfikować.": [
+    "Decide what to verify.",
+    "Legen Sie fest, was zu prüfen ist."
   ],
-  "Porównaj zakup pomostowy ze zmianą transportu. Sprawdź koszt i warunki każdego wariantu.": [
-    "Compare a bridging purchase with a transport change. Check the cost and conditions of each option.",
-    "Vergleichen Sie einen Überbrückungskauf mit einer Transportänderung. Prüfen Sie Kosten und Bedingungen jeder Option."
+  "Sprawdź status dostawy, poziom zapasu i dostępne alternatywy.": [
+    "Check delivery status, inventory levels and available alternatives.",
+    "Prüfen Sie den Lieferstatus, den Bestand und verfügbare Alternativen."
   ],
-  "Przykładowy stan surowca zapewnia cztery dni pracy zakładu.": [
-    "The example raw material stock covers four days of factory operations.",
-    "Der beispielhafte Rohstoffbestand deckt vier Betriebstage des Werks ab."
+  "Lokalizacja dostawcy · powiązana dostawa · obszar sygnału. Model poglądowy — nie przedstawia bieżących zagrożeń.": [
+    "Supplier location · linked delivery · signal area. Illustrative model — does not show current threats.",
+    "Lieferantenstandort · zugehörige Lieferung · Signalgebiet. Anschauliches Modell — zeigt keine aktuellen Gefahren."
   ],
-  "Przesunięcie kolejnej dostawy może zmniejszyć bufor produkcji.": [
-    "A delay to the next delivery could reduce the production buffer.",
-    "Eine Verschiebung der nächsten Lieferung könnte den Produktionspuffer verringern."
+  "Potwierdź status i termin dostawy u dostawcy.": [
+    "Confirm delivery status and timing with the supplier.",
+    "Bestätigen Sie Status und Termin der Lieferung beim Lieferanten."
   ],
-  "Potwierdź aktualny stan magazynu i termin przyjęcia. Ustal, kiedy potrzebna będzie decyzja.": [
-    "Confirm current stock and the expected receipt date. Establish when a decision will be needed.",
-    "Bestätigen Sie den aktuellen Bestand und den Wareneingangstermin. Klären Sie, wann eine Entscheidung nötig ist."
+  "OrbitOps łączy dane o otoczeniu z informacjami o działalności firmy. Pomaga przejść od obserwacji zdarzenia do oceny możliwego wpływu na dostawy, zapasy i ciągłość operacji.": [
+    "OrbitOps combines external data with information about your business. It helps move from observing an event to assessing its possible impact on deliveries, inventory and operational continuity.",
+    "OrbitOps verbindet Daten über das Umfeld mit Informationen über Ihr Unternehmen. Es hilft, von der Beobachtung eines Ereignisses zur Einschätzung möglicher Auswirkungen auf Lieferungen, Bestände und Betriebsabläufe zu gelangen."
   ],
-  "Podpowiedzi demonstracyjne · fikcyjne dane": [
-    "Demo suggestions · fictional data",
-    "Demo-Hinweise · fiktive Daten"
+  "Dane satelitarne i przestrzenne pokazują, co dzieje się w terenie. Dane pogodowe i środowiskowe pomagają ocenić, co może się zmienić. Informacje o dostawcach i operacjach pozwalają sprawdzić, jakie znaczenie może mieć to dla firmy.": [
+    "Satellite and spatial data show what is happening on the ground. Weather and environmental data help assess what may change. Supplier and operational information helps determine what this could mean for your business.",
+    "Satelliten- und Geodaten zeigen, was vor Ort geschieht. Wetter- und Umweltdaten helfen einzuschätzen, was sich ändern könnte. Informationen über Lieferanten und Abläufe helfen zu prüfen, was dies für das Unternehmen bedeuten könnte."
   ],
-  "Otwórz demo OrbitOps": [
-    "Open the OrbitOps demo",
-    "OrbitOps-Demo öffnen"
+  "Obraz satelitarny i dane przestrzenne pomagają analizować lokalizacje oraz zmiany w ich otoczeniu.": [
+    "Satellite imagery and spatial data help analyze locations and changes in their surroundings.",
+    "Satellitenbilder und Geodaten helfen, Standorte und Veränderungen in ihrer Umgebung zu analysieren."
   ],
-  "Wybierz przykładową sytuację": [
-    "Choose an example scenario",
-    "Beispielszenario wählen"
+  "Dane pogodowe i środowiskowe dostarczają sygnałów o warunkach, które mogą wpłynąć na działalność.": [
+    "Weather and environmental data provide signals about conditions that may affect operations.",
+    "Wetter- und Umweltdaten liefern Hinweise auf Bedingungen, die den Betrieb beeinflussen könnten."
   ],
-  "Uruchom animacje": [
-    "Play animations",
-    "Animationen starten"
+  "Dane o dostawcach, trasach, zapasach i zużyciu pomagają określić, które zależności należy sprawdzić.": [
+    "Data on suppliers, routes, inventory and consumption helps identify which dependencies to check.",
+    "Daten über Lieferanten, Routen, Bestände und Verbrauch helfen zu bestimmen, welche Abhängigkeiten geprüft werden sollten."
   ],
-  "Wstrzymaj animacje": [
-    "Pause animations",
-    "Animationen pausieren"
+  "Co to oznacza dla firmy?": [
+    "What does this mean for your business?",
+    "Was bedeutet das für Ihr Unternehmen?"
   ],
-  "Od dostawcy do decyzji": [
-    "From supplier to decision",
-    "Vom Lieferanten zur Entscheidung"
+  "Obraz pokazuje teren. Połączenie źródeł z danymi firmy pozwala ocenić możliwy wpływ na dostawę.": [
+    "An image shows the terrain. Combining sources with company data helps assess the possible impact on a delivery.",
+    "Ein Bild zeigt das Gelände. Die Verbindung von Quellen mit Unternehmensdaten ermöglicht es, mögliche Auswirkungen auf eine Lieferung einzuschätzen."
+  ],
+  "Przykłady źródeł i scenariusze demonstracyjne są oznaczane oddzielnie.": [
+    "Source examples and demo scenarios are labeled separately.",
+    "Quellenbeispiele und Demoszenarien sind gesondert gekennzeichnet."
+  ],
+  "Dla firm, które chcą wcześniej rozpoznawać ryzyko operacyjne.": [
+    "For businesses that want to identify operational risk earlier.",
+    "Für Unternehmen, die betriebliche Risiken früher erkennen möchten."
+  ],
+  "OrbitOps rozwijamy z myślą o przedsiębiorstwach zależnych od dostaw, zasobów i infrastruktury. Zakres analizy można dopasować do lokalizacji oraz procesów istotnych dla danej firmy.": [
+    "We are developing OrbitOps for businesses that depend on supplies, resources and infrastructure. The scope of analysis can be tailored to the locations and processes that matter to each company.",
+    "Wir entwickeln OrbitOps für Unternehmen, die von Lieferungen, Ressourcen und Infrastruktur abhängig sind. Der Analyseumfang lässt sich an die für das jeweilige Unternehmen wichtigen Standorte und Prozesse anpassen."
+  ],
+  "Jak warunki w regionie dostawcy lub na trasie mogą wpłynąć na terminowość dostaw?": [
+    "How could conditions in the supplier’s region or along the route affect delivery schedules?",
+    "Wie könnten Bedingungen in der Region des Lieferanten oder entlang der Route die Liefertreue beeinflussen?"
+  ],
+  "Które lokalizacje i zasoby warto objąć dodatkową obserwacją?": [
+    "Which locations and resources warrant additional observation?",
+    "Welche Standorte und Ressourcen sollten zusätzlich beobachtet werden?"
+  ],
+  "Gdzie mogą pojawić się zakłócenia istotne dla przepływu towarów?": [
+    "Where could disruptions affect the flow of goods?",
+    "Wo könnten Störungen auftreten, die für den Warenfluss relevant sind?"
+  ],
+  "Jak zmienia się otoczenie lokalizacji ważnych dla działalności firmy?": [
+    "How are the surroundings of key business locations changing?",
+    "Wie verändert sich das Umfeld der für den Betrieb wichtigen Standorte?"
+  ],
+  "Zdjęcia ilustrują obszary zastosowań. Nie przedstawiają zdarzeń z przykładowego scenariusza.": [
+    "Photos illustrate areas of application. They do not depict events from the example scenario.",
+    "Die Fotos veranschaulichen Anwendungsbereiche. Sie zeigen keine Ereignisse aus dem Beispielszenario."
+  ],
+  "Jeden widok łączy sygnały zewnętrzne, lokalizacje dostawców i działania do weryfikacji. Wybierz scenariusz, aby zobaczyć, jak zdarzenie może wpłynąć na konkretną dostawę.": [
+    "One view brings together external signals, supplier locations and actions to verify. Select a scenario to see how an event could affect a specific delivery.",
+    "Eine Ansicht verbindet externe Signale, Lieferantenstandorte und zu prüfende Maßnahmen. Wählen Sie ein Szenario, um zu sehen, wie ein Ereignis eine bestimmte Lieferung beeinflussen könnte."
+  ],
+  "INTERAKTYWNA MAKIETA · DANE SYNTETYCZNE": [
+    "INTERACTIVE MOCKUP · SYNTHETIC DATA",
+    "INTERAKTIVER ENTWURF · SYNTHETISCHE DATEN"
+  ],
+  "Zapytaj o gotowość towaru i aktualny termin.": [
+    "Ask whether the goods are ready and confirm the current delivery date.",
+    "Fragen Sie nach der Warenbereitschaft und dem aktuellen Liefertermin."
+  ],
+  "Oceń, na jak długo wystarczą obecne zasoby.": [
+    "Assess how long current resources will last.",
+    "Schätzen Sie ein, wie lange die vorhandenen Ressourcen reichen."
+  ],
+  "Ustal, jakie opcje można rozważyć w danej sytuacji.": [
+    "Identify the options to consider in this situation.",
+    "Ermitteln Sie, welche Optionen in dieser Situation infrage kommen."
+  ],
+  "Przejrzyj alternatywy": [
+    "Review alternatives",
+    "Alternativen prüfen"
+  ],
+  "Makieta działa na danych demonstracyjnych. Nie monitoruje rzeczywistych lokalizacji i nie wysyła zgłoszeń do systemów firmy.": [
+    "The mockup uses demo data. It does not monitor real locations or send requests to company systems.",
+    "Der Entwurf verwendet Demodaten. Er überwacht keine realen Standorte und sendet keine Meldungen an Unternehmenssysteme."
+  ],
+  "LUDZIE I KIERUNEK": [
+    "PEOPLE AND DIRECTION",
+    "MENSCHEN UND AUSRICHTUNG"
+  ],
+  "Technologia z szerszą perspektywą. Zrozumienie realnych operacji.": [
+    "Technology with a broader perspective. Understanding real operations.",
+    "Technologie mit einem umfassenderen Blick. Verständnis für reale Betriebsabläufe."
+  ],
+  "OrbitOps rozwija się na styku danych przestrzennych, obserwacji Ziemi i zarządzania operacjami. Celem jest udostępnienie firmom narzędzi, które pomagają łączyć rozproszone informacje i przekładać je na zrozumiałe decyzje.": [
+    "OrbitOps is developing at the intersection of spatial data, Earth observation and operations management. Its goal is to give businesses tools that connect scattered information and turn it into clear decisions.",
+    "OrbitOps entsteht an der Schnittstelle von Geodaten, Erdbeobachtung und Betriebsmanagement. Ziel ist es, Unternehmen Werkzeuge bereitzustellen, die verstreute Informationen verbinden und in verständliche Entscheidungen übersetzen."
+  ],
+  "Za kierunek produktu i rozwój biznesowy odpowiada założycielka z doświadczeniem w zarządzaniu transformacją technologiczną, portfelem inicjatyw i rozwojem produktów. Rozwiązanie rozwijane jest we współpracy z kompetencjami technologicznymi i geospatial.": [
+    "Product direction and business development are led by a female founder with experience in managing technology transformation, initiative portfolios and product development. The solution is being developed with technology and geospatial expertise.",
+    "Die Gründerin verantwortet die Produktausrichtung und Geschäftsentwicklung. Sie verfügt über Erfahrung im Management technologischer Transformation, von Initiativenportfolios und in der Produktentwicklung. Die Lösung wird mit technologischem und Geospatial-Fachwissen entwickelt."
+  ],
+  "Obecny etap: rozwój koncepcji produktu i demonstratora. Prezentowane scenariusze nie są usługą bieżącego monitoringu.": [
+    "Current stage: development of the product concept and demonstrator. The scenarios shown are not an ongoing monitoring service.",
+    "Aktueller Stand: Entwicklung des Produktkonzepts und Demonstrators. Die gezeigten Szenarien sind kein laufender Überwachungsdienst."
+  ],
+  "Wybierzmy problem, który warto rozwiązać.": [
+    "Let’s choose a problem worth solving.",
+    "Lassen Sie uns ein Problem auswählen, das es zu lösen lohnt."
+  ],
+  "Opowiedz nam o dostawach, lokalizacjach lub zasobach, które mają kluczowe znaczenie dla Twojej działalności. Wspólnie sprawdzimy, czy OrbitOps może pomóc lepiej rozpoznawać związane z nimi ryzyka.": [
+    "Tell us about the deliveries, locations or resources that are critical to your business. Together, we will explore whether OrbitOps could help identify the associated risks more clearly.",
+    "Erzählen Sie uns von Lieferungen, Standorten oder Ressourcen, die für Ihren Betrieb entscheidend sind. Gemeinsam prüfen wir, ob OrbitOps helfen kann, die damit verbundenen Risiken besser zu erkennen."
+  ],
+  "Od krótkiej rozmowy i wyboru jednego przypadku operacyjnego, który warto przeanalizować.": [
+    "With a short conversation and the choice of one operational case worth analyzing.",
+    "Mit einem kurzen Gespräch und der Auswahl eines betrieblichen Falls, der analysiert werden sollte."
+  ],
+  "Wystarczy branża, rodzaj problemu i ogólny opis lokalizacji lub przepływu. Nie przesyłaj poufnych danych firmy na tym etapie.": [
+    "Your industry, the type of problem and a general description of the location or flow are enough. Do not send confidential company data at this stage.",
+    "Branche, Art des Problems und eine allgemeine Beschreibung des Standorts oder Warenflusses genügen. Senden Sie in dieser Phase keine vertraulichen Unternehmensdaten."
+  ],
+  "Nie. Najpierw wspólnie ocenimy problem, dostępność danych i możliwy zakres testu.": [
+    "No. First, we will assess the problem, data availability and possible test scope together.",
+    "Nein. Zunächst bewerten wir gemeinsam das Problem, die Datenverfügbarkeit und den möglichen Testumfang."
+  ],
+  "Jakie informacje przygotować?": [
+    "What information should I prepare?",
+    "Welche Informationen sollte ich vorbereiten?"
+  ],
+  "Powiedz nam o swoim wyzwaniu.": [
+    "Tell us about your challenge.",
+    "Erzählen Sie uns von Ihrer Herausforderung."
+  ],
+  "Jakie ryzyko lub proces chcesz lepiej zrozumieć?": [
+    "Which risk or process would you like to understand better?",
+    "Welches Risiko oder welchen Prozess möchten Sie besser verstehen?"
+  ],
+  "Formularz przygotowuje wiadomość e-mail do kontakt@orbitops.eu. Wiadomość wysyłasz samodzielnie w swoim programie pocztowym. Dane nie są wysyłane automatycznie.": [
+    "The form prepares an email to kontakt@orbitops.eu. You send it yourself using your email application. Data is not sent automatically.",
+    "Das Formular bereitet eine E-Mail an kontakt@orbitops.eu vor. Sie versenden sie selbst in Ihrem E-Mail-Programm. Daten werden nicht automatisch versendet."
+  ],
+  "Wcześniej zauważaj sygnały": [
+    "Spot signals earlier",
+    "Signale früher erkennen"
+  ],
+  "Oceniaj możliwy wpływ na operacje": [
+    "Assess the possible impact on operations",
+    "Mögliche Auswirkungen auf den Betrieb bewerten"
+  ],
+  "Przechodź od informacji do działania": [
+    "Move from information to action",
+    "Von Informationen zum Handeln gelangen"
+  ],
+  "Zjawiska w regionie dostawcy lub na trasie mogą zmienić warunki realizacji dostawy.": [
+    "Events in the supplier’s region or along the route can change delivery conditions.",
+    "Ereignisse in der Region des Lieferanten oder entlang der Route können die Lieferbedingungen verändern."
+  ],
+  "Zmiany w otoczeniu lokalizacji mogą sygnalizować ryzyko dla dostępu do surowców.": [
+    "Changes around a location may signal risks to raw material availability.",
+    "Veränderungen im Umfeld eines Standorts können auf Risiken für den Zugang zu Rohstoffen hinweisen."
+  ],
+  "Zakłócenia w portach, na drogach i w infrastrukturze mogą wpłynąć na terminowość dostaw.": [
+    "Disruptions at ports, on roads and in infrastructure can affect delivery schedules.",
+    "Störungen in Häfen, auf Straßen und in der Infrastruktur können die Liefertreue beeinträchtigen."
+  ],
+  "Przykładowa sieć dostaw — 6 lokalizacji, 3 scenariusze, 1 relacja wymagająca sprawdzenia.": [
+    "Example supply network — 6 locations, 3 scenarios, 1 connection to check.",
+    "Beispiel eines Liefernetzwerks — 6 Standorte, 3 Szenarien, 1 zu prüfende Verbindung."
   ]
 });
+
+Object.assign(window.OrbitTranslations, {"© 2026 OrbitOps · Wersja koncepcyjna": ["© 2026 OrbitOps · Concept version", "© 2026 OrbitOps · Konzeptversion"]});

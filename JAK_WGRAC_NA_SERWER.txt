@@ -1,0 +1,48 @@
+ORBITOPS — WGRYWANIE STRONY PRZEZ FTP
+
+1. W lewym panelu programu FTP otwórz folder DO_WGRANIA w tym katalogu.
+2. W prawym panelu otwórz katalog WWW przypisany do domeny orbitops.eu.
+   Może to być public_html albo inny katalog wskazany w ustawieniach domeny.
+   Na zrzucie są pliki strony także w katalogu głównym konta — sam widok FTP
+   nie potwierdza, który katalog obsługuje domenę. Sprawdź przypisanie w panelu
+   hostingu, aby nie wgrać plików o jeden poziom za wysoko lub za nisko.
+3. Zaznacz CAŁĄ ZAWARTOŚĆ folderu DO_WGRANIA i skopiuj ją na serwer.
+   Potwierdź zastąpienie plików strony o tych samych nazwach. Łącz zawartość
+   folderów, gdy program o to zapyta. Nie usuwaj pozostałych plików konta.
+   Nie wgrywaj samego nadrzędnego folderu DO_WGRANIA.
+4. Po wgraniu index.html, demo.html, assets/ i vendor/ muszą leżeć obok siebie
+   bezpośrednio w katalogu WWW domeny. Nie jest potrzebna instalacja Node.js,
+   npm, Pythona ani uruchamianie serwera aplikacji na hostingu.
+5. Otwórz https://orbitops.eu/ i https://orbitops.eu/demo.html.
+   Odśwież stronę z pominięciem pamięci podręcznej (na Macu Cmd+Shift+R).
+   Sprawdź nowe logo, globus, zdjęcia i przełącznik języków.
+
+UKŁAD DOCELOWY W KATALOGU WWW
+
+index.html
+ demo.html
+ favicon.svg
+ favicon.ico
+ robots.txt
+ sitemap.xml
+ *.css
+ *.js
+ assets/          — logo, zdjęcia, fonty i dane mapy
+ vendor/three/    — niezbędne pliki biblioteki 3D
+
+ZIP
+OrbitOps-na-serwer.zip zawiera dokładnie tę samą zawartość co DO_WGRANIA,
+bez dodatkowego katalogu nadrzędnego. Możesz przesłać ZIP i rozpakować go
+w katalogu WWW, jeżeli panel hostingu ma taką funkcję. Samo wysłanie ZIP
+przez FTP nie uruchamia strony — archiwum musi zostać rozpakowane.
+
+AKTUALIZACJA PACZKI PO ZMIANACH W PROJEKCIE
+W Terminalu, z katalogu Orbitops:
+python3 scripts/przygotuj-serwer.py
+Polecenie odtwarza folder DO_WGRANIA i plik ZIP z bieżącej wersji prototyp/.
+Nie zmienia plików na serwerze. Po każdej zmianie ponownie wygeneruj paczkę.
+
+Paczka nie zawiera katalogów backups, koncepcje, state, review, .git,
+pełnego node_modules ani lokalnego server.py. Wersja publikacyjna nie ma
+odnośnika do wewnętrznej galerii review. Formularz kontaktowy przygotowuje
+wiadomość w programie pocztowym użytkownika; nie wymaga backendu.

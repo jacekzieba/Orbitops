@@ -116,9 +116,9 @@ Object.assign(window.OrbitTranslations, {
     "Review suggestion",
     "Vorschlag prüfen"
   ],
-  "Surowiec w drodze": [
-    "Raw material in transit",
-    "Rohstoff unterwegs"
+  "Planowana dostawa surowca": [
+    "Planned raw material delivery",
+    "Geplante Rohstofflieferung"
   ],
   "Drewno · NordTimber Oy": [
     "Timber · NordTimber Oy",
@@ -128,9 +128,9 @@ Object.assign(window.OrbitTranslations, {
     "Stock coverage",
     "Bestandsreichweite"
   ],
-  "Na teraz · zużycie 200 t/dobę": [
-    "Current estimate · consumption 200 t/day",
-    "Aktuell · Verbrauch 200 t/Tag"
+  "Stan scenariusza · zużycie 200 t/dobę": [
+    "Scenario snapshot · consumption 200 t/day",
+    "Szenariostand · Verbrauch 200 t/Tag"
   ],
   "Dostawa do odbiorcy": [
     "Customer delivery",
@@ -272,9 +272,9 @@ Object.assign(window.OrbitTranslations, {
     "Let's talk about your business",
     "Sprechen wir über Ihr Unternehmen"
   ],
-  "STAN NA TERAZ": [
-    "CURRENT ESTIMATE",
-    "AKTUELLER STAND"
+  "STAN SCENARIUSZA": [
+    "SCENARIO SNAPSHOT",
+    "SZENARIOSTAND"
   ],
   "Do wyczerpania obecnego zapasu": [
     "Until current stock runs out",
@@ -304,9 +304,9 @@ Object.assign(window.OrbitTranslations, {
     "Now",
     "Jetzt"
   ],
-  "* Szacowany stan z danych demo: 800 t na 30.10, 10:00, pomniejszany o zużycie 200 t/dobę. Zegar działa w rzeczywistym tempie; bez nowych dostaw i odczytu WMS.": [
-    "* Estimated from demo data: 800 t at 10:00 on 30 Oct, reduced by consumption of 200 t/day. The clock runs in real time; no new deliveries or WMS readings are included.",
-    "* Schätzung aus Demodaten: 800 t am 30.10. um 10:00, abzüglich 200 t Verbrauch pro Tag. Die Uhr läuft in Echtzeit; ohne neue Lieferungen oder WMS-Ablesung."
+  "* Stan scenariusza na 30.10.2026, 10:00 CET: 800 t przy zużyciu 200 t/dobę. Pokrycie 96 h bez nowych dostaw. Dane i czas analizy są stałe; brak odczytu WMS.": [
+    "* Scenario snapshot at 10:00 CET on 30 Oct 2026: 800 t at consumption of 200 t/day. Coverage of 96 h without new deliveries. Data and analysis time are fixed; no WMS readings.",
+    "* Szenariostand am 30.10.2026 um 10:00 CET: 800 t bei 200 t Verbrauch pro Tag. Reichweite von 96 h ohne neue Lieferungen. Daten und Analysezeitpunkt sind fest; keine WMS-Ablesung."
   ],
   "Czas pozostały do wyczerpania obecnego zapasu": [
     "Time remaining until current stock runs out",

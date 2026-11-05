@@ -1,4 +1,5 @@
-/* Lucide Orbit mark shared by the landing page and demo. */
-.header.wrap .brand .brand-mark,.footer .brand .brand-mark{width:40px;height:40px;flex-shrink:0;margin-right:10px;color:inherit}
-.footer .footer-brand{display:inline-flex;align-items:center}
-@media(max-width:760px){.header.wrap .brand .brand-mark,.footer .brand .brand-mark{width:34px;height:34px;margin-right:8px}}
+/* Vector artwork traced from the supplied OrbitOps identity. */
+.header.wrap .brand,.footer .footer-brand{display:inline-flex;align-items:center;flex-shrink:0}
+.brand .brand-logo{display:block;width:190px;height:40px;object-fit:contain}
+.workspace-brand .brand-logo{display:block;width:133px;height:28px;object-fit:contain}
+@media(max-width:760px){.brand .brand-logo{width:166.25px;height:35px}.workspace-brand .brand-logo{width:114px;height:24px}}

@@ -356,9 +356,9 @@ Object.assign(window.OrbitTranslations, {
     "PLN 0 refers only to the modelled loss after successful confirmation and execution of the action. Other risks have not been estimated.",
     "0 PLN bezieht sich nur auf den modellierten Verlust nach erfolgreicher Bestätigung und Durchführung der Maßnahme. Weitere Risiken wurden nicht geschätzt."
   ],
-  "18 000 zł to dopłata za awaryjne pozyskanie 200 t. Pełna cena zakupu i potrzebna gotówka nie są oszacowane. Po dostawie głównej pozostanie dodatkowy zapas.": [
-    "PLN 18,000 is the premium for sourcing 200 t at short notice. The full purchase price and cash requirement have not been estimated. Extra stock will remain after the main delivery.",
-    "18.000 PLN sind der Aufpreis für die kurzfristige Beschaffung von 200 t. Vollständiger Kaufpreis und Liquiditätsbedarf wurden nicht geschätzt. Nach der Hauptlieferung verbleibt zusätzlicher Bestand."
+  "18 000 zł to dopłata za awaryjne pozyskanie 200 t. Pełna cena zakupu i potrzebna gotówka nie są oszacowane. Przy opóźnieniu 48 h surowiec pomostowy zostanie zużyty w całości. Jego część pozostanie tylko przy wcześniejszym przyjęciu dostawy głównej.": [
+    "PLN 18,000 is the premium for sourcing 200 t at short notice. The full purchase price and cash requirement have not been estimated. With a 48 h delay, the bridging stock is used in full. Some remains only if the main delivery arrives earlier.",
+    "18.000 PLN sind der Aufpreis für die kurzfristige Beschaffung von 200 t. Vollständiger Kaufpreis und Liquiditätsbedarf wurden nicht geschätzt. Bei 48 h Verspätung wird der Überbrückungsbestand vollständig verbraucht. Ein Rest bleibt nur bei früherem Eingang der Hauptlieferung."
   ],
   "Założenia i sposób obliczeń": [
     "Assumptions and calculations",

@@ -23,7 +23,7 @@ Kontakt pozostaje oznaczoną makietą: strona nie wysyła zgłoszeń. Scenariusz
 
 ## Materiał recenzencki
 
-Zrzuty recenzenckie i surowe materiały (wideo 4K, duże PNG) nie są w repozytorium; trzymaj je lokalnie poza gitem. W repo są tylko skompresowane zasoby używane przez stronę (WebP, woff2, mp4 720p).
+Katalog `review/` zawiera PNG makiet oraz nagranie faktycznego renderu WebGL. Krytyk wizualny Sol 6.1 ocenia wyłącznie te obrazy i klatki animacji; nie otrzymuje kodu ani koncepcji tekstowej. Historia i ograniczenia oceny znajdują się w `review/recenzja-wizualna.md`.
 
 Tryby pomocnicze do reprodukcji kadrów: `?still=1`, `?still=2`, `?still=3`. `?capture=hero` zapisuje 18,5-sekundowe nagranie płótna WebGL do lokalnego katalogu review. Serwer przyjmuje nagranie wyłącznie pod `/__capture` i działa na interfejsie loopback.
 
@@ -102,7 +102,7 @@ Mapa ma ciągłe gradientowe wstęgi i cząstki z ogonami poruszające się po k
 
 ### Bieżący zapas w jednym panelu
 
-Przyspieszone odtwarzanie zastąpiono panelem „Stan na teraz” bez suwaka i przycisków odtwarzania. Masa drewna, odliczanie dni/godzin/minut/sekund, pierścień, znacznik „Teraz” na osi i KPI pokrycia wynikają z rzeczywistego zegara oraz bazowego fikcyjnego stanu800t na30.10.2026,10:00CET i zużycia200t/dobę. Dane nie pochodzą zWMS. Model pomija nowe dostawy; po03.11,10:00 zatrzymuje masę i czas na zerze. Odliczanie jest częścią tego samego panelu co planowane przyjęcie i bufor24h.
+Panel „Stan scenariusza” używa tego samego stałego czasu co pozostała analiza: 30.10.2026, 10:00 CET. Stan 800 t i zużycie 200 t/dobę dają 96 h pokrycia bez nowych dostaw. Pierścień, pozostały czas, znacznik osi i KPI odnoszą się do tego stanu, niezależnie od daty otwarcia strony. Dane nie pochodzą z WMS. Dostawa 1 200 t jest planowana (załadunek 31.10). Przy opóźnieniu 48 h zapas pomostowy 200 t zostanie zużyty w całości; pozostałość jest możliwa przy wcześniejszej dostawie głównej.
 
 
 ### Wspólna nawigacja, kontakt i pełne EN / DE
@@ -117,7 +117,7 @@ Zweryfikowano w przeglądarce: menu1440px w jednym rzędzie;390px z otwarciem i 
 
 ## SEO i identyfikacja
 
-Logo wykorzystuje ikonę **Orbit** z lokalnej biblioteki Lucide (ISC, `assets/LUCIDE-LICENSE.txt`). Znak w `assets/brand-mark.svg` jest wspólny dla nagłówka, stopki, SVG favicon, favicon ICO (16/32/48 px), ikony Apple (180 px) i logo organizacji (512 px). Pełne logo: `assets/logo.svg` oraz `assets/logo.png`. Grafika Open Graph: `assets/og-orbitops.png`, 1200 × 630 px.
+Logo odtworzono wektorowo z dostarczonego wzoru OrbitOps: turkusowy satelita (`#00ada5`) i jednolity napis. Znak: `assets/brand-mark.svg`; sam napis: `assets/wordmark.svg`. Oba pliki zawierają ścieżki SVG, bez zależności od fontów i bez osadzonych bitmap. Pełne logo: `assets/logo.svg` i `assets/logo.png`; wariant z białym napisem na ciemne tło: `assets/logo-light.svg`. Wspólne logo jest używane w nagłówkach, stopkach i podglądzie platformy. Z tego samego znaku przygotowano SVG favicon, favicon ICO (16/32/48 px), ikonę Apple (180 px) i logo organizacji (512 px). Grafika Open Graph: `assets/og-orbitops.svg` oraz `assets/og-orbitops.png`, 1200 × 630 px, nawiązuje do dostarczonego wzoru. Pliki w `backups/` są archiwalne i zachowują poprzedni wygląd.
 
 Strona główna i demonstrator mają osobne tytuły, opisy, canonical, Open Graph i Twitter Card. Strona główna zawiera JSON-LD Organization, WebSite i WebPage, bez deklarowania nieistniejących ocen ani produkcyjnego produktu. `seo.js` synchronizuje metadane z przełącznikiem PL/EN/DE. Obrazy mają wymiary ograniczające przesunięcia układu. Galeria `review/` ma `noindex,follow`; pozostaje dostępna robotom, aby mogły odczytać tę dyrektywę.
 
@@ -127,29 +127,10 @@ Na hostingu FTP plik `robots.txt` musi być dostępny bezpośrednio pod `https:/
 
 Przy zmianie domeny należy zaktualizować adresy w `index.html`, `demo.html`, `sitemap.xml` i `robots.txt`. Workflow Pages kopiuje również sitemap, robots i favicony do artefaktu publikacji. Publikacja na GitHub Pages jest niezależna od hostingu FTP.
 
-## Filmowa LP — materiały użytkownika (1 listopada 2026)
+## Paczka na serwer FTP
 
-`cinematic.css/js` dodają większą typografię hero, krótszy opis i główne przejście do scenariusza. Glob pozostaje na pierwszym ekranie. Dawne trzy małe kafelki wyzwania zastąpiono pełnoszeroką sekcją filmu portu oraz fotograficzną historią dostawca → transport → zakład. Każde zdjęcie wybiera odpowiedni krok istniejącego modelu 3D. Nowe treści i etykiety mają wersje PL/EN/DE.
+Z katalogu głównego projektu uruchom `python3 scripts/przygotuj-serwer.py`. Powstają `DO_WGRANIA/` (zawartość do skopiowania do katalogu WWW domeny) i `OrbitOps-na-serwer.zip` (te same pliki bez katalogu nadrzędnego). Instrukcja: `JAK_WGRAC_NA_SERWER.txt`. Skrypt sprawdza lokalne zasoby, kopiuje potrzebne moduły Three.js do `vendor/three/` i usuwa z wersji publikacyjnej odnośnik do wewnętrznej galerii. Po zmianach w `prototyp/` wygeneruj paczkę ponownie.
 
-Film z `content/` ma wersję internetową 1080p/30 fps (około 8,3 MiB zamiast 150 MiB). Jest wyciszony, ładowany przy wejściu w widok, zatrzymuje się poza widokiem i w nieaktywnej karcie. Pauza użytkownika zachowuje się przy zmianie języka. Reduced-motion i save-data wyłączają automatyczne uruchamianie; ręczne odtworzenie pozostaje dostępne. Poster stanowi statyczny odpowiednik. Trzy zdjęcia przygotowano jako WebP. Chłodniejszą, wspólną kolorystykę nadają odwracalne filtry CSS. Pliki oryginalne pozostają niezmienione. Lista źródeł i stan informacji o licencjach: `assets/content/CREDITS.md`.
+## Aktualizacja tekstów — 2 listopada 2026
 
-Sprawdzono w przeglądarce przy 1440 i 390 px: render nowych sekcji, brak poziomego przepełnienia, odtwarzanie i pauzę filmu, pauzę poza widokiem, wszystkie trzy przejścia ze zdjęć do modelu, zmianę języka podczas pauzy, nowe treści PL/EN/DE i poprawne ładowanie zdjęć. Kontrola HTML: brak zduplikowanych ID i brak brakujących plików lokalnych. `node --check` dla nowych skryptów przechodzi. Obsługa reduced-motion została sprawdzona w kodzie; preferencji systemowej nie zmieniano. Konsola nie zgłosiła błędów; istniejące ostrzeżenie Three.js o PCFSoftShadowMap pozostawiono bez zmiany. Kadry: `review/cinematic-*.jpg`. To weryfikacja wykonawcza, bez nowej niezależnej recenzji wizualnej.
-
-Zaktualizowano lokalny katalog `orbitops-ftp/` oraz przygotowano osobną paczkę `orbitops-lp-wow.zip`. Nie publikowano zmian na hostingu.
-
-## Hero z filmem i przykładowym agentem — wersja 2
-
-Ta aktualizacja zastępuje poprzedni pierwszy ekran z globem. Hero ma pełnoekranowe tło wideo portu, nawigację na obrazie, nową hierarchię tekstu oraz trzy sekwencje przykładowych podpowiedzi agenta: opady, transport i zapas. Każda pokazuje sygnał, możliwy wpływ i sugestię działania. Komunikaty są autorskimi przykładami na fikcyjnych danych, bez połączenia z modelem AI ani systemami firmy; opis jest widoczny w hero. Główny przycisk prowadzi do demo z zachowaniem języka, drugi do modelu regionu.
-
-`cinematic.js` odsłania komunikaty co 2,4 s i zmienia przykład co 16 s. Wspólna pauza zatrzymuje film i zegar sekwencji; wybór innego przykładu podczas pauzy pokazuje jego komplet komunikatów. Stan przykładu i pauzy zachowuje się po zmianie języka. Ruch jest wstrzymywany poza widokiem i w ukrytej karcie. Reduced-motion wyłącza automatyczne odtwarzanie i pokazuje komplet wybranego przykładu. Save-data również zaczyna od statycznego widoku. Przy braku możliwości odtworzenia wideo pozostaje poster.
-
-Usunięto powtórzenie filmu pod hero oraz inicjalizację, teksturę i sterowanie globu z `app.js`. Model regionu zachowuje własny renderer i interakcje. Zastąpiono przestarzałe ustawienie PCFSoftShadowMap przez dostępny PCFShadowMap.
-
-Weryfikacja w przeglądarce: PL/EN/DE, desktop 1440 × 900, telefon 390 × 844 oraz rzeczywista szerokość podglądu 878 px. Brak poziomego przewijania. Potwierdzono etapowe pojawianie się trzech wiadomości i automatyczną zmianę przykładu, zatrzymanie czasu wideo i postępu sekwencji (te same wartości przed i po zmianie języka), ręczny wybór przykładu podczas pauzy, mobilne menu i Escape, przejście do scenariusza, wybór trzeciego kroku i akcji zapasu w modelu 3D. Konsola bieżącej wersji bez błędów. Kontrola HTML: jedno wideo, brak starego hosta globu, brak powtórzonych ID i brakujących plików. Sprawdzenie składni trzech zmienionych skryptów przechodzi. Reduced-motion i save-data sprawdzono w kodzie, bez zmiany ustawień systemowych. Kadry finalnego hero: `review/agent-hero-desktop.jpg`, `review/agent-hero-mobile.jpg`.
-
-Aktualna paczka FTP `orbitops-lp-wow.zip` i katalog `orbitops-ftp/` zawierają tę wersję. Lokalne `server.py` wyłącza pamięć podręczną. Nie wykonano publikacji na hostingu.
-
-
-## Spójność wizualna
-
-`daylight.css` ładuje się ostatni i definiuje tokeny (kolory, rytm sekcji `--sec-y`, promienie, cień kart) oraz jedną skalę nagłówków i etykiet. Zmiany wyglądu sekcji rób tam, nie w starszych arkuszach.
+Teksty strony głównej podmieniono na podstawie dostarczonego `copywriting.md`, wraz z opisami wyzwania, etapów przykładu, zastosowań, zespołu i kontaktu. Nowe treści mają odpowiedniki EN/DE. Oznaczenia rozróżniają dane demonstracyjne, źródła i etap rozwoju produktu. Dłuższe akcje nawigacji zawijają się na małych ekranach.
