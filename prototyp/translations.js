@@ -1635,3 +1635,575 @@ Object.assign(window.OrbitTranslations, {
 });
 
 Object.assign(window.OrbitTranslations, {"© 2026 OrbitOps · Wersja koncepcyjna": ["© 2026 OrbitOps · Concept version", "© 2026 OrbitOps · Konzeptversion"]});
+
+
+/* 2026-11-11: broader product message within the original design. */
+Object.assign(window.OrbitTranslations, {
+  "DANE I AI DLA MAŁYCH I ŚREDNICH FIRM": [
+    "DATA AND AI FOR SMALL AND MEDIUM-SIZED BUSINESSES",
+    "DATEN UND KI FÜR KLEINE UND MITTLERE UNTERNEHMEN"
+  ],
+  "Twoje dane.": [
+    "Your data.",
+    "Ihre Daten."
+  ],
+  "Lepsze decyzje.": [
+    "Better decisions.",
+    "Besser entscheiden."
+  ],
+  "Zaawansowana analityka.": [
+    "Advanced analytics.",
+    "Moderne Analytik."
+  ],
+  "Dostępna dla MŚP.": [
+    "Within reach for SMEs.",
+    "Zugänglich für KMU."
+  ],
+  "Rozwijamy OrbitOps, aby małe i średnie firmy mogły korzystać z danych, AI i analityki bez budowania własnego działu analiz. Nasz cel: połączyć informacje o Twojej firmie z sygnałami ze świata i przełożyć je na zrozumiałe decyzje biznesowe.": [
+    "We are building OrbitOps to make data, AI and analytics accessible to small and medium-sized businesses without building their own analytics department. Our goal: connect your business information with signals from the world and translate them into clear business decisions.",
+    "Wir entwickeln OrbitOps, um kleinen und mittleren Unternehmen Daten, KI und Analytik ohne eigene Analyseabteilung zugänglich zu machen. Unser Ziel: Unternehmensinformationen mit Signalen aus der Welt verbinden und in verständliche Geschäftsentscheidungen übersetzen."
+  ],
+  "Połącz rozproszone dane": [
+    "Connect scattered data",
+    "Verstreute Daten verbinden"
+  ],
+  "Zrozum wpływ na firmę": [
+    "Understand business impact",
+    "Auswirkungen verstehen"
+  ],
+  "Wybierz następny krok": [
+    "Choose your next step",
+    "Den nächsten Schritt wählen"
+  ],
+  "Twoja firma ma dane. Warto zobaczyć je razem.": [
+    "Your business has data. See how it connects.",
+    "Ihr Unternehmen hat Daten. Verbinden Sie sie."
+  ],
+  "Zapasy w Excelu, zamówienia w systemie, terminy dostaw w mailach. Do tego pogoda, transport i zmiany cen surowców. Gdy te informacje pozostają osobno, trudno zobaczyć ich znaczenie dla firmy. OrbitOps ma pomagać je łączyć — to praktyczny pierwszy krok w cyfryzacji.": [
+    "Stock in spreadsheets, orders in a system, delivery dates in emails. Add weather, transport and material price changes. When this information stays separate, its business meaning is hard to see. OrbitOps aims to connect it — a practical first step in digitalisation.",
+    "Bestände in Excel, Aufträge im System, Liefertermine in E-Mails. Dazu Wetter, Transport und Rohstoffpreise. Getrennt ist ihre Bedeutung für das Unternehmen schwer zu erkennen. OrbitOps soll diese Informationen verbinden — als praktischen ersten Schritt der Digitalisierung."
+  ],
+  "Zobacz przykład decyzji": [
+    "Explore a decision example",
+    "Ein Entscheidungsbeispiel ansehen"
+  ],
+  "Ryzyko dostawy to pierwszy przykład wykorzystania połączonych danych. Zobacz, jak sygnał z otoczenia zyskuje znaczenie dopiero obok informacji o dostawcy, zapasie i produkcji.": [
+    "Supply risk is a first example of connected data in use. See how an external signal becomes meaningful alongside information about a supplier, stock and production.",
+    "Ein Lieferrisiko ist ein erstes Beispiel für den Nutzen verbundener Daten. Sehen Sie, wie ein externes Signal zusammen mit Lieferanten-, Bestands- und Produktionsdaten Bedeutung gewinnt."
+  ],
+  "Twój tłumacz danych.": [
+    "Your data translator.",
+    "Ihr Datenübersetzer."
+  ],
+  "Od informacji do działania.": [
+    "From information to action.",
+    "Von Information zu Handlung."
+  ],
+  "OrbitOps rozwijamy jako tłumacza danych: informacje o zamówieniach, zapasach i dostawcach mają łączyć się z pogodą, transportem i obserwacjami satelitarnymi. AI ma pomagać wyjaśniać ich znaczenie i proponować następne kroki. W demo pokazujemy tę logikę na przykładowych danych.": [
+    "We are developing OrbitOps as a data translator: orders, stock and supplier information connected with weather, transport and satellite observations. AI is intended to explain their meaning and suggest next steps. The demo illustrates this logic using sample data.",
+    "Wir entwickeln OrbitOps als Datenübersetzer: Aufträge, Bestände und Lieferanteninformationen sollen mit Wetter, Transport und Satellitenbeobachtungen verbunden werden. KI soll ihre Bedeutung erklären und nächste Schritte vorschlagen. Die Demo veranschaulicht diese Logik mit Beispieldaten."
+  ],
+  "Satelity pokazują teren, prognozy opisują możliwe zmiany, a dane Twojej firmy nadają im kontekst. Zestawienie tych perspektyw pomaga odróżnić informację od wniosku i wskazać, co wymaga sprawdzenia.": [
+    "Satellites show the ground, forecasts describe possible changes, and your business data provides context. Combining these perspectives helps separate information from inference and identify what needs checking.",
+    "Satelliten zeigen das Gelände, Prognosen beschreiben mögliche Veränderungen und Ihre Unternehmensdaten liefern den Kontext. Diese Perspektiven helfen, Informationen von Schlussfolgerungen zu unterscheiden und den Prüfbedarf zu erkennen."
+  ],
+  "Dla firm, które chcą lepiej wykorzystywać swoje dane.": [
+    "For businesses that want to make better use of their data.",
+    "Für Unternehmen, die ihre Daten besser nutzen möchten."
+  ],
+  "Zaczynamy od potrzeb małych i średnich firm produkcyjnych — od opakowań i tworzyw, przez metale, po drewno i meble. Wspólny cel: lepiej rozumieć dostępność materiałów, zależności od dostawców i wpływ zmian na własne plany.": [
+    "We start with the needs of small and medium-sized manufacturers — from packaging and plastics to metals, wood and furniture. The shared goal: understand material availability, supplier dependencies and how changes affect their plans.",
+    "Wir beginnen bei den Bedürfnissen kleiner und mittlerer Fertigungsunternehmen — von Verpackungen und Kunststoffen über Metalle bis zu Holz und Möbeln. Das gemeinsame Ziel: Materialverfügbarkeit, Lieferantenabhängigkeiten und Auswirkungen auf eigene Pläne besser verstehen."
+  ],
+  "Połącz prognozę dla dostawcy z terminem dostawy i zapasem w swojej firmie.": [
+    "Connect the supplier’s weather forecast with your delivery date and available stock.",
+    "Verbinden Sie die Wetterprognose am Lieferantenstandort mit Liefertermin und eigenem Bestand."
+  ],
+  "Zestaw dostępność surowca, zużycie i plan produkcji, aby wcześniej dostrzec możliwy niedobór.": [
+    "Bring material availability, consumption and production plans together to spot potential shortages earlier.",
+    "Verknüpfen Sie Materialverfügbarkeit, Verbrauch und Produktionsplan, um mögliche Engpässe früher zu erkennen."
+  ],
+  "Sprawdź, które zdarzenia na trasie mogą wpłynąć na Twoje zamówienia i zobowiązania wobec klientów.": [
+    "Identify which events along a route could affect your orders and commitments to customers.",
+    "Erkennen Sie, welche Ereignisse entlang einer Route Ihre Aufträge und Kundenzusagen betreffen könnten."
+  ],
+  "Powiąż zmiany wokół zakładów i dostawców z procesami, które są ważne dla Twojej firmy.": [
+    "Connect changes around facilities and suppliers with the processes that matter to your business.",
+    "Verknüpfen Sie Veränderungen rund um Standorte und Lieferanten mit wichtigen Unternehmensprozessen."
+  ],
+  "Połącz informacje.": [
+    "Connect information.",
+    "Informationen verbinden."
+  ],
+  "Zacznij od mapy zależności: wybierz sygnał, sprawdź dostawcę i możliwe działanie. W pełnym demo zobaczysz także zapasy, porównanie wariantów i zapis propozycji decyzji — krok od rozproszonych danych do wspólnego obrazu firmy.": [
+    "Start with the dependency map: choose a signal, check the supplier and consider an action. The full demo also shows stock, compares options and records decision proposals — a step from scattered data to a connected business view.",
+    "Beginnen Sie mit der Abhängigkeitskarte: Wählen Sie ein Signal, prüfen Sie den Lieferanten und eine mögliche Maßnahme. Die vollständige Demo zeigt auch Bestände, vergleicht Optionen und speichert Entscheidungsvorschläge — ein Schritt von verstreuten Daten zum gemeinsamen Unternehmensbild."
+  ],
+  "MISJA I KIERUNEK": [
+    "MISSION AND DIRECTION",
+    "MISSION UND AUSRICHTUNG"
+  ],
+  "Zaawansowana analityka także dla mniejszych firm.": [
+    "Advanced analytics for smaller businesses, too.",
+    "Moderne Analytik auch für kleinere Unternehmen."
+  ],
+  "Naszą misją jest demokratyzacja danych: ułatwienie mniejszym firmom dostępu do analityki, AI i wiedzy, które pomagają podejmować lepsze decyzje. Cyfryzacja może zacząć się od połączenia informacji, które firma już ma.": [
+    "Our mission is data democratisation: giving smaller businesses easier access to analytics, AI and insights that support better decisions. Digitalisation can start by connecting the information a business already has.",
+    "Unsere Mission ist die Demokratisierung von Daten: kleineren Unternehmen den Zugang zu Analytik, KI und Erkenntnissen für bessere Entscheidungen erleichtern. Digitalisierung kann damit beginnen, bereits vorhandene Informationen zu verbinden."
+  ],
+  "Zobaczmy, co mogą powiedzieć Twoje dane.": [
+    "Let’s explore what your data can tell you.",
+    "Entdecken wir, was Ihre Daten zeigen können."
+  ],
+  "Opowiedz nam o swojej firmie i informacjach, które trudno dziś ze sobą połączyć. Wspólnie sprawdzimy, jak OrbitOps mógłby pomóc lepiej rozumieć zapasy, dostawców, zamówienia i sygnały z otoczenia.": [
+    "Tell us about your business and the information that is difficult to connect today. Together, we can explore how OrbitOps could help you understand stock, suppliers, orders and external signals.",
+    "Erzählen Sie uns von Ihrem Unternehmen und den Informationen, die sich heute schwer verbinden lassen. Gemeinsam prüfen wir, wie OrbitOps helfen könnte, Bestände, Lieferanten, Aufträge und externe Signale besser zu verstehen."
+  ],
+  "Co chcesz lepiej zrozumieć?": [
+    "What would you like to understand better?",
+    "Was möchten Sie besser verstehen?"
+  ],
+  "Jakie dane lub proces chcesz lepiej zrozumieć?": [
+    "Which data or process would you like to understand better?",
+    "Welche Daten oder welchen Prozess möchten Sie besser verstehen?"
+  ],
+  "Np. zapasy w Excelu, terminy w mailach i brak wspólnego obrazu dostaw.": [
+    "For example: stock in spreadsheets, dates in emails and no shared view of deliveries.",
+    "Zum Beispiel: Bestände in Excel, Termine in E-Mails und kein gemeinsamer Überblick über Lieferungen."
+  ],
+  "Zobacz demo": [
+    "Explore the demo",
+    "Demo ansehen"
+  ]
+});
+
+Object.assign(window.OrbitTranslations, {
+  "Zobacz, jak połączenie danych o zapasach, dostawcach i transporcie pomaga zrozumieć sytuację firmy i porównać możliwe decyzje.": [
+    "See how combining stock, supplier and transport data helps you understand the business situation and compare possible decisions.",
+    "Sehen Sie, wie die Verbindung von Bestands-, Lieferanten- und Transportdaten hilft, die Unternehmenslage zu verstehen und mögliche Entscheidungen zu vergleichen."
+  ],
+  "OrbitOps — dane, AI i cyfryzacja dla MŚP": [
+    "OrbitOps — data, AI and digitalisation for SMEs",
+    "OrbitOps — Daten, KI und Digitalisierung für KMU"
+  ],
+  "Rozwijamy OrbitOps, aby udostępniać dane, AI i analitykę małym i średnim firmom. Łącz informacje o zapasach, dostawcach i otoczeniu w lepsze decyzje biznesowe.": [
+    "We are developing OrbitOps to make data, AI and analytics accessible to SMEs. Connect stock, supplier and external information for better business decisions.",
+    "Wir entwickeln OrbitOps, um KMU Zugang zu Daten, KI und Analytik zu ermöglichen. Verbinden Sie Bestands-, Lieferanten- und Umfelddaten für bessere Entscheidungen."
+  ]
+});
+
+// Homepage: accessible analytics, digitalisation and business resilience.
+Object.assign(window.OrbitTranslations, {
+  "CYFRYZACJA I ANALITYKA DLA MŚP": [
+    "DIGITALISATION AND ANALYTICS FOR SMEs",
+    "DIGITALISIERUNG UND ANALYTIK FÜR KMU"
+  ],
+  "Złożone dane.": [
+    "Complex data.",
+    "Komplexe Daten."
+  ],
+  "Jasne wnioski.": [
+    "Clear insights.",
+    "Klare Erkenntnisse."
+  ],
+  "Analityka i AI w zasięgu Twojej firmy.": [
+    "Analytics and AI within your reach.",
+    "Analytik und KI für Ihr Unternehmen."
+  ],
+  "Zaawansowana analityka, AI i wiedza z satelitów — bez własnego zespołu analityków i budżetu korporacji. Rozwijamy OrbitOps, by łączyć rozproszone dane w jednym miejscu i przekładać je na jasne wnioski, wczesne ostrzeżenia i konkretne działania.": [
+    "Advanced analytics, AI and satellite intelligence — without an in-house analyst team or an enterprise budget. We are building OrbitOps to bring scattered data into one place and turn it into clear insights, early warnings and practical next steps.",
+    "Fortschrittliche Analytik, KI und Satelliteninformationen — ohne eigenes Analyseteam oder Konzernbudget. Wir entwickeln OrbitOps, um verstreute Daten an einem Ort zu bündeln und in klare Erkenntnisse, Frühwarnungen und konkrete Handlungsvorschläge zu übersetzen."
+  ],
+  "Dostępna analityka": [
+    "Accessible analytics",
+    "Zugängliche Analytik"
+  ],
+  "Prostsza cyfryzacja": [
+    "Simpler digitalisation",
+    "Einfacher digitalisieren"
+  ],
+  "Większa przewidywalność": [
+    "Greater predictability",
+    "Mehr Planbarkeit"
+  ],
+  "Cyfryzacja zaczyna się od danych, które już masz.": [
+    "Digitalisation starts with the data you already have.",
+    "Digitalisierung beginnt mit den Daten, die Sie schon haben."
+  ],
+  "Zapasy w Excelu, zamówienia w systemie, terminy w mailach. Pierwszy krok to połączyć te informacje w jednym, zrozumiałym środowisku. Kolejny — zestawić je z sygnałami ze świata: pogodą, transportem czy zmianami w otoczeniu dostawców. Tak budujemy podstawę do codziennej pracy z danymi, także w firmach, które dopiero zaczynają cyfryzację.": [
+    "Stock in spreadsheets, orders in software, delivery dates in emails. The first step is to connect this information in one easy-to-use environment. Next, add signals from outside your business: weather, transport and changes around suppliers. This creates a foundation for working with data every day, including for businesses just starting to digitalise.",
+    "Bestände in Excel, Aufträge im System, Termine in E-Mails. Der erste Schritt: diese Informationen in einer verständlichen Umgebung zusammenführen. Danach kommen externe Signale hinzu — Wetter, Transport oder Veränderungen im Umfeld der Lieferanten. So entsteht die Grundlage für die tägliche Arbeit mit Daten, auch für Unternehmen am Anfang ihrer Digitalisierung."
+  ],
+  "Dostrzeż ryzyko wcześniej. Zyskaj czas na reakcję.": [
+    "Spot risks earlier. Gain time to respond.",
+    "Risiken früher erkennen. Zeit zum Handeln gewinnen."
+  ],
+  "Prognoza intensywnych opadów to dopiero sygnał. W połączeniu z terminem dostawy, poziomem zapasu i planem produkcji pomaga odpowiedzieć: co może się opóźnić, jak wpłynie to na firmę i co warto zrobić? To przykład, jak zrozumiałe dane wspierają odporność biznesu i bardziej przewidywalne planowanie.": [
+    "A heavy-rain forecast is just a signal. Combined with a delivery date, stock levels and a production plan, it helps answer: what could be delayed, how would it affect the business, and what should we do? This is how understandable data can support business resilience and more predictable planning.",
+    "Eine Starkregenprognose ist zunächst ein Signal. Zusammen mit Liefertermin, Beständen und Produktionsplan hilft sie zu beantworten: Was könnte sich verzögern, wie betrifft es das Unternehmen und was ist zu tun? So unterstützen verständliche Daten die Widerstandsfähigkeit des Unternehmens und eine verlässlichere Planung."
+  ],
+  "Zrozumiała na co dzień.": [
+    "Clear enough for everyday decisions.",
+    "Verständlich im Arbeitsalltag."
+  ],
+  "Zaawansowana analityka.": [
+    "Advanced analytics.",
+    "Fortschrittliche Analytik."
+  ],
+  "Dostęp do AI i danych satelitarnych nie powinien wymagać działu analiz. OrbitOps rozwijamy jako tłumacza między złożonymi danymi a codziennymi potrzebami firmy. Cel: wyjaśnić, co się zmienia, dlaczego ma znaczenie i jakie działania warto rozważyć. W demo pokazujemy tę logikę na przykładowych danych.": [
+    "Access to AI and satellite data should not require an analytics department. We are developing OrbitOps to translate complex data into answers to everyday business questions: what is changing, why does it matter, and which actions are worth considering? The demo illustrates this approach using sample data.",
+    "Der Zugang zu KI und Satellitendaten sollte keine eigene Analyseabteilung voraussetzen. Wir entwickeln OrbitOps, um komplexe Daten in Antworten auf alltägliche Unternehmensfragen zu übersetzen: Was verändert sich, warum ist es wichtig und welche Maßnahmen kommen infrage? Die Demo zeigt diesen Ansatz anhand von Beispieldaten."
+  ],
+  "Mniejsza firma. Pełniejszy obraz. Pewniejsze decyzje.": [
+    "Smaller business. Clearer picture. More confident decisions.",
+    "Kleineres Unternehmen. Klareres Bild. Fundiertere Entscheidungen."
+  ],
+  "Projektujemy OrbitOps dla MŚP, które chcą podejmować decyzje na podstawie danych, ale nie mają własnego zespołu analityków ani budżetu na rozbudowane systemy korporacyjne. Zaczynamy od firm produkcyjnych: opakowań, tworzyw, metali, drewna i mebli. Pokazujemy, jak dane mogą pomóc chronić ciągłość pracy i lepiej planować.": [
+    "We are designing OrbitOps for SMEs that want to make decisions using data but do not have a dedicated analyst team or a budget for enterprise systems. We start with manufacturers in packaging, plastics, metals, wood and furniture, showing how data can help protect business continuity and improve planning.",
+    "Wir entwickeln OrbitOps für KMU, die datenbasiert entscheiden möchten, aber weder ein eigenes Analyseteam noch das Budget für umfangreiche Unternehmenssysteme haben. Wir beginnen mit Herstellern von Verpackungen, Kunststoffen, Metallen, Holz und Möbeln und zeigen, wie Daten helfen können, den Betrieb abzusichern und besser zu planen."
+  ],
+  "Jeden obraz firmy.": [
+    "One view of your business.",
+    "Ein Gesamtbild Ihres Unternehmens."
+  ],
+  "Jaśniejszy plan działania.": [
+    "A clearer plan of action.",
+    "Ein klarerer Handlungsplan."
+  ],
+  "Zobacz na przykładzie dostaw, jak rozproszone informacje mogą stać się wspólnym obrazem sytuacji. Wybierz sygnał, poznaj jego możliwy wpływ i sprawdź proponowane działania. Pełne demo pozwala też porównać warianty decyzji oraz powiązać je z zapasami i potrzebami produkcji.": [
+    "See how scattered information can become a shared view of your business through a supply-chain example. Select a signal, understand its potential impact and explore suggested actions. The full demo also lets you compare decision options and connect them with stock levels and production needs.",
+    "Sehen Sie am Beispiel einer Lieferkette, wie verstreute Informationen zu einem gemeinsamen Lagebild werden können. Wählen Sie ein Signal, verstehen Sie mögliche Auswirkungen und prüfen Sie Handlungsvorschläge. In der vollständigen Demo vergleichen Sie zudem Entscheidungsoptionen im Zusammenhang mit Beständen und Produktionsbedarf."
+  ],
+  "Dostęp do danych nie powinien zależeć od wielkości firmy.": [
+    "Access to data should not depend on company size.",
+    "Der Zugang zu Daten sollte nicht von der Unternehmensgröße abhängen."
+  ],
+  "Demokratyzujemy dostęp do analityki, AI i wiedzy satelitarnej. Pomagamy tradycyjnym firmom wejść w cyfrowy sposób pracy, zaczynając od informacji, które już mają. Łączymy te dwa kierunki w jednym celu: aby małe i średnie firmy mogły lepiej rozumieć swoją sytuację, wcześniej dostrzegać zagrożenia i pewniej planować przyszłość.": [
+    "Our mission is to democratise access to analytics, AI and satellite intelligence. We help traditional businesses move towards digital ways of working, starting with information they already have. These two paths serve one goal: helping SMEs understand their situation, spot risks earlier and plan ahead with greater confidence.",
+    "Unsere Mission ist die Demokratisierung des Zugangs zu Analytik, KI und Satelliteninformationen. Wir helfen traditionellen Unternehmen beim Einstieg in digitale Arbeitsweisen — mit den Informationen, die sie bereits haben. Beides dient einem Ziel: KMU sollen ihre Lage besser verstehen, Risiken früher erkennen und zuversichtlicher planen können."
+  ],
+  "Pierwszy krok do cyfrowej firmy? Zacznijmy od rozmowy.": [
+    "Your first step towards a digital business? Let’s talk.",
+    "Der erste Schritt zum digitalen Unternehmen? Sprechen wir darüber."
+  ],
+  "Nie musisz mieć uporządkowanej bazy danych ani gotowego planu cyfryzacji. Opowiedz nam, jak dziś pracujesz, gdzie przechowujesz informacje i które decyzje są najtrudniejsze. Wspólnie sprawdzimy, od czego warto zacząć i jak OrbitOps mógłby wesprzeć Twoją firmę.": [
+    "You do not need a perfectly organised database or a finished digitalisation plan. Tell us how you work today, where your information lives and which decisions are hardest. Together, we can explore where to start and how OrbitOps could support your business.",
+    "Sie brauchen weder eine perfekt organisierte Datenbank noch einen fertigen Digitalisierungsplan. Erzählen Sie uns, wie Sie heute arbeiten, wo Ihre Informationen liegen und welche Entscheidungen am schwierigsten sind. Gemeinsam prüfen wir, wo ein sinnvoller Einstieg liegt und wie OrbitOps Ihr Unternehmen unterstützen könnte."
+  ],
+  "Cyfryzacja i analityka dostępna dla MŚP. Rozwijamy OrbitOps, by łączyć dane firmy, AI i wiedzę satelitarną w jasne wnioski, wczesne ostrzeżenia i lepsze planowanie.": [
+    "Digitalisation and analytics within reach of SMEs. We are building OrbitOps to connect business data, AI and satellite intelligence for clear insights, early warnings and better planning.",
+    "Digitalisierung und Analytik für KMU. Wir entwickeln OrbitOps, um Unternehmensdaten, KI und Satelliteninformationen für klare Erkenntnisse, Frühwarnungen und bessere Planung zu verbinden."
+  ]
+});
+
+// Data access, mission and digitalisation sections.
+Object.assign(window.OrbitTranslations, {
+  "Podstawowa cyfryzacja": [
+    "Basic digitalisation",
+    "Grundlegende Digitalisierung"
+  ],
+  "MŚP o co najmniej podstawowej intensywności cyfrowej": [
+    "SMEs with at least basic digital intensity",
+    "KMU mit mindestens grundlegender digitaler Intensität"
+  ],
+  "Analityka danych": [
+    "Data analytics",
+    "Datenanalytik"
+  ],
+  "Przedsiębiorstwa korzystające z analityki danych": [
+    "Enterprises using data analytics",
+    "Unternehmen mit Datenanalytik"
+  ],
+  "Sztuczna inteligencja": [
+    "Artificial intelligence",
+    "Künstliche Intelligenz"
+  ],
+  "Przedsiębiorstwa korzystające z AI": [
+    "Enterprises using AI",
+    "Unternehmen mit KI"
+  ],
+  "59%": [
+    "59%",
+    "59%"
+  ],
+  "71,4%": [
+    "71.4%",
+    "71,4%"
+  ],
+  "24,5%": [
+    "24.5%",
+    "24,5%"
+  ],
+  "39,9%": [
+    "39.9%",
+    "39,9%"
+  ],
+  "8,4%": [
+    "8.4%",
+    "8,4%"
+  ],
+  "20%": [
+    "20%",
+    "20%"
+  ],
+  "DOSTĘP DO DANYCH. RÓWNE SZANSE.": [
+    "ACCESS TO DATA. EQUAL OPPORTUNITIES.",
+    "ZUGANG ZU DATEN. GLEICHE CHANCEN."
+  ],
+  "Zaawansowana analityka nie powinna być przywilejem dużych firm.": [
+    "Advanced data intelligence shouldn’t be a privilege of large companies.",
+    "Fortschrittliche Datenanalytik sollte kein Privileg großer Unternehmen sein."
+  ],
+  "Duże firmy inwestują w zespoły analityków, AI i dane satelitarne. W wielu MŚP informacje nadal krążą między Excelem, telefonem i skrzynką mailową.": [
+    "Large companies invest in analyst teams, AI and satellite intelligence. Many SMEs still move information between spreadsheets, phone calls and email.",
+    "Große Unternehmen investieren in Analyseteams, KI und Satellitendaten. In vielen KMU verteilen sich Informationen noch auf Excel, Telefonate und E-Mails."
+  ],
+  "Dane są. Brakuje narzędzi, czasu i kompetencji, by z nich korzystać. Cyfryzacja wydaje się kosztowna i skomplikowana, a przewaga większych firm rośnie.": [
+    "The data exists. The tools, time and expertise to use it are often missing. Digitalisation feels costly and complex, widening the competitive gap.",
+    "Die Daten sind vorhanden. Oft fehlen Werkzeuge, Zeit und Fachwissen, um sie zu nutzen. Digitalisierung wirkt teuer und komplex — der Wettbewerbsvorsprung größerer Firmen wächst."
+  ],
+  "Dlatego tworzymy OrbitOps": [
+    "That’s why we’re building OrbitOps",
+    "Deshalb entwickeln wir OrbitOps"
+  ],
+  "POLSKA NA TLE UE": [
+    "POLAND COMPARED WITH THE EU",
+    "POLEN IM EU-VERGLEICH"
+  ],
+  "Cyfryzacja firm w liczbach": [
+    "Business digitalisation in numbers",
+    "Digitalisierung der Unternehmen in Zahlen"
+  ],
+  "Dane za 2025 rok": [
+    "2025 data",
+    "Daten für 2025"
+  ],
+  "Wskaźnik": [
+    "Indicator",
+    "Indikator"
+  ],
+  "Polska": [
+    "Poland",
+    "Polen"
+  ],
+  "UE": [
+    "EU",
+    "EU"
+  ],
+  "Źródło: Komisja Europejska,": [
+    "Source: European Commission,",
+    "Quelle: Europäische Kommission,"
+  ],
+  "Zakres danych i data weryfikacji": [
+    "Data coverage and verification date",
+    "Datenumfang und Prüfdatum"
+  ],
+  "Rok odniesienia: 2025. Pierwszy wskaźnik dotyczy MŚP (10–249 pracujących); analityka i AI — przedsiębiorstw zatrudniających co najmniej 10 osób, w sektorach objętych badaniem. Porównanie Polski i UE, nie małych i dużych firm. Weryfikacja: 11.11.2026.": [
+    "Reference year: 2025. The first indicator covers SMEs (10–249 persons employed); analytics and AI cover enterprises with at least 10 persons employed in the surveyed sectors. This compares Poland with the EU, not small with large companies. Verified: 11 November 2026.",
+    "Bezugsjahr: 2025. Der erste Indikator betrifft KMU (10–249 Beschäftigte); Analytik und KI betreffen Unternehmen ab 10 Beschäftigten in den untersuchten Branchen. Vergleich zwischen Polen und EU, nicht zwischen kleinen und großen Firmen. Geprüft: 11.11.2026."
+  ],
+  "Pliki Excel": [
+    "Excel files",
+    "Excel-Dateien"
+  ],
+  "Telefony": [
+    "Phone calls",
+    "Telefonate"
+  ],
+  "Zagubione maile": [
+    "Lost emails",
+    "Verlorene E-Mails"
+  ],
+  "Ręczne notatki": [
+    "Manual notes",
+    "Handschriftliche Notizen"
+  ],
+  "Alerty ryzyka": [
+    "Risk alerts",
+    "Risikowarnungen"
+  ],
+  "Zapasy": [
+    "Stock",
+    "Bestände"
+  ],
+  "Dostawcy": [
+    "Suppliers",
+    "Lieferanten"
+  ],
+  "Klienci": [
+    "Customers",
+    "Kunden"
+  ],
+  "NASZA MISJA": [
+    "OUR MISSION",
+    "UNSERE MISSION"
+  ],
+  "Nie brakuje nam danych.": [
+    "We are not short of data.",
+    "Uns fehlen nicht die Daten."
+  ],
+  "Brakuje sposobów, by z nich korzystać.": [
+    "We are short of ways to use it.",
+    "Uns fehlen Wege, sie zu nutzen."
+  ],
+  "Demokratyzujemy dostęp do danych i dajemy firmom narzędzia, by lepiej je rozumieć. Analityka, AI i wiedza satelitarna powinny wspierać każdą firmę — w codziennych decyzjach, sprawniejszej pracy i budowaniu odporności.": [
+    "Our mission is to democratise access to data and give businesses the tools to understand it. Analytics, AI and satellite intelligence should help every business make informed decisions, improve operations and become more resilient.",
+    "Unsere Mission ist es, den Zugang zu Daten zu demokratisieren und Unternehmen Werkzeuge zu geben, um sie besser zu verstehen. Analytik, KI und Satelliteninformationen sollen jedes Unternehmen bei Entscheidungen, effizienteren Abläufen und mehr Widerstandsfähigkeit unterstützen."
+  ],
+  "DZIŚ W WIELU MŚP": [
+    "TODAY IN MANY SMEs",
+    "HEUTE IN VIELEN KMU"
+  ],
+  "Informacje osobno.": [
+    "Disconnected information.",
+    "Getrennte Informationen."
+  ],
+  "Ręczne raporty. Niepełny obraz.": [
+    "Manual reports. An incomplete picture.",
+    "Manuelle Berichte. Ein unvollständiges Bild."
+  ],
+  "Z ORBITOPS · NASZ KIERUNEK": [
+    "WITH ORBITOPS · OUR VISION",
+    "MIT ORBITOPS · UNSER ZIEL"
+  ],
+  "Informacje połączone.": [
+    "Connected intelligence.",
+    "Vernetzte Informationen."
+  ],
+  "Jeden obraz firmy · wyjaśniony przez AI": [
+    "One business view · explained by AI",
+    "Ein Unternehmensbild · von KI erklärt"
+  ],
+  "Zrozumiałe wnioski. Wcześniejsze ostrzeżenia. Konkretne działania.": [
+    "Clear insights. Early warnings. Actionable recommendations.",
+    "Klare Erkenntnisse. Frühwarnungen. Konkrete Handlungsvorschläge."
+  ],
+  "Od rozproszonych informacji do danych, z których możesz korzystać.": [
+    "From fragmented information to data you can act on.",
+    "Von verstreuten Informationen zu Daten, mit denen Sie handeln können."
+  ],
+  "Zaczynamy od ryzyka, ale patrzymy na całą firmę. Rozwijamy OrbitOps, by porządkować dane o zapasach, dostawcach, klientach i zamówieniach, łączyć je z sygnałami z otoczenia i wyjaśniać ich znaczenie za pomocą AI. To pierwszy krok do codziennej pracy z danymi.": [
+    "We start with risk and look at the whole business. We are building OrbitOps to organise stock, supplier, customer and order data, connect it with external signals and explain what it means using AI. A first step towards working with data every day.",
+    "Wir beginnen beim Risiko und betrachten das ganze Unternehmen. OrbitOps soll Bestands-, Lieferanten-, Kunden- und Auftragsdaten ordnen, mit externen Signalen verbinden und mithilfe von KI verständlich machen. Ein erster Schritt zur täglichen Arbeit mit Daten."
+  ],
+  "OD PIERWSZEGO KROKU DO CYFROWEJ FIRMY": [
+    "FROM A FIRST STEP TO A DIGITAL BUSINESS",
+    "VOM ERSTEN SCHRITT ZUM DIGITALEN UNTERNEHMEN"
+  ],
+  "Zacznij od ryzyka.": [
+    "Start with risk.",
+    "Beginnen Sie beim Risiko."
+  ],
+  "Rozwijaj cyfrową firmę.": [
+    "Grow into a fully digital company.",
+    "Entwickeln Sie Ihr Unternehmen vollständig digital."
+  ],
+  "Połącz własne dane": [
+    "Connect your business data",
+    "Eigene Daten verbinden"
+  ],
+  "Zrozum ryzyko i możliwości": [
+    "Understand risks and opportunities",
+    "Risiken und Chancen verstehen"
+  ],
+  "Planuj i usprawniaj operacje": [
+    "Plan and improve operations",
+    "Betriebliche Abläufe planen und verbessern"
+  ],
+  "Misja": [
+    "Mission",
+    "Mission"
+  ],
+  "O NAS": [
+    "ABOUT US",
+    "ÜBER UNS"
+  ],
+  "Technologia blisko codziennych potrzeb firmy.": [
+    "Technology built around everyday business needs.",
+    "Technologie für den Unternehmensalltag."
+  ],
+  "Budujemy OrbitOps z myślą o osobach, które prowadzą firmę i potrzebują jasnych odpowiedzi. Łączymy perspektywę biznesową z analityką i technologiami kosmicznymi.": [
+    "We are building OrbitOps for people who run businesses and need clear answers. We bring business understanding together with analytics and space technologies.",
+    "Wir entwickeln OrbitOps für Menschen, die Unternehmen führen und klare Antworten brauchen. Dafür verbinden wir betriebswirtschaftliches Verständnis mit Analytik und Raumfahrttechnologien."
+  ]
+});
+
+// Initial target customers: medium-sized manufacturers.
+Object.assign(window.OrbitTranslations, {
+  "Tworzywa i opakowania": [
+    "Plastics and packaging",
+    "Kunststoffe und Verpackungen"
+  ],
+  "Surowce i import. Dostępność zapasów. Ciągłość produkcji.": [
+    "Raw materials and imports. Stock availability. Production continuity.",
+    "Rohstoffe und Importe. Verfügbare Bestände. Kontinuierliche Produktion."
+  ],
+  "Powiąż terminy dostaw z zapasem, zanim zabraknie materiału na produkcję.": [
+    "Connect delivery dates with stock levels before production runs short of materials.",
+    "Verbinden Sie Liefertermine mit Beständen, bevor Material für die Produktion fehlt."
+  ],
+  "Metale i produkcja": [
+    "Metals and manufacturing",
+    "Metalle und Fertigung"
+  ],
+  "Ceny materiałów. Zależności od dostawców. Opóźnione dostawy.": [
+    "Material prices. Supplier dependencies. Delayed deliveries.",
+    "Materialpreise. Lieferantenabhängigkeiten. Lieferverzögerungen."
+  ],
+  "Zobacz, które zmiany u dostawców mogą wpłynąć na koszty i realizację zamówień.": [
+    "See which supplier changes could affect costs and order fulfilment.",
+    "Erkennen Sie, welche Veränderungen bei Lieferanten Kosten und Aufträge beeinflussen könnten."
+  ],
+  "Drewno i meble": [
+    "Wood and furniture",
+    "Holz und Möbel"
+  ],
+  "Pozyskiwanie materiałów. Trasy transportu. Dostępność surowca.": [
+    "Material sourcing. Transport routes. Raw material availability.",
+    "Materialbeschaffung. Transportwege. Rohstoffverfügbarkeit."
+  ],
+  "Połącz źródła zaopatrzenia i transport z potrzebami swojego zakładu.": [
+    "Connect sourcing and transport with the needs of your production site.",
+    "Verbinden Sie Beschaffung und Transport mit dem Bedarf Ihres Werks."
+  ],
+  "DLA KOGO TWORZYMY ORBITOPS": [
+    "WHO WE BUILD ORBITOPS FOR",
+    "FÜR WEN WIR ORBITOPS ENTWICKELN"
+  ],
+  "Dla firm, których produkcja zależy od materiałów i pewnych dostaw.": [
+    "Built for businesses that depend on suppliers, materials and reliable deliveries.",
+    "Für Unternehmen, die auf Lieferanten, Materialien und zuverlässige Lieferungen angewiesen sind."
+  ],
+  "Zaczynamy od średnich firm produkcyjnych. To tutaj dostępność surowców, zależności od dostawców i terminy dostaw decydują o codziennej pracy. Udostępniamy im perspektywę analityczną, na którą często brakuje czasu i własnego zespołu.": [
+    "We start with medium-sized manufacturers, where material availability, supplier dependencies and delivery dates shape everyday operations. Our aim is to make analytical insight accessible to teams without the time or dedicated analysts to produce it.",
+    "Wir beginnen mit mittelständischen Fertigungsunternehmen. Materialverfügbarkeit, Lieferantenabhängigkeiten und Liefertermine bestimmen hier den Alltag. Wir wollen analytische Erkenntnisse auch Teams zugänglich machen, denen dafür Zeit und eigene Analysten fehlen."
+  ],
+  "Także w transporcie i logistyce.": [
+    "Also relevant to transport and logistics.",
+    "Auch für Transport und Logistik relevant."
+  ],
+  "Jako dodatkowe zastosowanie: trasy, opóźnienia i niezawodność dostaw.": [
+    "An additional application: routes, delays and delivery reliability.",
+    "Ein weiterer Anwendungsbereich: Routen, Verzögerungen und zuverlässige Lieferungen."
+  ],
+  "Porozmawiajmy o Twojej produkcji": [
+    "Let’s talk about your production",
+    "Sprechen wir über Ihre Produktion"
+  ],
+  "Dla kogo": [
+    "Who it’s for",
+    "Für wen"
+  ],
+  "Co może wpłynąć na Twój plan produkcji?": [
+    "What could affect your production plan?",
+    "Was könnte Ihren Produktionsplan beeinflussen?"
+  ],
+  "Pogoda, surowce i transport mają znaczenie wtedy, gdy łączą się z Twoimi zamówieniami, zapasem i zobowiązaniami wobec klientów. Sprawdź przykłady sygnałów, które warto uwzględnić w planowaniu.": [
+    "Weather, materials and transport matter when connected to your orders, stock and customer commitments. Explore signals worth considering in your planning.",
+    "Wetter, Rohstoffe und Transport werden relevant, wenn sie Ihre Aufträge, Bestände und Kundenzusagen betreffen. Entdecken Sie Signale, die in die Planung einfließen sollten."
+  ],
+  "Inna produkcja": [
+    "Other manufacturing",
+    "Andere Fertigung"
+  ]
+});

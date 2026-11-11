@@ -134,3 +134,14 @@ Z katalogu głównego projektu uruchom `python3 scripts/przygotuj-serwer.py`. Po
 ## Aktualizacja tekstów — 2 listopada 2026
 
 Teksty strony głównej podmieniono na podstawie dostarczonego `copywriting.md`, wraz z opisami wyzwania, etapów przykładu, zastosowań, zespołu i kontaktu. Nowe treści mają odpowiedniki EN/DE. Oznaczenia rozróżniają dane demonstracyjne, źródła i etap rozwoju produktu. Dłuższe akcje nawigacji zawijają się na małych ekranach.
+
+
+## 11 listopada 2026 — poprzedni wygląd, nowy przekaz
+
+Na prośbę użytkownika przywrócono oryginalny układ, style, animowaną Ziemię, model regionu 3D, zdjęcia, mapę zależności, formularz i osobny dashboard FibreFlow. Przeprojektowana wersja z fabryką opakowań znajduje się w `../backups/redesign-20261111/` i nie jest publikowana.
+
+Zmiany bieżącej wersji dotyczą tekstów: dane i AI dostępne dla MŚP, cyfryzacja, misja demokratyzacji danych, tłumacz danych oraz szerszy kontekst biznesowy. W hero drugi istniejący przycisk otwiera pełne demo i zachowuje język. Nowe treści i metadane mają wersje PL/EN/DE. Scenariusze i obliczenia FibreFlow pozostają oryginalne; brak nowych integracji lub automatycznej wysyłki. Statystyki bez pełnych źródeł nie zostały dodane.
+
+Doprecyzowanie przekazu: „Złożone dane. Jasne wnioski.” Strona łączy trzy idee: demokratyzację dostępu do analityki, AI i wiedzy satelitarnej; cyfryzację MŚP przez połączenie rozproszonych informacji; odporność i przewidywalność dzięki zrozumiałym wnioskom, ostrzeżeniom i działaniom. Odświeżono treści sekcji, tłumaczenia i SEO, zwiększono czytelność trzech korzyści pod przyciskami. Wygląd i interakcje zachowane. Podgląd lokalny: http://127.0.0.1:4174/?lang=pl.
+
+Dodano sekcje demokratyzacji danych, misji z porównaniem graficznym oraz odbiorców (średnie firmy produkcyjne). Nowe style są w `mission-style.css`, teksty w PL/EN/DE. Statystyki PL/UE opatrzone rokiem 2025 i linkiem do raportu Komisji Europejskiej Digital Decade 2026; szczegóły w `../state/odswiezenie-przekazu-2026-11-11.md`. Oryginalny wygląd, Ziemia 3D, model regionu i dashboard pozostają zachowane.

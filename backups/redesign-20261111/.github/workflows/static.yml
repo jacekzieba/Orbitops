@@ -1,0 +1,51 @@
+name: Publikacja OrbitOps
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Pobierz projekt
+        uses: actions/checkout@v4
+
+      - name: Przygotuj Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Sprawdź model i przygotuj stronę
+        run: |
+          node --test scripts/review/operations.test.mjs
+          node scripts/build-landing.mjs
+          python3 scripts/przygotuj-serwer.py
+          cp -R DO_WGRANIA _site
+          touch _site/.nojekyll
+
+      - name: Skonfiguruj Pages
+        uses: actions/configure-pages@v5
+
+      - name: Prześlij stronę
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "_site"
+
+      - name: Opublikuj
+        id: deployment
+        uses: actions/deploy-pages@v5

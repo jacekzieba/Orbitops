@@ -6,9 +6,9 @@
     en: ['OrbitOps Demo — FibreFlow supply risk analysis', 'Explore the OrbitOps demo: risk signals, inventory and response options across a supply chain. The FibreFlow scenario uses fictional data.'],
     de: ['OrbitOps Demo — Lieferkettenrisiken bei FibreFlow', 'Entdecken Sie die OrbitOps-Demo: Risikosignale, Bestände und Handlungsoptionen in der Lieferkette. Das FibreFlow-Szenario nutzt fiktive Daten.']
   } : {
-    pl: ['OrbitOps — ryzyko w łańcuchu dostaw i dane satelitarne', 'Rozwijamy platformę łączącą dane satelitarne, pogodowe i firmowe. Poznaj OrbitOps i sprawdź, jak wcześniej dostrzegać ryzyko zakłóceń w łańcuchu dostaw.'],
-    en: ['OrbitOps — supply chain risk and satellite data', 'We are developing a platform combining satellite, weather and business data. Discover OrbitOps and explore earlier awareness of supply chain disruptions.'],
-    de: ['OrbitOps — Lieferkettenrisiken und Satellitendaten', 'Wir entwickeln eine Plattform für Satelliten-, Wetter- und Unternehmensdaten. Entdecken Sie OrbitOps, um Risiken in Lieferketten früher zu erkennen.']
+    pl: ['OrbitOps — dane, AI i cyfryzacja dla MŚP', 'Cyfryzacja i analityka dostępna dla MŚP. Rozwijamy OrbitOps, by łączyć dane firmy, AI i wiedzę satelitarną w jasne wnioski, wczesne ostrzeżenia i lepsze planowanie.'],
+    en: ['OrbitOps — data, AI and digitalisation for SMEs', 'Digitalisation and analytics within reach of SMEs. We are building OrbitOps to connect business data, AI and satellite intelligence for clear insights, early warnings and better planning.'],
+    de: ['OrbitOps — Daten, KI und Digitalisierung für KMU', 'Digitalisierung und Analytik für KMU. Wir entwickeln OrbitOps, um Unternehmensdaten, KI und Satelliteninformationen für klare Erkenntnisse, Frühwarnungen und bessere Planung zu verbinden.']
   };
   function update() {
     const lang = window.OrbitI18n?.language || 'pl';

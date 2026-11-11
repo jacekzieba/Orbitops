@@ -1,0 +1,29 @@
+ORBITOPS — WGRYWANIE STRONY PRZEZ FTP
+Aktualizacja: 11 listopada 2026
+
+1. Otwórz folder DO_WGRANIA w tym katalogu.
+2. W programie FTP otwórz katalog WWW przypisany do domeny orbitops.eu
+   (np. public_html — sprawdź przypisanie w panelu hostingu).
+3. Skopiuj CAŁĄ ZAWARTOŚĆ DO_WGRANIA do katalogu WWW.
+   Zastąp pliki strony o tych samych nazwach i połącz folder assets/.
+   Nie wgrywaj nadrzędnego folderu DO_WGRANIA i nie usuwaj innych plików konta.
+4. Pliki index.html, demo.html, landing*.js/css, operations*.js oraz assets/
+   muszą znajdować się bezpośrednio w katalogu WWW. Nowa wersja nie używa
+   vendor/three ani node_modules. Nie wymaga Node.js ani Pythona na hostingu.
+5. Otwórz https://orbitops.eu/ i odśwież z pominięciem pamięci podręcznej
+   (na Macu Cmd+Shift+R). Sprawdź demo, przełącznik PL/EN/DE i telefon.
+   Dodatkowy widok demonstratora: https://orbitops.eu/demo.html.
+
+ZIP
+OrbitOps-na-serwer.zip zawiera te same pliki bez katalogu nadrzędnego.
+Można rozpakować go w katalogu WWW. Samo przesłanie ZIP nie publikuje strony.
+
+ODTWORZENIE PACZKI PO EDYCJI
+Z katalogu Orbitops:
+node scripts/build-landing.mjs
+node --test scripts/review/operations.test.mjs
+python3 scripts/przygotuj-serwer.py
+
+Polecenia generują lokalną paczkę. Nie przesyłają plików na serwer.
+Publikowane są tylko bieżący landing, demonstrator i wymagane zasoby.
+Kontakt otwiera program pocztowy użytkownika; demo działa na fikcyjnych danych.

@@ -15,7 +15,10 @@ ORBITOPS — WGRYWANIE STRONY PRZEZ FTP
    npm, Pythona ani uruchamianie serwera aplikacji na hostingu.
 5. Otwórz https://orbitops.eu/ i https://orbitops.eu/demo.html.
    Odśwież stronę z pominięciem pamięci podręcznej (na Macu Cmd+Shift+R).
-   Sprawdź nowe logo, globus, zdjęcia i przełącznik języków.
+   Sprawdź globus, demo i przełącznik języków PL/EN/DE. Na stronie głównej
+   powinny być widoczne sekcje demokratyzacji danych, misji z grafiką
+   „Dziś → Z OrbitOps” oraz „Dla kogo” z trzema branżami produkcyjnymi.
+   Wgraj również nowy plik mission-style.css razem z pozostałymi plikami.
 
 UKŁAD DOCELOWY W KATALOGU WWW
 
