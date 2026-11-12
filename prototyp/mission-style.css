@@ -67,8 +67,8 @@
 @media(prefers-reduced-motion:reduce){.business-transition *{animation:none;transition:none}}
 
 /* Initial customer focus: three manufacturing segments, logistics as a secondary use. */
-.customers-heading{display:grid;grid-template-columns:1.2fr 1fr;gap:70px;align-items:center}
-.customers-heading h2{max-width:650px}
+.customers-heading{display:block}
+.customers-heading h2{max-width:none}
 .customers-heading>p{font-size:16px;line-height:1.75;color:#526177}
 .customer-sectors{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:40px}
 .customer-sector{min-width:0}
@@ -87,3 +87,18 @@
 .customers-footer .text-link{display:inline-flex;gap:15px;align-items:center;color:#366c58;font-size:13px;flex-shrink:0}
 @media(max-width:1150px){.customers-heading{gap:35px}.customer-sectors{gap:22px}.customer-sector h3{font-size:21px}.customers-footer{align-items:flex-start}.customers-footer .text-link{flex-shrink:1}}
 @media(max-width:760px){.customers-heading{grid-template-columns:1fr;gap:20px}.customers-heading h2{font-size:30px;letter-spacing:-1px}.customers-heading>p{font-size:15px;line-height:1.7}.customer-sectors{grid-template-columns:1fr;gap:30px;margin-top:28px}.sector-visual{height:130px;margin-bottom:18px}.customer-sector h3{font-size:23px}.customer-sector p{margin-top:9px}.customers-footer{flex-direction:column;gap:16px;margin-top:28px}}
+
+
+/* Browser comments: the digital journey is the first-screen message. */
+.hero h1{font-size:58px;line-height:1.06;letter-spacing:-2.8px}
+.hero .intro{font-size:25px;max-width:470px}
+.hero-actions .primary{min-width:172px;justify-content:space-between}
+.hero-alert>img{object-position:center;filter:none}
+.growth-overview{padding-bottom:38px}
+.growth-overview ol{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;list-style:none;margin:0;padding:26px 0;border-block:1px solid #dbe7e0}
+.growth-overview li{display:flex;align-items:center;gap:14px;font-size:15px;color:#243c48;line-height:1.5}
+.growth-overview li>span{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:34px;height:34px;border-radius:50%;background:#e7f5ed;color:#3c7d64;font-size:11px;font-weight:650}
+.contact-photo{height:260px}
+.contact-photo>img{object-position:center 40%;filter:none}
+@media(max-width:1150px){.hero h1{font-size:50px;letter-spacing:-2.2px}.hero .intro{font-size:24px}.growth-overview li{font-size:13px;gap:10px}.growth-overview ol{gap:20px}}
+@media(max-width:760px){.hero h1{font-size:43px;letter-spacing:-1.9px}.hero .intro{font-size:23px}.growth-overview{padding-bottom:28px}.growth-overview ol{grid-template-columns:1fr;gap:17px;padding-block:22px}.growth-overview li{font-size:14px}.contact-photo{height:250px}}

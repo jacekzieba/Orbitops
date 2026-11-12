@@ -2207,3 +2207,39 @@ Object.assign(window.OrbitTranslations, {
     "Andere Fertigung"
   ]
 });
+
+// Browser comments: funding support, promoted message and new imagery.
+Object.assign(window.OrbitTranslations, {
+  "Ilustracja dostawy do zakładu podczas intensywnych opadów": [
+    "Illustration of a factory delivery during heavy rain",
+    "Illustration einer Lieferung zum Werk bei Starkregen"
+  ],
+  "Pomagamy również firmom w pozyskiwaniu dofinansowania na wdrożenie i rozwój AI oraz cyfryzację procesów biznesowych.": [
+    "We also help businesses seek funding to implement and develop AI and digitalise their business processes.",
+    "Wir unterstützen Unternehmen auch bei der Suche nach Fördermitteln für die Einführung und Weiterentwicklung von KI sowie die Digitalisierung ihrer Geschäftsprozesse."
+  ],
+  "Złożone dane. Jasne wnioski dla Twojej firmy.": [
+    "Complex data. Clear insights for your business.",
+    "Komplexe Daten. Klare Erkenntnisse für Ihr Unternehmen."
+  ],
+  "Trzy kroki do cyfrowej firmy": [
+    "Three steps towards a digital business",
+    "Drei Schritte zum digitalen Unternehmen"
+  ],
+  "Zespół produkcyjny analizujący dane na tablecie w zakładzie": [
+    "A production team reviewing data on a tablet at a factory",
+    "Ein Produktionsteam analysiert Daten auf einem Tablet im Werk"
+  ],
+  "Dane Twojej firmy.": [
+    "Your business data.",
+    "Ihre Unternehmensdaten."
+  ],
+  "Plan na kolejny krok.": [
+    "A plan for the next step.",
+    "Ein Plan für den nächsten Schritt."
+  ],
+  "Demo przedstawia przykładowe scenariusze na danych demonstracyjnych.": [
+    "The demo presents example scenarios using demonstration data.",
+    "Die Demo zeigt Beispielszenarien mit Demonstrationsdaten."
+  ]
+});
