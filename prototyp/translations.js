@@ -2243,3 +2243,8 @@ Object.assign(window.OrbitTranslations, {
     "Die Demo zeigt Beispielszenarien mit Demonstrationsdaten."
   ]
 });
+
+Object.assign(window.OrbitTranslations, {
+  "Rozwijaj cyfrową firmę razem z nami.": ["Build your digital business with us.", "Entwickeln Sie Ihr digitales Unternehmen mit uns."],
+  "Kręgi stali i materiały przygotowane do produkcji": ["Steel coils and materials ready for production", "Stahlcoils und Materialien für die Produktion"]
+});
